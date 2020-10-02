@@ -1,0 +1,257 @@
+.first-screen {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		padding: 282px 0 81px;
+	}
+
+	&__content {
+		position: relative;
+		max-width: 580px;
+	}
+
+	&__title {
+		font-size: 54px;
+		line-height: 56.74px;
+		font-weight: 300;
+		padding-top: 11px;
+
+		p {
+			font-size: 42px;
+			line-height: 58.34px;
+			font-weight: 500;
+		}
+
+		span {
+			font-weight: 300;
+		}
+	}
+
+	&__price {
+		display: inline-block;
+		width: 145px;
+		height: 41px;
+		position: relative;
+		top: 6px;
+		left: 6px;
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+		}
+
+		&::before {
+			width: 100%;
+			height: 100%;
+			border-radius: 10px;
+			box-shadow: 0 0 30px 10px rgba(220, 222, 237, 0.18), inset 0 0 35px rgba(255, 255, 255, 0.16);
+			background-color: #7a9fc8;
+			top: 0;
+			left: 0;
+		}
+
+		&::after {
+			width: 8px;
+			height: 8px;
+			background-color: $white;
+			border-radius: 50%;
+			top: 18px;
+			left: 13px;
+		}
+
+		span {
+			position: absolute;
+			top: 1px;
+			left: 32px;
+			font-size: 14px;
+			line-height: 41px;
+			color: $white;
+			font-weight: 400;
+		}
+	}
+
+	&__note {
+		padding-top: 55px;
+		padding-left: 15px;
+		position: relative;
+
+		p {
+			position: absolute;
+
+			&:first-of-type {
+				top: 31px;
+				left: 200px;
+				font-size: 139px;
+				font-weight: 500;
+				opacity: 0.05;
+			}
+
+			&:last-of-type {
+				top: 45px;
+				right: 79px;
+				font-size: 25px;
+				line-height: 32.62px;
+				font-weight: 300;
+
+				span {
+					font-weight: 500;
+				}
+			}
+		}
+
+		img {
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	&__man {
+		position: absolute;
+		bottom: 0;
+		left: 52%;
+		transform: translateX(-50%);
+	}
+}
+
+.advantages {
+	&__container {
+		padding: 73px 0 0;
+	}
+
+	&__flex {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -50px;
+	}
+}
+
+.advantages-item {
+	width: calc(33.3333% - 100px);
+	margin: 0 50px;
+	text-align: center;
+
+	&:nth-child(3n+2) {
+		width: calc(35.3333% - 100px);
+	}
+
+	&:nth-child(3n+3) {
+		width: calc(31.3333% - 100px);
+	}
+
+	img {
+		margin: 0 auto;
+	}
+
+	p {
+		font-size: 22px;
+		font-weight: 300;
+		line-height: 32.01px;
+		letter-spacing: 0.22px;
+
+		span {
+			font-weight: 500;
+		}
+	}
+}
+
+.quiz {
+	&__container {
+		padding: 139px 0 100px;
+	}
+
+	&__title {
+		font-size: 50px;
+		line-height: 60px;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 74px;
+
+		span {
+			font-weight: 500;
+		}
+	}
+
+	&__outer {
+		max-width: 1293px;
+		padding: 8px;
+		margin: 0 auto;
+		background-color: $white;
+		border-radius: 10px;
+	}
+
+	&__inner {
+		padding: 58px 86px 77px;
+		border: 1px solid #f3f3f3;
+		border-radius: 10px;
+	}
+
+	&__get-it {
+		max-width: 346px;
+		margin-right: 71px;
+	}
+
+	&__get-it-text {
+		font-size: 25px;
+		font-weight: 500;
+		margin-bottom: 30px;
+	}
+}
+
+.quiz-get {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 108px;
+	padding: 20px 32px;
+	background-color: #eff3f8;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+
+	+ .quiz-get {
+		margin-top: 24px;
+	}
+
+	&__value {
+		margin-right: 18px;
+		font-size: 47px;
+		font-weight: 500;
+		color: #89aace;
+		text-shadow: 0 0 30px rgba(220, 222, 237, 0.18);
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 300;
+		letter-spacing: 0.18px;
+
+		span {
+			font-weight: 500;
+		}
+	}
+
+	&--with-pic {
+		padding: 20px 81px;
+
+		.quiz-get__picture {
+			position: absolute;
+			top: 2px;
+			left: -40px;
+		}
+
+		&:last-child {
+			.quiz-get__picture {
+				top: -8px;
+				left: -85px;
+			}
+		}
+	}
+}

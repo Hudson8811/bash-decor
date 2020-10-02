@@ -1,0 +1,12 @@
+mixin input(type, inputName, className, placeholder, value)
+	input.input(class=className, type=type, name=inputName, value=value, placeholder=placeholder)
+
+mixin button(text, className, href)
+	if href
+		a.button(href=href, class=className)
+			span.flare
+			span= text
+	else
+		button.button(class=className)
+			span.flare
+			span= text

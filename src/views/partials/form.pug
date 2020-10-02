@@ -1,0 +1,30 @@
+form.form(action='', method='POST')
+	.form__inner
+		.form__title Получите 3 варианта сметы потолков <span>для вашего дома со скидкой до 50%</span>
+		.form__wrapper
+			.form__subtitle Как Вам удобнее получить варианты?
+			.form__socials
+				a.form__socials-item(href='#')
+					svg
+						use(xlink:href='./svg/sprite.svg#socials--viber')
+					span Viber
+				a.form__socials-item(href='#')
+					svg
+						use(xlink:href='./svg/sprite.svg#socials--telegram')
+					span Telegram
+				a.form__socials-item(href='#')
+					svg
+						use(xlink:href='./svg/sprite.svg#socials--wa')
+					span WhatsApp
+				a.form__socials-item(href='#')
+					svg
+						use(xlink:href='./svg/sprite.svg#socials--phone')
+					span По телефону
+			+input('phone', 'phone', 'input--gray', 'номер телефона')
+			+button('получить 3 варианта со скидкой', 'form__button')
+			.form__privacy-policy Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a>
+	.form__offer-duration
+		.form__offer-inner
+			svg
+				use(xlink:href='./svg/sprite.svg#event')
+			span Акция действует до 15 июля

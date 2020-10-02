@@ -1,0 +1,143 @@
+.form {
+	max-width: 493px;
+	width: 100%;
+	padding: 8px;
+	background-color: $white;
+	border-radius: 10px;
+	box-shadow: 0 0 30px 10px rgba(220, 222, 237, 0.18);
+	box-sizing: border-box;
+	position: relative;
+
+	&__inner {
+		padding: 37px 55px 55px;
+		border-radius: 10px;
+		text-align: center;
+		border: 1px solid #f3f3f3;
+	}
+
+	&__title {
+		font-size: 20px;
+		line-height: 23.2px;
+		font-weight: 300;
+		letter-spacing: 0.22px;
+		color: #0d323d;
+
+		span {
+			font-weight: 500;
+		}
+	}
+
+	&__wrapper {
+		max-width: 323px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	&__subtitle {
+		font-size: 17px;
+		font-weight: 300;
+		letter-spacing: 0.18px;
+		color: #686868;
+		margin: 22px 0 25px;
+	}
+
+	&__socials {
+		display: flex;
+		flex-wrap: wrap;
+		border-radius: 2px;
+		border: 1px solid #f1f1f1;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+
+	&__socials-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: calc(55% + 2px);
+		height: 68px;
+		padding: 15px 18px 15px 12px;
+		margin: -1px;
+		background-color: #fdfdfd;
+		border: 1px solid #f1f1f1;
+		box-sizing: border-box;
+		font-size: 15px;
+		font-weight: 300;
+		color: #949494;
+		letter-spacing: 0.95px;
+
+		&:nth-child(odd) {
+			width: calc(45% + 2px);
+		}
+
+		svg {
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+		}
+	}
+
+	&__button {
+		margin: 16px 0 24px;
+	}
+
+	&__privacy-policy {
+		font-size: 13px;
+		line-height: 16.3px;
+		letter-spacing: 0.07px;
+		color: #939393;
+
+		a {
+			text-decoration: underline;
+			color: #939393;
+
+			@media (min-width: $dMin) {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	&__offer-duration,
+	&__offer-inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__offer-duration {
+		width: 180px;
+		height: 180px;
+		padding: 8px;
+		background-color: #f8f8fa;
+		border-radius: 50%;
+		position: absolute;
+		bottom: 100px;
+		left: -136px;
+	}
+
+	&__offer-inner {
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		padding: 24px 42px;
+		border: 1px solid #f4f4f4;
+		border-radius: 50%;
+		text-align: center;
+		box-sizing: border-box;
+
+		svg {
+			width: 34px;
+			height: 35px;
+			fill: #606060;
+			margin-bottom: 7px;
+		}
+
+		span {
+			font-size: 17px;
+			line-height: 22.55px;
+			font-weight: 500;
+		}
+	}
+}

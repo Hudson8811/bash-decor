@@ -1,0 +1,59 @@
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	max-width: 100%;
+	height: 100%;
+}
+
+input,
+button {
+	-webkit-appearance: none;
+}
+
+input,
+button,
+select,
+textarea {
+	font-family: $mainFont;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	outline: 0;
+}
+
+body {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	color: $mainColor;
+	background: $white;
+	font-family: $mainFont;
+}
+
+ol,
+ul,
+nav {
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+
+*:focus {
+	outline: none;
+}
+
+.container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 1570px;
+	max-width: calc(100% - 40px);
+
+	@media (min-width: $dMin) {
+		max-width: calc(100% - 60px);
+	}
+}
