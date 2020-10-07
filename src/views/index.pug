@@ -13,7 +13,7 @@ block main
 	.first-screen(style='background-image: url("images/bg-first.jpg");')
 		.container.first-screen__container
 			.first-screen__man
-				img(src="images/man.png")
+				img(src="images/man.png" alt='man')
 			.first-screen__content
 				.first-screen__title Натяжные потолки <br> в Стерлитамаке
 					.first-screen__price
@@ -30,20 +30,20 @@ block main
 			.advantages__flex
 				.advantages-item
 					.advantages-item__picture
-						img(src="images/advantages/item-1.png")
+						img(src='images/advantages/item-1.png' alt='advantages-1')
 					p Заявленная вначале стоимость остается неизменной до конца работ. <br> <span>Если не укладываемся в смету - <br> платим из своего кармана</span>
 				.advantages-item
 					.advantages-item__picture
-						img(src="images/advantages/item-2.png")
+						img(src='images/advantages/item-2.png' alt='advantages-2')
 					p Потолки «Башдекор» сохраняют качество <br> <span>и внешний вид в течение 25 лет <br> - без потребности в уходе</span>
 				.advantages-item
 					.advantages-item__picture
-						img(src="images/advantages/item-3.png")
+						img(src='images/advantages/item-3.png' alt='advantages-3')
 					p Устанавливаем потолки строго по государственным стандартам. <br> <span>Средний опыт монтажников «Башдекор» - 4,5 года</span>
 
 	.quiz
 		.container.quiz__container
-			.quiz__title Рассчитайте стоимость <br> натяжных потолков с установкой, <br> <span>ответив на 5 вопросов за 1 минуту</span>
+			+title('Рассчитайте стоимость <br> натяжных потолков с установкой, <br> <span>ответив на 5 вопросов за 1 минуту</span>', 'quiz__title')
 			.quiz__outer
 				.quiz__inner
 					.quiz__get-it
@@ -56,9 +56,38 @@ block main
 							.quiz-get__text <span>скидка</span> на все варианты
 						.quiz-get.quiz-get--with-pic
 							.quiz-get__picture
-								img(src="images/quiz-get-1.png")
+								img(src='images/quiz-get-1.png' alt='quiz-get-1')
 							.quiz-get__text <span>Подарок ценой</span> <br> до 5000 рублей <br> за ваши ответы
 						.quiz-get.quiz-get--with-pic
 							.quiz-get__picture
-								img(src="images/quiz-get-2.png")
+								img(src='images/quiz-get-2.png' alt='quiz-get-2')
 							.quiz-get__text <span>Каталог потолков,</span> <br> который подойдут именно вашему дому
+
+	.achievements
+		.container.achievements__container
+			+title('За 15 лет «Башдекор» установил больше потолков, <br> <span>чем все компании Стерлитамака <br> вместе взятые</span>', 'achievements__title')
+			.achievements__video
+				img(src='images/achievements/video.png' alt='achievements-video')
+				.achievements__outer
+					.achievements__play
+						.pulse.pulse-1
+						.pulse.pulse-2
+						.pulse.pulse-3
+						.pulse.pulse-4
+						.pulse-core
+							img(src='img/play.png' alt='play')
+					.achievements__inner
+						p <span>Посмотрите</span> самые заказываемые модели потолков
+			.achievements__counter
+				.achievements__counter-item
+					.achievements__counter-img
+						img(src='images/achievements/item-1.png' alt='achievements-item-1')
+					.achievements__counter-wrap
+						.achievements__digit(data-count='18563') 0
+						.achievements__text <span>потолков</span> установили <br> за время работы
+				.achievements__counter-item
+					.achievements__counter-img
+						img(src='images/achievements/item-2.png' alt='achievements-item-2')
+					.achievements__counter-wrap
+						.achievements__digit(data-count='6282') 0
+						.achievements__text <span>заказчиков</span> уже получили натяжные потолки <br> в свои дома и квартиры
