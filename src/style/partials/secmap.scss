@@ -1,0 +1,141 @@
+.section-map {
+    position: relative;
+    z-index: 1;
+}
+
+.secmap-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ceeece;
+    z-index: 1;
+}
+
+.secmap-clouds {}
+
+.secmap-map {}
+
+.container-map {
+    width: 1254px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-bottom: 65px;
+    padding-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.secmap-title {
+    width: 100%;
+    text-align: center;
+    color: #21222d;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+
+    b {
+        font-weight: 500;
+    }
+}
+
+.secmap-info {
+    width: 455px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 50px;
+    // padding: 11px 10px 5px 8px;
+}
+
+.secmap-info-top {
+    position: relative;
+    z-index: 1;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.secmap-info-top__bg{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #83a5cc;
+    border-radius: 10px 10px 0 0;
+    clip-path: polygon(0 140px,30px 123px,0 105px,0 0,100% 0,100% 100%,0 100%);
+}
+.secmap-info-top__border{
+    background: red;
+    left: 9px;
+    top: 11px;
+    width: calc(100% - 18px);
+    height: calc(100% - 11px);
+    z-index: 1;
+    position: absolute;
+    clip-path: polygon(0 140px,30px 123px,0 105px,0 0,100% 0,100% 100%,0 100%);
+    &::before{
+        background: #ffffff;
+    }
+
+}
+.secmap-info-container{
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.secmap-item {
+    &__title {}
+}
+
+.secmap-time {
+    &__item {}
+}
+
+
+
+.secmap-list {}
+
+.secmap-list-item {
+    &__city {}
+
+    &__street {}
+}
+
+.secmap-info-bottom {
+    background: #ffffff;
+    border-radius: 0 0 10px 10px;
+}
+
+.secmap-info {}
+
+.secmap-info-container {}
+
+.secmap-info-bottom__phone {
+    &:hover {}
+
+    &:active {}
+
+    &:focus {}
+}
+
+.input {
+    &--gray {}
+}
+
+.btn-v2 {
+    &__bg {}
+
+    &__text {}
+
+    &:hover {}
+
+    &:active {}
+
+    &:focus {}
+}
