@@ -18,78 +18,179 @@ block main
 				.first-screen__title Натяжные потолки <br> в Стерлитамаке
 					.first-screen__price
 						span от 189 ₽/м2
-					p с бесплатной установкой за 2 часа <span>уже завтра</span>
+					p с бесплатной установкой+ за 2 часа <span>уже завтра</span>
 				.first-screen__note
 					p 5
 					p <span>с 5 гарантиями</span> <br> по договору
 					img(src="images/note.png")
 			include partials/form.pug
 
-	.advantages
-		.container.advantages__container
-			.advantages__flex
-				.advantages-item
-					.advantages-item__picture
-						img(src='images/advantages/item-1.png' alt='advantages-1')
-					p Заявленная вначале стоимость остается неизменной до конца работ. <br> <span>Если не укладываемся в смету - <br> платим из своего кармана</span>
-				.advantages-item
-					.advantages-item__picture
-						img(src='images/advantages/item-2.png' alt='advantages-2')
-					p Потолки «Башдекор» сохраняют качество <br> <span>и внешний вид в течение 25 лет <br> - без потребности в уходе</span>
-				.advantages-item
-					.advantages-item__picture
-						img(src='images/advantages/item-3.png' alt='advantages-3')
-					p Устанавливаем потолки строго по государственным стандартам. <br> <span>Средний опыт монтажников «Башдекор» - 4,5 года</span>
+	.bg-clouds(style='background-image: url(images/bg-clouds.jpg)')
+		.advantages
+			.container.advantages__container
+				.advantages__flex
+					.advantages-item
+						.advantages-item__picture
+							img(src='images/advantages/item-1.png' alt='advantages-1')
+						p Заявленная вначале стоимость остается неизменной до конца работ. <br> <span>Если не укладываемся в смету - <br> платим из своего кармана</span>
+					.advantages-item
+						.advantages-item__picture
+							img(src='images/advantages/item-2.png' alt='advantages-2')
+						p Потолки «Башдекор» сохраняют качество <br> <span>и внешний вид в течение 25 лет <br> - без потребности в уходе</span>
+					.advantages-item
+						.advantages-item__picture
+							img(src='images/advantages/item-3.png' alt='advantages-3')
+						p Устанавливаем потолки строго по государственным стандартам. <br> <span>Средний опыт монтажников «Башдекор» - 4,5 года</span>
 
-	.quiz
-		.container.quiz__container
-			+title('Рассчитайте стоимость <br> натяжных потолков с установкой, <br> <span>ответив на 5 вопросов за 1 минуту</span>', 'quiz__title')
-			.quiz__outer
-				.quiz__inner
-					.quiz__get-it
-						.quiz__get-it-text Вы получите:
-						.quiz-get(style='padding-left: 56px;')
-							.quiz-get__value(style='margin-right: 34px;') 3
-							.quiz-get__text <span>варианта</span> сметы <br> по вашим параметрам
-						.quiz-get
-							.quiz-get__value 50%
-							.quiz-get__text <span>скидка</span> на все варианты
-						.quiz-get.quiz-get--with-pic
-							.quiz-get__picture
-								img(src='images/quiz-get-1.png' alt='quiz-get-1')
-							.quiz-get__text <span>Подарок ценой</span> <br> до 5000 рублей <br> за ваши ответы
-						.quiz-get.quiz-get--with-pic
-							.quiz-get__picture
-								img(src='images/quiz-get-2.png' alt='quiz-get-2')
-							.quiz-get__text <span>Каталог потолков,</span> <br> который подойдут именно вашему дому
+		.quiz
+			.container.quiz__container
+				+title('Рассчитайте стоимость <br> натяжных потолков с установкой, <br> <span>ответив на 5 вопросов за 1 минуту</span>', 'quiz__title')
+				.quiz__outer
+					.quiz__inner
+						.quiz__get-it
+							.quiz__get-it-text Вы получите:
+							.quiz-get(style='padding-left: 56px;')
+								.quiz-get__value(style='margin-right: 34px;') 3
+								.quiz-get__text <span>варианта</span> сметы <br> по вашим параметрам
+							.quiz-get
+								.quiz-get__value 50%
+								.quiz-get__text <span>скидка</span> на все варианты
+							.quiz-get.quiz-get--with-pic
+								.quiz-get__picture
+									img(src='images/quiz-get-1.png' alt='quiz-get-1')
+								.quiz-get__text <span>Подарок ценой</span> <br> до 5000 рублей <br> за ваши ответы
+							.quiz-get.quiz-get--with-pic
+								.quiz-get__picture
+									img(src='images/quiz-get-2.png' alt='quiz-get-2')
+								.quiz-get__text <span>Каталог потолков,</span> <br> который подойдут именно вашему дому
 
-	.achievements
-		.container.achievements__container
-			+title('За 15 лет «Башдекор» установил больше потолков, <br> <span>чем все компании Стерлитамака <br> вместе взятые</span>', 'achievements__title')
-			.achievements__video
-				img(src='images/achievements/video.png' alt='achievements-video')
-				.achievements__outer
-					.achievements__play
-						.pulse.pulse-1
-						.pulse.pulse-2
-						.pulse.pulse-3
-						.pulse.pulse-4
-						.pulse-core
-							img(src='img/play.png' alt='play')
-					.achievements__inner
-						p <span>Посмотрите</span> самые заказываемые модели потолков
-			.achievements__counter
-				.achievements__counter-item
-					.achievements__counter-img
-						img(src='images/achievements/item-1.png' alt='achievements-item-1')
-					.achievements__counter-wrap
-						.achievements__digit(data-count='18563') 0
-						.achievements__text <span>потолков</span> установили <br> за время работы
-				.achievements__counter-item
-					.achievements__counter-img
-						img(src='images/achievements/item-2.png' alt='achievements-item-2')
-					.achievements__counter-wrap
-						.achievements__digit(data-count='6282') 0
-						.achievements__text <span>заказчиков</span> уже получили натяжные потолки <br> в свои дома и квартиры
+		.achievements
+			.container.achievements__container
+				+title('За 15 лет «Башдекор» установил больше потолков, <br> <span>чем все компании Стерлитамака <br> вместе взятые</span>')
+				.achievements__video
+					img(src='images/achievements/video.png' alt='achievements-video')
+					.achievements__outer
+						.achievements__play
+							.pulse.pulse-1
+							.pulse.pulse-2
+							.pulse.pulse-3
+							.pulse.pulse-4
+							.pulse-core
+								img(src='img/play.png' alt='play')
+						.achievements__inner
+							p <span>Посмотрите</span> самые заказываемые модели потолков
+				.achievements__counter
+					.achievements__counter-item
+						.achievements__counter-img
+							img(src='images/achievements/item-1.png' alt='achievements-item-1')
+						.achievements__counter-wrap
+							.achievements__digit(data-count='18563') 0
+							.achievements__text <span>потолков</span> установили <br> за время работы
+					.achievements__counter-item
+						.achievements__counter-img
+							img(src='images/achievements/item-2.png' alt='achievements-item-2')
+						.achievements__counter-wrap
+							.achievements__digit(data-count='6282') 0
+							.achievements__text <span>заказчиков</span> уже получили натяжные потолки <br> в свои дома и квартиры
+
+		.products
+			.container.products__container
+				+title('Воплощаем в жизнь любые идеи <span>от классического <br> белого потолка до современных решений <br> </span> типа Double Vision', 'products__title')
+				.products__subtitle Посмотрите самые заказываемые модели потолков
+				.products__flex
+					.product-item
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Многоуровневые потолки
+							.product-item__description(style='display: none;')
+								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
+								p Его заказывают 80% заказчиков.
+								p от 189 ₽/м2
+							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+					.product-item
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Классические белые потолки
+							.product-item__description(style='display: none;')
+								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
+								p Его заказывают 80% заказчиков.
+								p от 189 ₽/м2
+							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+					.product-item
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Цветные потолки
+							.product-item__description(style='display: none;')
+								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
+								p Его заказывают 80% заказчиков.
+								p от 189 ₽/м2
+							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+					.product-item
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Потолки <br> с фотопечатью
+							.product-item__description(style='display: none;')
+								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
+								p Его заказывают 80% заказчиков.
+								p от 189 ₽/м2
+							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+					.product-item
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Парящие потолки
+							.product-item__description(style='display: none;')
+								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
+								p Его заказывают 80% заказчиков.
+								p от 189 ₽/м2
+							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+					.product-item
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Потолки <br> с подсветкой
+							.product-item__description(style='display: none;')
+								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
+								p Его заказывают 80% заказчиков.
+								p от 189 ₽/м2
+							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+					.product-item
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Звездное небо
+							.product-item__description(style='display: none;')
+								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
+								p Его заказывают 80% заказчиков.
+								p от 189 ₽/м2
+							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+					.product-item
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Double Vision
+							.product-item__description(style='display: none;')
+								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
+								p Его заказывают 80% заказчиков.
+								p от 189 ₽/м2
+							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+					.product-item.product-item--social
+						.product-item__insta
+							svg
+								use(xlink:href='./svg/sprite.svg#socials--insta')
+						.product-item__subs
+							p Больше работ <br> в нашем инстаграме
+							p Получите 300 рублей <br> за подписку в инстаграме
+							a(href='https://www.instagram.com/bashdekor_str/' target='_blank') @bashdekor_str
+							p 3 859 подписчиков
+						img(src='images/logo-badge.png' alt='logo-badge')
+				.products__outer
+					.products__inner
+						img(src='images/catalog.png' alt='catalog')
+						p Это не все модели потолков, что у нас есть
 
 	include sections/map.pug

@@ -257,10 +257,6 @@
 }
 
 .achievements {
-	&__title {
-		margin-bottom: 0;
-	}
-
 	&__video {
 		margin-top: -13px;
 		padding-left: 21px;
@@ -397,6 +393,236 @@
 
 		&-4 {
 			animation: pulse-4 1s linear infinite;
+		}
+	}
+}
+
+.products {
+	&__container {
+		padding: 145px 0 172px;
+	}
+
+	&__title {
+		margin-bottom: 36px;
+	}
+
+	&__subtitle {
+		font-size: 22px;
+		font-weight: 300;
+		color: #9f9f9f;
+		text-align: center;
+		letter-spacing: 0.8px;
+		margin-bottom: 89px;
+	}
+
+	&__flex {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -37.5px;
+	}
+
+	&__outer {
+		max-width: 563px;
+		padding: 8px;
+		margin: 17px auto 0;
+		background-color: $white;
+		border-radius: 10px;
+		box-sizing: border-box;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 23px 36px 0 33px;
+		border: 1px solid #f3f3f3;
+		border-radius: 10px;
+
+		img {
+			width: 275px;
+			margin-right: 26px;
+		}
+
+		p {
+			font-size: 22px;
+			line-height: 28px;
+			font-weight: 500;
+			letter-spacing: 0.3px;
+			padding-bottom: 17px;
+		}
+	}
+}
+
+.product-item {
+	width: calc(33.3333% - 75px);
+	margin: 0 37.5px 70px;
+	padding-bottom: 312px;
+	background-color: $white;
+	box-shadow: 0 0 30px 10px rgba(220, 222, 237, 0.33);
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: calc(100% - 16px);
+		height: calc(100% - 16px);
+		border: 1px solid #f3f3f3;
+		border-radius: 10px;
+		pointer-events: none;
+	}
+
+	&__img {
+		border-radius: 10px;
+		height: 405px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-height: 312px;
+		width: 100%;
+		padding: 56px 60px 82px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		background-color: $white;
+		box-sizing: border-box;
+
+		&--expand {
+			.product-item__title {
+				font-weight: 500;
+			}
+		}
+	}
+
+	&__description {
+		opacity: 0;
+		transition: opacity 0.4s ease;
+
+		p {
+			font-size: 18px;
+			line-height: 26.35px;
+			font-weight: 300;
+			text-align: center;
+
+			&:nth-child(2) {
+				margin-top: 20px;
+				font-weight: 500;
+			}
+
+			&:last-child {
+				margin-top: 20px;
+				font-size: 25px;
+				font-weight: 500;
+				margin-bottom: 47px;
+			}
+		}
+
+		&--visible {
+			opacity: 1;
+		}
+	}
+
+	&__button {
+		width: 301px;
+		height: 82px;
+		margin: auto auto 0;
+	}
+
+	&__title {
+		max-width: 300px;
+		font-size: 25px;
+		font-weight: 300;
+		text-align: center;
+		margin: 0 auto 28px;
+	}
+
+	&--social {
+		padding: 89px 100px 57px;
+
+		img {
+			-webkit-filter: grayscale(100%);
+			-moz-filter: grayscale(100%);
+			-ms-filter: grayscale(100%);
+			filter: grayscale(100%);
+			opacity: 0.08;
+			margin: 30px auto 0;
+			width: 247px;
+			padding-left: 20px;
+		}
+
+		.product-item {
+			&__insta {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 56px;
+				height: 56px;
+				margin: 0 auto 10px;
+				border-radius: 50%;
+				overflow: hidden;
+				background: #bc1888;
+				background: -moz-linear-gradient(0deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+				background: -webkit-linear-gradient(0deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+				background: -ms-linear-gradient(0deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+				background: linear-gradient(0deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+				svg {
+					width: 50%;
+					fill: $white;
+				}
+			}
+
+			&__subs {
+				text-align: center;
+
+				p {
+					&:first-of-type {
+						font-size: 25px;
+						line-height: 30.82px;
+						font-weight: 500;
+						margin-bottom: 17px;
+					}
+
+					&:nth-of-type(2) {
+						font-size: 18px;
+						line-height: 26.35px;
+						font-weight: 300;
+						margin-bottom: 35px;
+					}
+
+					&:last-of-type {
+						font-size: 18px;
+						font-weight: 300;
+						opacity: 0.55;
+						margin-top: 7px;
+					}
+				}
+
+				a {
+					font-size: 30px;
+					font-weight: 500;
+					color: $mainColor;
+				}
+			}
 		}
 	}
 }
