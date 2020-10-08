@@ -5,7 +5,7 @@
 .footer-top {
     padding-left: 27px;
     padding-right: 105px;
-    padding-top: 12px;
+    padding-top: 49px;
     padding-bottom: 25px;
 }
 
@@ -188,7 +188,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition-duration: .2s;
     img {
         display: block;
         width: 26px;
@@ -197,7 +197,9 @@
         object-position: center center;
     }
 
-    &:hover {}
+    &:hover {
+        opacity: .8;
+    }
 
     &:active {}
 
