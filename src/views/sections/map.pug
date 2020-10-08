@@ -1,11 +1,11 @@
 section.section-map
 	.secmap-bg
-		img.secmap-clouds(src="", alt="")
-		.secmap-map
+		img.secmap-clouds(src="images/map/clouds.png", alt="")
+		#secmap-map.secmap-map
 	.container-map
 		h2.secmap-title
 			b Остались вопросы?
-			|  Давайте встретимся и обсудим их за чашкой кофе
+			|  Давайте встретимся<br> и обсудим их за чашкой кофе
 		.secmap-info
 			.secinfo-border
 			.secmap-info-top
@@ -32,8 +32,83 @@ section.section-map
 				.secmap-info-innner
 					.secmap-info-container
 						a.secmap-info-bottom__phone(href="tel:79874919455") +7(987) 491-94-55
-						form(action="")
+						form.secmap-form(action="")
 							input.input.input--gray.secmap-info-input(type='phone' name='phone' placeholder='номер телефона')
 							button.btn-v2.secmap-info-btn
-								span.btn-v2__bg
-								span.btn-v2__text Назначить встречу
+								.btn-v2__inner
+									span.btn-v2__bg
+									span.btn-v2__text Назначить встречу
+	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+	script.
+		ymaps.ready(function () {
+			var myMap = new ymaps.Map('secmap-map', {
+					center: [53.504550680917745,55.50635760766119],
+					zoom: 9,
+					controls: []
+				}, {
+					searchControlProvider: 'yandex#search'
+				}),
+
+				// Создаём макет содержимого.
+				MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+					'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+				),
+
+				myPlacemark1 = new ymaps.Placemark([53.45024046140713,56.04410558284641], {
+					balloonContent: '<b>г. Ишимбай,</b> <br> ул. Бульварная, дом 43;'
+
+				}, {
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: 'default#image',
+					// Своё изображение иконки метки.
+					iconImageHref: 'images/map/map-item.png',
+					// Размеры метки.
+					iconImageSize: [31, 39],
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: [-15, -40]
+				}),
+				myPlacemark2 = new ymaps.Placemark([53.38013984910916,55.92476496684739], {
+					balloonContent: '<b>г. Салават,</b> <br> ул. Салават первомайская, дом 67;'
+				}, {
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: 'default#image',
+					// Своё изображение иконки метки.
+					iconImageHref: 'images/map/map-item.png',
+					// Размеры метки.
+					iconImageSize: [24, 30],
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: [-12, -16]
+				}),
+				myPlacemark3 = new ymaps.Placemark([53.62608958268299,55.8968841692149], {
+					balloonContent: '<b>г. Стерлитамак,</b> <br> ул. Строителей, дом 24;'
+				}, {
+
+					// Опции.
+					// Необходимо указать данный тип макета.
+					iconLayout: 'default#image',
+					// Своё изображение иконки метки.
+					iconImageHref: 'images/map/map-item.png',
+					// Размеры метки.
+					iconImageSize: [24, 30],
+					// Смещение левого верхнего угла иконки относительно
+					// её "ножки" (точки привязки).
+					iconImageOffset: [-12, -16]
+				});
+
+			//отключаем зум колёсиком мышки
+			myMap.behaviors.disable('scrollZoom');
+
+			//на мобильных устройствах... (проверяем по userAgent браузера)
+			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+				//... отключаем перетаскивание карты
+				myMap.behaviors.disable('drag');
+			}
+			myMap.geoObjects
+				.add(myPlacemark1)
+				.add(myPlacemark2)
+				.add(myPlacemark3);
+		});
