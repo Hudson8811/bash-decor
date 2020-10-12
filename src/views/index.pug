@@ -70,7 +70,7 @@ block main
 				.achievements__video
 					img(src='images/achievements/video.png' alt='achievements-video')
 					.achievements__outer
-						.achievements__play
+						.play
 							.pulse.pulse-1
 							.pulse.pulse-2
 							.pulse.pulse-3
@@ -192,5 +192,117 @@ block main
 					.products__inner
 						img(src='images/catalog.png' alt='catalog')
 						p Это не все модели потолков, что у нас есть
+
+	.catalog
+		.catalog__bg
+			img(src='images/bg-catalog.png' alt='catalog')
+		.container.catalog__container
+			.catalog__flex
+				+title('Получите доступ <br> <span>к каталогу из 500 натяжных потолков</span>', 'catalog__title')
+				.catalog__list
+					span Мы собрали потолки на любой вкус:
+					ul
+						li Классические
+						li Резные
+						li Цветные
+						li С подсветкой
+						li С фотопечатью
+						li Звездное небо
+						li Несколько уровней
+						li Double Vision
+						li Парящие
+					.catalog__pdf
+						.catalog__pdf-inner
+							img(src='img/pdf.png' alt='pdf')
+							span PDF, 5 мб
+				form.form.form--catalog(action='', method='POST')
+					.form__inner
+						.form__title Куда прислать ссылку на каталог?
+						.form__wrapper
+							.form__socials
+								a.form__socials-item(href='#')
+									svg
+										use(xlink:href='./svg/sprite.svg#socials--viber')
+									span Viber
+								a.form__socials-item(href='#')
+									svg
+										use(xlink:href='./svg/sprite.svg#socials--telegram')
+									span Telegram
+								a.form__socials-item(href='#')
+									svg
+										use(xlink:href='./svg/sprite.svg#socials--wa')
+									span WhatsApp
+								a.form__socials-item(href='#')
+									svg
+										use(xlink:href='./svg/sprite.svg#socials--phone')
+									span По телефону
+							+input('phone', 'phone', 'input--gray', 'номер телефона')
+							+button('получить каталог потолков', 'form__button')
+							.form__bonus + персональную скидку до 50% на все позиции
+							.form__privacy-policy Оставляя заявку, вы соглашаетесь с <a href="#" target="_blank">политикой <br> конфиденциальности</a>
+
+	.quality
+		.container.quality__container
+			+title('Почему потолок сохраняет качество <br> <span>и внешний вид в течение 25 лет </span> <br> без потребности в уходе', 'quality__title')
+			.quality__flex
+				.product-item.product-item--quality
+					.product-item__img
+						img(src='images/products/item-1.jpg' alt='products-item-1')
+					.product-item__content
+						.product-item__title Потолок не <br> требует ухода <br> и обновления
+						.product-item__description(style='display: none;') В отличие от побелки <br> не трескается, не сыпется <br> и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
+				.product-item.product-item--quality
+					.product-item__img
+						img(src='images/products/item-1.jpg' alt='products-item-1')
+					.product-item__content
+						.product-item__title Надежное крепление <span>гарантирует безопасность конструкции</span>
+						.product-item__description(style='display: none;') В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
+				.product-item.product-item--quality
+					.product-item__img
+						img(src='images/products/item-1.jpg' alt='products-item-1')
+					.product-item__content
+						.product-item__title Полотно <br> выдерживает <br> <span>нагрузку до 200 кг</span>
+						.product-item__description(style='display: none;') В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
+				.product-item.product-item--quality
+					.product-item__img
+						img(src='images/products/item-1.jpg' alt='products-item-1')
+					.product-item__content
+						.product-item__title Гарантируют <br> <span>пожарную <br> безопасность</span>
+						.product-item__description(style='display: none;') В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
+
+	.work
+		.container.work__container
+			+title('<span>Установка потолков строго <br> по госстандартамот специалистов, </span> каждый из которых смонтировал минимум 50 потолков', 'work__title')
+			.work__flex
+				.work__items
+					.work__item
+						.work__item-img
+							img(src='images/work/item-1.png' alt='')
+						p <span>Средний опыт монтажников</span> "БашДекор" - 4,5 года и >100 установленных потолков. Наши монтажники обучают грамотному монтажу на ютубе
+					.work__item
+						.work__item-img
+							img(src='images/work/item-2.png' alt='')
+						p <span>Электромонтажные работы строго по СНИПу.</span> Выполняет профессиональный электрик, который есть в каждой бригаде
+					.work__item
+						.work__item-img
+							img(src='images/work/item-3.png' alt='')
+						p <span>Перед установкой проверяем</span> стены специальным оборудованием, чтобы обнаружить проводку <br> и не повредить при монтаже
+					.work__item
+						.work__item-img
+							img(src='images/work/item-4.png' alt='')
+						p <span>Все сотрудники проходят 2-недельное обучение</span> <br> в компании и сдают выпускной экзамен прежде, <br> чем приступить к монтажу
+				.work__video-wrap
+					.work__video
+						p Узнайте как мы монтируем <br> потолки из 5-минутного видео
+						.play.play--small
+							.pulse-core
+								img(src='img/play.png' alt='play')
+					.work__picture
+						img(src='images/products/item-1.jpg' alt='products-item-1')
+					.note.note--work
+						.note__inner
+							svg
+								use(xlink:href='./svg/sprite.svg#clock')
+							p Среднее время монтажа <br> <span>2-2,5 часа</span>
 
 	include sections/map.pug
