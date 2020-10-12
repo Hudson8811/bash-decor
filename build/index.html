@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css?202091216715302" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -278,6 +278,59 @@
             </div>
           </div>
         </div>
+        <div class="s9">
+          <div class="container s9__container">
+            <div class="s9__left">
+              <div class="title s9__title">Быстро и адекватно реагируем <span>на ваши просьбы и рекламации</span></div>
+              <div class="s9__text">Мы хотим, чтобы Вы полностью остались довольны нашей работой и рекомендовали нас друзьям. Поэтому на следующий день после монтажа мы позвоним Вам, чтобы уточнить как прошел монтаж</div>
+              <div class="s9__stoptext"><img class="s9__stoptext-img" src="images/s9/s9-stopwatch.png">
+                <div class="s9__stoptext-text"><span>Если после установки потолка что-то пошло не так</span> (не горит свет, на полотне появились полосы или пятна), <span>то мы решим возникшие проблемы в течение 24 часов бесплатно</span></div>
+              </div>
+            </div>
+            <div class="s9__img"><img src="images/s9/s9-img.png"></div>
+          </div><img class="s9__bush" src="images/s9/s9-brush.png">
+        </div>
+        <div class="s10">
+          <div class="container s10__container">
+            <div class="s10__flex">
+              <div class="s10__left">
+                <div class="s10__img"><img src="images/s10/s10-mans.png"></div>
+                <div class="s10__info">
+                  <div class="s10__info-inner">
+                    <div class="s10__info-name">Айдар и Елена Галимовы</div>
+                    <div class="s10__info-text"><span>Основатели</span><img class="s10__info-logo" src="images/logo.png"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s10__right">
+                <div class="title s10__title">Вы получите с нашей стороны <span>честность, комфорт, вежливость и заботу</span></div>
+                <div class="s10__items">
+                  <div class="s10__item">
+                    <div class="s10__item-img"><img src="images/s10/s10-w-1.png"></div>
+                    <div class="s10__item-content">
+                      <div class="s10__item-title">Делаем все под ключ, чтобы Вам не пришлось самим что-то доделывать</div>
+                      <div class="s10__item-text">Доставляем потолок, заносим, устанавливаем,  крепим все ваши светильники. Если светильников нет, то поможем подобрать в нашей компании.</div>
+                    </div>
+                  </div>
+                  <div class="s10__item">
+                    <div class="s10__item-img"><img src="images/s10/s10-w-2.png"></div>
+                    <div class="s10__item-content">
+                      <div class="s10__item-title">Заявленная в начале стоимость остается неизменной до конца работ</div>
+                      <div class="s10__item-text">Если не укладываемся в смету — платим из своего кармана</div>
+                    </div>
+                  </div>
+                  <div class="s10__item">
+                    <div class="s10__item-img"><img src="images/s10/s10-w-3.png"></div>
+                    <div class="s10__item-content">
+                      <div class="s10__item-title">Ценим ваше время и нервы</div>
+                      <div class="s10__item-text">Замерщик и монтажники приедут с максимальным опозданием 10&nbsp;мин. За каждые дополнительные 5&nbsp;минут опоздания Вы получите денежную компенсацию</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><img class="s10__bush" src="images/s10/s10-brush.png">
+        </div>
       </div>
       <div class="catalog">
         <div class="catalog__bg"><img src="images/bg-catalog.png" alt="catalog"></div>
@@ -405,11 +458,11 @@
         </div>
       </div>
       <section class="section-map">
-        <div class="secmap-bg"><img class="secmap-clouds" src="" alt="">
-          <div class="secmap-map"></div>
+        <div class="secmap-bg"><img class="secmap-clouds" src="images/map/clouds.png" alt="">
+          <div class="secmap-map" id="secmap-map"></div>
         </div>
         <div class="container-map">
-          <h2 class="secmap-title"><b>Остались вопросы?</b> Давайте встретимся и обсудим их за чашкой кофе</h2>
+          <h2 class="secmap-title"><b>Остались вопросы?</b> Давайте встретимся<br> и обсудим их за чашкой кофе</h2>
           <div class="secmap-info">
             <div class="secinfo-border"></div>
             <div class="secmap-info-top">
@@ -445,15 +498,105 @@
             <div class="secmap-info-bottom">
               <div class="secmap-info-innner">
                 <div class="secmap-info-container"><a class="secmap-info-bottom__phone" href="tel:79874919455">+7(987) 491-94-55</a>
-                  <form action="">
+                  <form class="secmap-form" action="">
                     <input class="input input--gray secmap-info-input" type="phone" name="phone" placeholder="номер телефона">
-                    <button class="btn-v2 secmap-info-btn"><span class="btn-v2__bg"></span><span class="btn-v2__text">Назначить встречу</span></button>
+                    <button class="btn-v2 secmap-info-btn">
+                      <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Назначить встречу</span></div>
+                    </button>
                   </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script>
+          var myMap;
+          var mapCenter=[];
+          
+          if (window.matchMedia("(min-width: 836px)").matches) {
+          	mapCenter=[53.504550680917745,55.50635760766119];
+          }else{
+          	if (window.matchMedia("(min-width: 587px)").matches) {
+          		mapCenter=[53.743545855719546, 55.33851634269093];
+          	}else{
+          		mapCenter=[53.49594724940832, 55.965337570848234];
+          	}
+          }
+          
+          ymaps.ready(function () {
+          	 myMap = new ymaps.Map('secmap-map', {
+          			center: mapCenter,
+          			zoom: 9,
+          			controls: []
+          		}, {
+          			searchControlProvider: 'yandex#search'
+          		}),
+          
+          		// Создаём макет содержимого.
+          		MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          			'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+          		),
+          
+          		myPlacemark1 = new ymaps.Placemark([53.45024046140713,56.04410558284641], {
+          			balloonContent: '<b>г. Ишимбай,</b> <br> ул. Бульварная, дом 43;'
+          
+          		}, {
+          			// Опции.
+          			// Необходимо указать данный тип макета.
+          			iconLayout: 'default#image',
+          			// Своё изображение иконки метки.
+          			iconImageHref: 'images/map/map-item.png',
+          			// Размеры метки.
+          			iconImageSize: [31, 39],
+          			// Смещение левого верхнего угла иконки относительно
+          			// её "ножки" (точки привязки).
+          			iconImageOffset: [-15, -40]
+          		}),
+          		myPlacemark2 = new ymaps.Placemark([53.38013984910916,55.92476496684739], {
+          			balloonContent: '<b>г. Салават,</b> <br> ул. Салават первомайская, дом 67;'
+          		}, {
+          			// Опции.
+          			// Необходимо указать данный тип макета.
+          			iconLayout: 'default#image',
+          			// Своё изображение иконки метки.
+          			iconImageHref: 'images/map/map-item.png',
+          			// Размеры метки.
+          			iconImageSize: [24, 30],
+          			// Смещение левого верхнего угла иконки относительно
+          			// её "ножки" (точки привязки).
+          			iconImageOffset: [-12, -16]
+          		}),
+          		myPlacemark3 = new ymaps.Placemark([53.62608958268299,55.8968841692149], {
+          			balloonContent: '<b>г. Стерлитамак,</b> <br> ул. Строителей, дом 24;'
+          		}, {
+          
+          			// Опции.
+          			// Необходимо указать данный тип макета.
+          			iconLayout: 'default#image',
+          			// Своё изображение иконки метки.
+          			iconImageHref: 'images/map/map-item.png',
+          			// Размеры метки.
+          			iconImageSize: [24, 30],
+          			// Смещение левого верхнего угла иконки относительно
+          			// её "ножки" (точки привязки).
+          			iconImageOffset: [-12, -16]
+          		});
+          
+          	//отключаем зум колёсиком мышки
+          	myMap.behaviors.disable('scrollZoom');
+          
+          	//на мобильных устройствах... (проверяем по userAgent браузера)
+          	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+          		//... отключаем перетаскивание карты
+          		myMap.behaviors.disable('drag');
+          	}
+          	myMap.geoObjects
+          		.add(myPlacemark1)
+          		.add(myPlacemark2)
+          		.add(myPlacemark3);
+          });
+        </script>
       </section>
       <footer class="footer">
         <div class="footer-top">
@@ -462,40 +605,44 @@
               <div class="foo-logo"><img src="images/logo-part.png" alt=""></div>
               <div class="foo-progress"><b>Смонтировали >30 000 натяжных потолков</b> в Стерлитамаке с 2005 года</div>
             </div>
-            <div class="foo-tf-item">
-              <div class="foo-addr">
-                <div class="foo-addr-top">
-                  <div class="foo-addr-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 0C156.748 0 76 80.748 76 180c0 33.534 9.289 66.26 26.869 94.652l142.885 230.257c2.737 4.411 7.559 7.091 12.745 7.091h.119c5.231-.041 10.063-2.804 12.75-7.292L410.611 272.22C427.221 244.428 436 212.539 436 180 436 80.748 355.252 0 256 0zm128.866 256.818L258.272 468.186l-129.905-209.34C113.734 235.214 105.8 207.95 105.8 180c0-82.71 67.49-150.2 150.2-150.2S406.1 97.29 406.1 180c0 27.121-7.411 53.688-21.234 76.818z"/> <path d="M256 90c-49.626 0-90 40.374-90 90 0 49.309 39.717 90 90 90 50.903 0 90-41.233 90-90 0-49.626-40.374-90-90-90zm0 150.2c-33.257 0-60.2-27.033-60.2-60.2 0-33.084 27.116-60.2 60.2-60.2s60.1 27.116 60.1 60.2c0 32.683-26.316 60.2-60.1 60.2z"/></svg></div>
-                  <div class="foo-addr-title"> Адрес офиса:</div>
+            <div class="foo-tf-group foo-tf-group--info">
+              <div class="foo-tf-item foo-tf-item--addr">
+                <div class="foo-addr">
+                  <div class="foo-addr-top">
+                    <div class="foo-addr-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 0C156.748 0 76 80.748 76 180c0 33.534 9.289 66.26 26.869 94.652l142.885 230.257c2.737 4.411 7.559 7.091 12.745 7.091h.119c5.231-.041 10.063-2.804 12.75-7.292L410.611 272.22C427.221 244.428 436 212.539 436 180 436 80.748 355.252 0 256 0zm128.866 256.818L258.272 468.186l-129.905-209.34C113.734 235.214 105.8 207.95 105.8 180c0-82.71 67.49-150.2 150.2-150.2S406.1 97.29 406.1 180c0 27.121-7.411 53.688-21.234 76.818z"/> <path d="M256 90c-49.626 0-90 40.374-90 90 0 49.309 39.717 90 90 90 50.903 0 90-41.233 90-90 0-49.626-40.374-90-90-90zm0 150.2c-33.257 0-60.2-27.033-60.2-60.2 0-33.084 27.116-60.2 60.2-60.2s60.1 27.116 60.1 60.2c0 32.683-26.316 60.2-60.1 60.2z"/></svg></div>
+                    <div class="foo-addr-title"> Адрес офиса:</div>
+                  </div>
+                  <div class="foo-addr__items">
+                    <div class="foo-addr__item">г. Стерлитамак,</div>
+                    <div class="foo-addr__item">ул. Строителей, дом 24</div>
+                  </div>
                 </div>
-                <div class="foo-addr__items">
-                  <div class="foo-addr__item">г. Стерлитамак,</div>
-                  <div class="foo-addr__item">ул. Строителей, дом 24</div>
+              </div>
+              <div class="foo-tf-item foo-tf-item--time">
+                <div class="foo-addr">
+                  <div class="foo-addr-top">
+                    <div class="foo-addr-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612"><path d="M286.875 535.5h38.25v-38.25h-38.25v38.25zM306 76.5c-10.557 0-19.125 8.568-19.125 19.125v191.709h-153c-10.557 0-19.125 8.568-19.125 19.125s8.568 19.125 19.125 19.125H306c10.557 0 19.125-8.568 19.125-19.125V95.625c0-10.557-8.568-19.125-19.125-19.125zM128.769 436.662l26.469 26.526 26.469-26.526-26.469-26.526-26.469 26.526zm56.609-277.485l-27.062-27.042-27.043 27.042 27.043 27.043 27.062-27.043zm236.825-.956l26.47 26.526 26.469-26.526-26.469-26.526-26.47 26.526zM416.6 435.629l27.043 27.043 27.043-27.043-27.043-27.042-27.043 27.042zm80.65-148.754v38.25h38.25v-38.25h-38.25zM306 0C136.992 0 0 137.012 0 306c0 169.008 136.992 306 306 306s306-137.012 306-306S475.008 0 306 0zm0 573.75C158.125 573.75 38.25 453.875 38.25 306S158.125 38.25 306 38.25 573.75 158.125 573.75 306 453.875 573.75 306 573.75z"/></svg></div>
+                    <div class="foo-addr-title"> Время работы:</div>
+                  </div>
+                  <div class="foo-addr__items">
+                    <div class="foo-addr__item">Пн-Пт: 9:00 - 20:00</div>
+                    <div class="foo-addr__item">Сб-Вс: 9-00 - 17:00</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="foo-tf-item">
-              <div class="foo-addr">
-                <div class="foo-addr-top">
-                  <div class="foo-addr-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612"><path d="M286.875 535.5h38.25v-38.25h-38.25v38.25zM306 76.5c-10.557 0-19.125 8.568-19.125 19.125v191.709h-153c-10.557 0-19.125 8.568-19.125 19.125s8.568 19.125 19.125 19.125H306c10.557 0 19.125-8.568 19.125-19.125V95.625c0-10.557-8.568-19.125-19.125-19.125zM128.769 436.662l26.469 26.526 26.469-26.526-26.469-26.526-26.469 26.526zm56.609-277.485l-27.062-27.042-27.043 27.042 27.043 27.043 27.062-27.043zm236.825-.956l26.47 26.526 26.469-26.526-26.469-26.526-26.47 26.526zM416.6 435.629l27.043 27.043 27.043-27.043-27.043-27.042-27.043 27.042zm80.65-148.754v38.25h38.25v-38.25h-38.25zM306 0C136.992 0 0 137.012 0 306c0 169.008 136.992 306 306 306s306-137.012 306-306S475.008 0 306 0zm0 573.75C158.125 573.75 38.25 453.875 38.25 306S158.125 38.25 306 38.25 573.75 158.125 573.75 306 453.875 573.75 306 573.75z"/></svg></div>
-                  <div class="foo-addr-title"> Время работы:</div>
-                </div>
-                <div class="foo-addr__items">
-                  <div class="foo-addr__item">Пн-Пт: 9:00 - 20:00</div>
-                  <div class="foo-addr__item">Сб-Вс: 9-00 - 17:00</div>
+            <div class="foo-tf-group foo-tf-group--soc">
+              <div class="foo-tf-item foo-tf-item--soc">
+                <div class="foo-soc-wrap">
+                  <div class="foo-soc-title foo-addr-title">Мы в соцсетях</div>
+                  <div class="foo-socials"><a class="foo-socials-item foo-socials-item--vk" href=""><img src="images/footer/vk.svg" alt=""></a><a class="foo-socials-item foo-socials-item--inst" href=""><img src="images/footer/instagram.svg" alt=""></a><a class="foo-socials-item foo-socials-item--yt" href=""><img src="images/footer/youtube.svg" alt=""></a></div>
                 </div>
               </div>
-            </div>
-            <div class="foo-tf-item">
-              <div class="foo-soc-wrap">
-                <div class="foo-soc-title foo-addr-title">Мы в соцсетях</div>
-                <div class="foo-socials"><a class="foo-socials-item foo-socials-item--vk" href=""><img src="images/footer/vk.svg" alt=""></a><a class="foo-socials-item foo-socials-item--inst" href=""><img src="images/footer/instagram.svg" alt=""></a><a class="foo-socials-item foo-socials-item--yt" href=""><img src="images/footer/youtube.svg" alt=""></a></div>
-              </div>
-            </div>
-            <div class="foo-tf-item"><a class="foo-phone" href="tel:79874919455">+7(987) 491-94-55</a>
-              <div class="foo-messengers-wrap">
-                <div class="foo-messengers-title">Задайте вопрос <br>  в мессенджере:</div>
-                <div class="foo-messengers"><a class="foo-messengers-item" href=""><img src="images/footer/whatsapp.svg" alt=""></a><a class="foo-messengers-item" href=""><img src="images/footer/telegram.svg" alt=""></a></div>
+              <div class="foo-tf-item foo-tf-item--mes"><a class="foo-phone" href="tel:79874919455">+7(987) 491-94-55</a>
+                <div class="foo-messengers-wrap">
+                  <div class="foo-messengers-title">Задайте вопрос <br>  в мессенджере:</div>
+                  <div class="foo-messengers"><a class="foo-messengers-item" href=""><img src="images/footer/whatsapp.svg" alt=""></a><a class="foo-messengers-item" href=""><img src="images/footer/telegram.svg" alt=""></a></div>
+                </div>
               </div>
             </div>
           </div>
@@ -505,6 +652,6 @@
         </div>
       </footer>
     </main>
-    <script src="js/main.js"></script>
+    <script src="js/main.js?202091216715302"></script>
   </body>
 </html>

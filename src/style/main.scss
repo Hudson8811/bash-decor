@@ -6,10 +6,18 @@
 
 @import "partials/_var";
 @import "partials/main";
+@import "partials/btn";
 @import "partials/animation";
 @import "partials/mixins";
 @import "partials/_header";
 @import "partials/footer";
 @import "partials/form";
 @import "partials/block";
-@import "partials/secmap.scss";
+@import "partials/secmap";
+@import "partials/s9-10";
+
+
+/* adaptive */
+
+@import "partials/adaptive/footer-adaptive";
+@import "partials/adaptive/secmap-adaptive";
