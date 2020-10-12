@@ -40,9 +40,22 @@ section.section-map
 									span.btn-v2__text Назначить встречу
 	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
 	script.
+		var myMap;
+		var mapCenter=[];
+
+		if (window.matchMedia("(min-width: 836px)").matches) {
+			mapCenter=[53.504550680917745,55.50635760766119];
+		}else{
+			if (window.matchMedia("(min-width: 587px)").matches) {
+				mapCenter=[53.743545855719546, 55.33851634269093];
+			}else{
+				mapCenter=[53.49594724940832, 55.965337570848234];
+			}
+		}
+
 		ymaps.ready(function () {
-			var myMap = new ymaps.Map('secmap-map', {
-					center: [53.504550680917745,55.50635760766119],
+			 myMap = new ymaps.Map('secmap-map', {
+					center: mapCenter,
 					zoom: 9,
 					controls: []
 				}, {

@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css?202091216715302" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -385,9 +385,22 @@
         </div>
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script>
+          var myMap;
+          var mapCenter=[];
+          
+          if (window.matchMedia("(min-width: 836px)").matches) {
+          	mapCenter=[53.504550680917745,55.50635760766119];
+          }else{
+          	if (window.matchMedia("(min-width: 587px)").matches) {
+          		mapCenter=[53.743545855719546, 55.33851634269093];
+          	}else{
+          		mapCenter=[53.49594724940832, 55.965337570848234];
+          	}
+          }
+          
           ymaps.ready(function () {
-          	var myMap = new ymaps.Map('secmap-map', {
-          			center: [53.504550680917745,55.50635760766119],
+          	 myMap = new ymaps.Map('secmap-map', {
+          			center: mapCenter,
           			zoom: 9,
           			controls: []
           		}, {
@@ -513,6 +526,6 @@
         </div>
       </footer>
     </main>
-    <script src="js/main.js"></script>
+    <script src="js/main.js?202091216715302"></script>
   </body>
 </html>
