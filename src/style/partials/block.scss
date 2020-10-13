@@ -25,6 +25,10 @@
 			font-size: 42px;
 			line-height: 58.34px;
 			font-weight: 500;
+
+			br {
+				display: none;
+			}
 		}
 
 		span {
@@ -132,6 +136,7 @@
 	position: absolute;
 	bottom: 100px;
 	left: -136px;
+	box-sizing: border-box;
 
 	&__inner {
 		display: flex;

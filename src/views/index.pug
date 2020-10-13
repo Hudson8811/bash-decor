@@ -13,16 +13,24 @@ block main
 	.first-screen(style='background-image: url("images/bg-first.jpg");')
 		.container.first-screen__container
 			.first-screen__man
-				img(src="images/man.png" alt='man')
+				picture
+					source(media='(max-width: 960px)', srcset='images/man-single-3.png')
+					source(media='(max-width: 1200px)', srcset='images/man-single-2.png')
+					source(media='(max-width: 1600px)', srcset='images/man-single.png')
+					img(src="images/man.png" alt='man')
 			.first-screen__content
 				.first-screen__title Натяжные потолки <br> в Стерлитамаке
 					.first-screen__price
 						span от 189 ₽/м2
-					p с бесплатной установкой+ за 2 часа <span>уже завтра</span>
+					p с бесплатной установкой <br> за 2 часа <span>уже завтра</span>
 				.first-screen__note
 					p 5
 					p <span>с 5 гарантиями</span> <br> по договору
-					img(src="images/note.png")
+					picture
+						source(media='(max-width: 640px)', srcset='images/note-4.png')
+						source(media='(max-width: 1200px)', srcset='images/note-3.png')
+						source(media='(max-width: 1600px)', srcset='images/note-2.png')
+						img(src="images/note.png")
 			include partials/form.pug
 
 	.bg-clouds(style='background-image: url(images/bg-clouds.jpg)')

@@ -51,9 +51,9 @@ img {
 	box-sizing: border-box;
 	margin: 0 auto;
 	width: 1570px;
-	max-width: calc(100% - 40px);
+	max-width: calc(100% - 60px);
 
-	@media (min-width: $dMin) {
-		max-width: calc(100% - 60px);
+	@media (max-width: 960px) {
+		max-width: calc(100% - 33px);
 	}
 }
