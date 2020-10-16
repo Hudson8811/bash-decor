@@ -1,4 +1,72 @@
 $(document).ready(function () {
+	$("input[name='phone']").mask(" +7 (000) 000-00-00");
+
+	anchorScroll($('.anchor'));
+
+	function anchorScroll(e) {
+		e.click(function () {
+			link = $(this).attr('href');
+			to = $(link).offset().top;
+			$('body, html').animate({
+				scrollTop: to
+			}, 800);
+		});
+	}
+	
+	// Open/close mobile menu
+	var header = $('.header'),
+			menu = $('.header-menu'),
+			burger = $('.header__burger');
+
+	burger.click(function () {
+		header.addClass('header--open-menu header--visible');
+		$('.overlay').fadeIn(200);
+	});
+
+	$(document).click(function (e) {
+		if (menu.has(e.target).length === 0 &&
+					!menu.is(e.target) &&
+					burger.has(e.target).length === 0 &&
+					!burger.is(e.target) &&
+					header.hasClass('header--open-menu')) {
+			header.removeClass('header--open-menu');
+			$('.overlay').fadeOut(200);
+
+			setTimeout(function () {
+				header.removeClass('header--visible');
+			}, 300)
+		}
+	});
+
+	// Change day after 00:00
+	var months = [
+		'января',
+		'февраля',
+		'марта',
+		'апреля',
+		'мая',
+		'июня',
+		'июля',
+		'августа',
+		'сентября',
+		'октября',
+		'ноября',
+		'декабря'
+	];
+
+	var curDate = new Date(),
+			newDate = new Date(curDate.getFullYear(), curDate.getMonth(), curDate.getDate() + 31);
+
+	$('.bonus-day').text(newDate.getDate());
+	$('.bonus-month').text(months[newDate.getMonth()]);
+
+	// Form socials checked
+	$('.form__socials label').click(function () {
+		$(this).find('input').prop('checked')
+			? $(this).addClass('form__socials-item--checked')
+			: $(this).removeClass('form__socials-item--checked');
+	});
+
 	// Counter
 	$(window).scroll(function () {
 		var pos = $('.achievements__counter').offset().top = window.innerHeight;

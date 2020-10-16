@@ -7,11 +7,12 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?2020916172030448" rel="stylesheet">
+    <link href="css/main.css?2020916235119683" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
     <header class="header">
+      <div class="overlay" style="display: none;"></div>
       <div class="container header__container">
         <div class="header__logo"><img src="images/logo.png" alt="logo"></div>
         <div class="header__whats-done">Смонтировали >30 000 натяжных потолков <br> <span>в Стерлитамаке с 2005 года</span></div>
@@ -30,6 +31,18 @@
             <use xlink:href="./svg/sprite.svg#phone-wh"></use>
           </svg></a>
       </div>
+      <div class="header-menu">
+        <div class="header__catalog"><img src="images/catalog.png" alt="catalog"><a href="#">Скачать каталог</a></div><a class="header__phone" href="tel:+79874919455">+7(987) 491-94-55</a>
+        <div class="header__contacts">Задайте вопрос в мессенджере:
+          <div class="header__socials"><a class="header__socials-icon" href="#">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--wa"></use>
+              </svg></a><a class="header__socials-icon" href="#">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
+              </svg></a></div>
+        </div>
+      </div>
     </header>
     <main class="main">
       <div class="first-screen" style="background-image: url(&quot;images/bg-first.jpg&quot;);">
@@ -45,35 +58,46 @@
             <div class="first-screen__title">Натяжные потолки <br> в Стерлитамаке
               <div class="first-screen__price"><span>от 189 ₽/м2</span></div>
               <p>с бесплатной установкой <br> за 2 часа <span>уже завтра</span></p>
-            </div>
-            <div class="first-screen__note">
+            </div><a class="first-screen__note anchor" href="#advantages">
               <p>5</p>
               <p><span>с 5 гарантиями</span> <br> по договору</p>
               <picture>
                 <source media="(max-width: 640px)" srcset="images/note-4.png">
                 <source media="(max-width: 1200px)" srcset="images/note-3.png">
                 <source media="(max-width: 1600px)" srcset="images/note-2.png"><img src="images/note.png">
-              </picture>
-            </div>
+              </picture></a>
           </div>
           <form class="form" action="" method="POST">
             <div class="form__inner">
               <div class="form__title">Получите 3 варианта <br> сметы потолков <span>для вашего дома со скидкой до 50%</span></div>
               <div class="form__wrapper">
                 <div class="form__subtitle">Как Вам удобнее <br> получить варианты?</div>
-                <div class="form__socials"><a class="form__socials-item" href="#">
+                <div class="form__socials">
+                  <label class="form__socials-item">
+                    <input type="checkbox">
                     <svg>
                       <use xlink:href="./svg/sprite.svg#socials--viber"></use>
-                    </svg><span>Viber</span></a><a class="form__socials-item" href="#">
+                    </svg><span>Viber</span>
+                  </label>
+                  <label class="form__socials-item">
+                    <input type="checkbox">
                     <svg>
                       <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
-                    </svg><span>Telegram</span></a><a class="form__socials-item" href="#">
+                    </svg><span>Telegram</span>
+                  </label>
+                  <label class="form__socials-item">
+                    <input type="checkbox">
                     <svg>
                       <use xlink:href="./svg/sprite.svg#socials--wa"></use>
-                    </svg><span>WhatsApp</span></a><a class="form__socials-item" href="#">
+                    </svg><span>WhatsApp</span>
+                  </label>
+                  <label class="form__socials-item">
+                    <input type="checkbox">
                     <svg>
                       <use xlink:href="./svg/sprite.svg#socials--phone"></use>
-                    </svg><span>По телефону</span></a></div>
+                    </svg><span>По телефону</span>
+                  </label>
+                </div>
                 <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
                 <button class="button form__button"><span class="flare"></span><span>получить 3 варианта со скидкой</span></button>
                 <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
@@ -84,14 +108,14 @@
                 <svg>
                   <use xlink:href="./svg/sprite.svg#event"></use>
                 </svg>
-                <p>Акция действует до 15 июля</p>
+                <p>Акция действует до <span class='bonus-day'>15</span> <span class='bonus-month'>июля</span></p>
               </div>
             </div>
           </form>
         </div>
       </div>
       <div class="bg-clouds" style="background-image: url(images/bg-clouds.jpg)">
-        <div class="advantages">
+        <div class="advantages" id="advantages">
           <div class="container advantages__container">
             <div class="advantages__flex">
               <div class="advantages-item">
@@ -332,19 +356,32 @@
               <div class="form__inner">
                 <div class="form__title">Куда прислать ссылку на каталог?</div>
                 <div class="form__wrapper">
-                  <div class="form__socials"><a class="form__socials-item" href="#">
+                  <div class="form__socials">
+                    <label class="form__socials-item">
+                      <input type="checkbox">
                       <svg>
                         <use xlink:href="./svg/sprite.svg#socials--viber"></use>
-                      </svg><span>Viber</span></a><a class="form__socials-item" href="#">
+                      </svg><span>Viber</span>
+                    </label>
+                    <label class="form__socials-item">
+                      <input type="checkbox">
                       <svg>
                         <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
-                      </svg><span>Telegram</span></a><a class="form__socials-item" href="#">
+                      </svg><span>Telegram</span>
+                    </label>
+                    <label class="form__socials-item">
+                      <input type="checkbox">
                       <svg>
                         <use xlink:href="./svg/sprite.svg#socials--wa"></use>
-                      </svg><span>WhatsApp</span></a><a class="form__socials-item" href="#">
+                      </svg><span>WhatsApp</span>
+                    </label>
+                    <label class="form__socials-item">
+                      <input type="checkbox">
                       <svg>
                         <use xlink:href="./svg/sprite.svg#socials--phone"></use>
-                      </svg><span>По телефону</span></a></div>
+                      </svg><span>По телефону</span>
+                    </label>
+                  </div>
                   <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
                   <button class="button form__button"><span class="flare"></span><span>получить каталог потолков</span></button>
                   <div class="form__bonus">+ персональную скидку до 50% на все позиции</div>
@@ -680,6 +717,6 @@
         </div>
       </footer>
     </main>
-    <script src="js/main.js?2020916172030448"></script>
+    <script src="js/main.js?2020916235119683"></script>
   </body>
 </html>

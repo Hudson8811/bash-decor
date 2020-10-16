@@ -23,7 +23,7 @@ block main
 					.first-screen__price
 						span от 189 ₽/м2
 					p с бесплатной установкой <br> за 2 часа <span>уже завтра</span>
-				.first-screen__note
+				a.first-screen__note.anchor(href='#advantages')
 					p 5
 					p <span>с 5 гарантиями</span> <br> по договору
 					picture
@@ -34,7 +34,7 @@ block main
 			include partials/form.pug
 
 	.bg-clouds(style='background-image: url(images/bg-clouds.jpg)')
-		.advantages
+		#advantages.advantages
 			.container.advantages__container
 				.advantages__flex
 					.advantages-item
@@ -235,19 +235,23 @@ block main
 						.form__title Куда прислать ссылку на каталог?
 						.form__wrapper
 							.form__socials
-								a.form__socials-item(href='#')
+								label.form__socials-item
+									input(type='checkbox')
 									svg
 										use(xlink:href='./svg/sprite.svg#socials--viber')
 									span Viber
-								a.form__socials-item(href='#')
+								label.form__socials-item
+									input(type='checkbox')
 									svg
 										use(xlink:href='./svg/sprite.svg#socials--telegram')
 									span Telegram
-								a.form__socials-item(href='#')
+								label.form__socials-item
+									input(type='checkbox')
 									svg
 										use(xlink:href='./svg/sprite.svg#socials--wa')
 									span WhatsApp
-								a.form__socials-item(href='#')
+								label.form__socials-item
+									input(type='checkbox')
 									svg
 										use(xlink:href='./svg/sprite.svg#socials--phone')
 									span По телефону
