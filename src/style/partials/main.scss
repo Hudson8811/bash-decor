@@ -57,3 +57,35 @@ img {
 		max-width: calc(100% - 33px);
 	}
 }
+
+.slider-arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 64px;
+	box-shadow: inset 0 -3px 4px rgba(255, 155, 125, 0.47);
+	background-image: linear-gradient(54deg, #ff8533 0%, #f44233 100%);
+	border-radius: 50%;
+
+	svg {
+		width: 35%;
+		fill: #fcfcfc;
+	}
+
+	&--next {
+		svg {
+			transform: rotate(180deg);
+			padding-right: 5px;
+		}
+	}
+
+	&.slick-disabled {
+		box-shadow: inset 0 0 9px rgba(255, 255, 255, 0.13);
+		background-image: linear-gradient(54deg, rgba(158, 158, 158, 0.3) 0%, rgba(237, 237, 237, 0.3) 100%);
+
+		svg {
+			fill: #9f9f9f;
+		}
+	}
+}

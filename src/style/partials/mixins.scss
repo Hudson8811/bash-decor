@@ -105,4 +105,19 @@
 	span {
 		font-weight: 500;
 	}
+
+	@media (max-width: 1200px) {
+		font-size: 40px;
+		line-height: 45px;
+	}
+
+	@media (max-width: 960px) {
+		font-size: 35px;
+		line-height: 40px;
+	}
+
+	@media (max-width: 640px) {
+		font-size: 19px;
+		line-height: 23px;
+	}
 }

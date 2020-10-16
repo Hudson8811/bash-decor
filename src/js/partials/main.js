@@ -27,12 +27,58 @@ $(document).ready(function () {
 		}
 	});
 
+	// Slider advantages
+	if (window.matchMedia('(max-width: 960px)').matches) {
+		$('.advantages__flex').slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+			nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+			dots: false,
+			infinite: false,
+			responsive: [
+				{
+					breakpoint: 640,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+	}
+
+	// Slider quality
+	if (window.matchMedia('(max-width: 1600px)').matches) {
+		$('.quality__flex').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+			nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+			dots: false,
+			infinite: false,
+			responsive: [
+				{
+					breakpoint: 960,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 640,
+					settings: {
+						slidesToShow: 1
+					}
+				}
+			]
+		});
+	}
+
 	// Product
 	$('.product-item').hover(
 		function () {
 			var prodBtn = $(this).find('.product-item__button'),
-					prodContent = $(this).find('.product-item__content'),
-					prodText = $(this).find('.product-item__description');
+				prodContent = $(this).find('.product-item__content'),
+				prodText = $(this).find('.product-item__description');
 
 			prodContent.addClass('product-item__content--expand');
 			prodBtn.removeClass('button--inactive');
@@ -41,8 +87,8 @@ $(document).ready(function () {
 
 		function () {
 			var prodBtn = $(this).find('.product-item__button'),
-					prodContent = $(this).find('.product-item__content'),
-					prodText = $(this).find('.product-item__description');
+				prodContent = $(this).find('.product-item__content'),
+				prodText = $(this).find('.product-item__description');
 
 			prodText.removeClass('product-item__description--visible');
 			prodContent.removeClass('product-item__content--expand');

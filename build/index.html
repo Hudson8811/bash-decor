@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?2020913201224495" rel="stylesheet">
+    <link href="css/main.css?202091612111506" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -116,21 +116,23 @@
               <div class="quiz__inner">
                 <div class="quiz__get-it">
                   <div class="quiz__get-it-text">Вы получите:</div>
-                  <div class="quiz-get" style="padding-left: 56px;">
-                    <div class="quiz-get__value" style="margin-right: 34px;">3</div>
-                    <div class="quiz-get__text"><span>варианта</span> сметы <br> по вашим параметрам</div>
-                  </div>
-                  <div class="quiz-get">
-                    <div class="quiz-get__value">50%</div>
-                    <div class="quiz-get__text"><span>скидка</span> на все варианты</div>
-                  </div>
-                  <div class="quiz-get quiz-get--with-pic">
-                    <div class="quiz-get__picture"><img src="images/quiz-get-1.png" alt="quiz-get-1"></div>
-                    <div class="quiz-get__text"><span>Подарок ценой</span> <br> до 5000 рублей <br> за ваши ответы</div>
-                  </div>
-                  <div class="quiz-get quiz-get--with-pic">
-                    <div class="quiz-get__picture"><img src="images/quiz-get-2.png" alt="quiz-get-2"></div>
-                    <div class="quiz-get__text"><span>Каталог потолков,</span> <br> который подойдут именно вашему дому</div>
+                  <div class="quiz__flex">
+                    <div class="quiz-get">
+                      <div class="quiz-get__value">3</div>
+                      <div class="quiz-get__text"><span>варианта</span> сметы <br> по вашим параметрам</div>
+                    </div>
+                    <div class="quiz-get">
+                      <div class="quiz-get__value">50%</div>
+                      <div class="quiz-get__text"><span>скидка</span> на все варианты</div>
+                    </div>
+                    <div class="quiz-get quiz-get--with-pic">
+                      <div class="quiz-get__picture"><img src="images/quiz-get-1.png" alt="quiz-get-1"></div>
+                      <div class="quiz-get__text"><span>Подарок ценой</span> <br> до 5000 рублей <br> за ваши ответы</div>
+                    </div>
+                    <div class="quiz-get quiz-get--with-pic">
+                      <div class="quiz-get__picture"><img src="images/quiz-get-2.png" alt="quiz-get-2"></div>
+                      <div class="quiz-get__text"><span>Каталог потолков,</span> <br> который подойдут именно вашему дому</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -139,7 +141,7 @@
         </div>
         <div class="achievements">
           <div class="container achievements__container">
-            <div class="title">За 15 лет «Башдекор» установил больше потолков, <br> <span>чем все компании Стерлитамака <br> вместе взятые</span></div>
+            <div class="title achievements__title">За 15 лет «Башдекор» установил больше потолков, <br> <span>чем все компании Стерлитамака <br> вместе взятые</span></div>
             <div class="achievements__video"><img src="images/achievements/video.png" alt="achievements-video">
               <div class="achievements__outer">
                 <div class="play">
@@ -156,7 +158,11 @@
             </div>
             <div class="achievements__counter">
               <div class="achievements__counter-item">
-                <div class="achievements__counter-img"><img src="images/achievements/item-1.png" alt="achievements-item-1"></div>
+                <div class="achievements__counter-img">
+                  <picture>
+                    <source media="(max-width: 640px)" srcset="images/achievements/item-1-sm.png"><img src="images/achievements/item-1.png" alt="achievements-item-1">
+                  </picture>
+                </div>
                 <div class="achievements__counter-wrap">
                   <div class="achievements__digit" data-count="18563">0</div>
                   <div class="achievements__text"><span>потолков</span> установили <br> за время работы</div>
@@ -180,7 +186,7 @@
               <div class="product-item">
                 <div class="product-item__img"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
                 <div class="product-item__content">
-                  <div class="product-item__title">Многоуровневые потолки</div>
+                  <div class="product-item__title">Многоуровневые <br> потолки</div>
                   <div class="product-item__description" style="display: none;">
                     <p>Монотонное белое полотно без излишек - самый популярный вариант исполнения.</p>
                     <p>Его заказывают 80% заказчиков.</p>
@@ -295,24 +301,31 @@
         </div>
       </div>
       <div class="catalog">
-        <div class="catalog__bg"><img src="images/bg-catalog.png" alt="catalog"></div>
+        <div class="catalog__bg">
+          <picture>
+            <source media="(max-width: 640px)" srcset="images/bg-catalog-3.png">
+            <source media="(max-width: 960px)" srcset="images/bg-catalog-2.png"><img src="images/bg-catalog.png" alt="catalog">
+          </picture>
+        </div>
         <div class="container catalog__container">
           <div class="catalog__flex">
-            <div class="title catalog__title">Получите доступ <br> <span>к каталогу из 500 натяжных потолков</span></div>
-            <div class="catalog__list"><span>Мы собрали потолки на любой вкус:</span>
-              <ul>
-                <li>Классические</li>
-                <li>Резные</li>
-                <li>Цветные</li>
-                <li>С подсветкой</li>
-                <li>С фотопечатью</li>
-                <li>Звездное небо</li>
-                <li>Несколько уровней</li>
-                <li>Double Vision</li>
-                <li>Парящие</li>
-              </ul>
-              <div class="catalog__pdf">
-                <div class="catalog__pdf-inner"><img src="img/pdf.png" alt="pdf"><span>PDF, 5 мб</span></div>
+            <div class="catalog__flex-inner">
+              <div class="title catalog__title">Получите доступ <br> <span>к каталогу из 500 натяжных потолков</span></div>
+              <div class="catalog__list"><span>Мы собрали потолки на любой вкус:</span>
+                <ul>
+                  <li>Классические</li>
+                  <li>Резные</li>
+                  <li>Цветные</li>
+                  <li>С подсветкой</li>
+                  <li>С фотопечатью</li>
+                  <li>Звездное небо</li>
+                  <li>Несколько уровней</li>
+                  <li>Double Vision</li>
+                  <li>Парящие</li>
+                </ul>
+                <div class="catalog__pdf">
+                  <div class="catalog__pdf-inner"><img src="img/pdf.png" alt="pdf"><span>PDF, 5 мб</span></div>
+                </div>
               </div>
             </div>
             <form class="form form--catalog" action="" method="POST">
@@ -667,6 +680,6 @@
         </div>
       </footer>
     </main>
-    <script src="js/main.js?2020913201224495"></script>
+    <script src="js/main.js?202091612111506"></script>
   </body>
 </html>
