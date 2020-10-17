@@ -7,11 +7,12 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?202091615231029" rel="stylesheet">
+    <link href="css/main.css?202091787870" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
     <header class="header">
+      <div class="overlay" style="display: none;"></div>
       <div class="container header__container">
         <div class="header__logo"><img src="images/logo.png" alt="logo"></div>
         <div class="header__whats-done">Смонтировали >30 000 натяжных потолков <br> <span>в Стерлитамаке с 2005 года</span></div>
@@ -30,6 +31,18 @@
             <use xlink:href="./svg/sprite.svg#phone-wh"></use>
           </svg></a>
       </div>
+      <div class="header-menu">
+        <div class="header__catalog"><img src="images/catalog.png" alt="catalog"><a href="#">Скачать каталог</a></div><a class="header__phone" href="tel:+79874919455">+7(987) 491-94-55</a>
+        <div class="header__contacts">Задайте вопрос в мессенджере:
+          <div class="header__socials"><a class="header__socials-icon" href="#">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--wa"></use>
+              </svg></a><a class="header__socials-icon" href="#">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
+              </svg></a></div>
+        </div>
+      </div>
     </header>
     <main class="main">
       <div class="first-screen" style="background-image: url(&quot;images/bg-first.jpg&quot;);">
@@ -45,35 +58,46 @@
             <div class="first-screen__title">Натяжные потолки <br> в Стерлитамаке
               <div class="first-screen__price"><span>от 189 ₽/м2</span></div>
               <p>с бесплатной установкой <br> за 2 часа <span>уже завтра</span></p>
-            </div>
-            <div class="first-screen__note">
+            </div><a class="first-screen__note anchor" href="#advantages">
               <p>5</p>
               <p><span>с 5 гарантиями</span> <br> по договору</p>
               <picture>
                 <source media="(max-width: 640px)" srcset="images/note-4.png">
                 <source media="(max-width: 1200px)" srcset="images/note-3.png">
                 <source media="(max-width: 1600px)" srcset="images/note-2.png"><img src="images/note.png">
-              </picture>
-            </div>
+              </picture></a>
           </div>
           <form class="form" action="" method="POST">
             <div class="form__inner">
               <div class="form__title">Получите 3 варианта <br> сметы потолков <span>для вашего дома со скидкой до 50%</span></div>
               <div class="form__wrapper">
                 <div class="form__subtitle">Как Вам удобнее <br> получить варианты?</div>
-                <div class="form__socials"><a class="form__socials-item" href="#">
+                <div class="form__socials">
+                  <label class="form__socials-item">
+                    <input type="checkbox">
                     <svg>
                       <use xlink:href="./svg/sprite.svg#socials--viber"></use>
-                    </svg><span>Viber</span></a><a class="form__socials-item" href="#">
+                    </svg><span>Viber</span>
+                  </label>
+                  <label class="form__socials-item">
+                    <input type="checkbox">
                     <svg>
                       <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
-                    </svg><span>Telegram</span></a><a class="form__socials-item" href="#">
+                    </svg><span>Telegram</span>
+                  </label>
+                  <label class="form__socials-item">
+                    <input type="checkbox">
                     <svg>
                       <use xlink:href="./svg/sprite.svg#socials--wa"></use>
-                    </svg><span>WhatsApp</span></a><a class="form__socials-item" href="#">
+                    </svg><span>WhatsApp</span>
+                  </label>
+                  <label class="form__socials-item">
+                    <input type="checkbox">
                     <svg>
                       <use xlink:href="./svg/sprite.svg#socials--phone"></use>
-                    </svg><span>По телефону</span></a></div>
+                    </svg><span>По телефону</span>
+                  </label>
+                </div>
                 <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
                 <button class="button form__button"><span class="flare"></span><span>получить 3 варианта со скидкой</span></button>
                 <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
@@ -84,14 +108,14 @@
                 <svg>
                   <use xlink:href="./svg/sprite.svg#event"></use>
                 </svg>
-                <p>Акция действует до 15 июля</p>
+                <p>Акция действует до <span class='bonus-day'>15</span> <span class='bonus-month'>июля</span></p>
               </div>
             </div>
           </form>
         </div>
       </div>
       <div class="bg-clouds" style="background-image: url(images/bg-clouds.jpg)">
-        <div class="advantages">
+        <div class="advantages" id="advantages">
           <div class="container advantages__container">
             <div class="advantages__flex">
               <div class="advantages-item">
@@ -116,21 +140,23 @@
               <div class="quiz__inner">
                 <div class="quiz__get-it">
                   <div class="quiz__get-it-text">Вы получите:</div>
-                  <div class="quiz-get" style="padding-left: 56px;">
-                    <div class="quiz-get__value" style="margin-right: 34px;">3</div>
-                    <div class="quiz-get__text"><span>варианта</span> сметы <br> по вашим параметрам</div>
-                  </div>
-                  <div class="quiz-get">
-                    <div class="quiz-get__value">50%</div>
-                    <div class="quiz-get__text"><span>скидка</span> на все варианты</div>
-                  </div>
-                  <div class="quiz-get quiz-get--with-pic">
-                    <div class="quiz-get__picture"><img src="images/quiz-get-1.png" alt="quiz-get-1"></div>
-                    <div class="quiz-get__text"><span>Подарок ценой</span> <br> до 5000 рублей <br> за ваши ответы</div>
-                  </div>
-                  <div class="quiz-get quiz-get--with-pic">
-                    <div class="quiz-get__picture"><img src="images/quiz-get-2.png" alt="quiz-get-2"></div>
-                    <div class="quiz-get__text"><span>Каталог потолков,</span> <br> который подойдут именно вашему дому</div>
+                  <div class="quiz__flex">
+                    <div class="quiz-get">
+                      <div class="quiz-get__value">3</div>
+                      <div class="quiz-get__text"><span>варианта</span> сметы <br> по вашим параметрам</div>
+                    </div>
+                    <div class="quiz-get">
+                      <div class="quiz-get__value">50%</div>
+                      <div class="quiz-get__text"><span>скидка</span> на все варианты</div>
+                    </div>
+                    <div class="quiz-get quiz-get--with-pic">
+                      <div class="quiz-get__picture"><img src="images/quiz-get-1.png" alt="quiz-get-1"></div>
+                      <div class="quiz-get__text"><span>Подарок ценой</span> <br> до 5000 рублей <br> за ваши ответы</div>
+                    </div>
+                    <div class="quiz-get quiz-get--with-pic">
+                      <div class="quiz-get__picture"><img src="images/quiz-get-2.png" alt="quiz-get-2"></div>
+                      <div class="quiz-get__text"><span>Каталог потолков,</span> <br> который подойдут именно вашему дому</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -139,7 +165,7 @@
         </div>
         <div class="achievements">
           <div class="container achievements__container">
-            <div class="title">За 15 лет «Башдекор» установил больше потолков, <br> <span>чем все компании Стерлитамака <br> вместе взятые</span></div>
+            <div class="title achievements__title">За 15 лет «Башдекор» установил больше потолков, <br> <span>чем все компании Стерлитамака <br> вместе взятые</span></div>
             <div class="achievements__video"><img src="images/achievements/video.png" alt="achievements-video">
               <div class="achievements__outer">
                 <div class="play">
@@ -156,7 +182,11 @@
             </div>
             <div class="achievements__counter">
               <div class="achievements__counter-item">
-                <div class="achievements__counter-img"><img src="images/achievements/item-1.png" alt="achievements-item-1"></div>
+                <div class="achievements__counter-img">
+                  <picture>
+                    <source media="(max-width: 640px)" srcset="images/achievements/item-1-sm.png"><img src="images/achievements/item-1.png" alt="achievements-item-1">
+                  </picture>
+                </div>
                 <div class="achievements__counter-wrap">
                   <div class="achievements__digit" data-count="18563">0</div>
                   <div class="achievements__text"><span>потолков</span> установили <br> за время работы</div>
@@ -180,7 +210,7 @@
               <div class="product-item">
                 <div class="product-item__img"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
                 <div class="product-item__content">
-                  <div class="product-item__title">Многоуровневые потолки</div>
+                  <div class="product-item__title">Многоуровневые <br> потолки</div>
                   <div class="product-item__description" style="display: none;">
                     <p>Монотонное белое полотно без излишек - самый популярный вариант исполнения.</p>
                     <p>Его заказывают 80% заказчиков.</p>
@@ -295,43 +325,63 @@
         </div>
       </div>
       <div class="catalog">
-        <div class="catalog__bg"><img src="images/bg-catalog.png" alt="catalog"></div>
+        <div class="catalog__bg">
+          <picture>
+            <source media="(max-width: 640px)" srcset="images/bg-catalog-3.png">
+            <source media="(max-width: 960px)" srcset="images/bg-catalog-2.png"><img src="images/bg-catalog.png" alt="catalog">
+          </picture>
+        </div>
         <div class="container catalog__container">
           <div class="catalog__flex">
-            <div class="title catalog__title">Получите доступ <br> <span>к каталогу из 500 натяжных потолков</span></div>
-            <div class="catalog__list"><span>Мы собрали потолки на любой вкус:</span>
-              <ul>
-                <li>Классические</li>
-                <li>Резные</li>
-                <li>Цветные</li>
-                <li>С подсветкой</li>
-                <li>С фотопечатью</li>
-                <li>Звездное небо</li>
-                <li>Несколько уровней</li>
-                <li>Double Vision</li>
-                <li>Парящие</li>
-              </ul>
-              <div class="catalog__pdf">
-                <div class="catalog__pdf-inner"><img src="img/pdf.png" alt="pdf"><span>PDF, 5 мб</span></div>
+            <div class="catalog__flex-inner">
+              <div class="title catalog__title">Получите доступ <br> <span>к каталогу из 500 натяжных потолков</span></div>
+              <div class="catalog__list"><span>Мы собрали потолки на любой вкус:</span>
+                <ul>
+                  <li>Классические</li>
+                  <li>Резные</li>
+                  <li>Цветные</li>
+                  <li>С подсветкой</li>
+                  <li>С фотопечатью</li>
+                  <li>Звездное небо</li>
+                  <li>Несколько уровней</li>
+                  <li>Double Vision</li>
+                  <li>Парящие</li>
+                </ul>
+                <div class="catalog__pdf">
+                  <div class="catalog__pdf-inner"><img src="img/pdf.png" alt="pdf"><span>PDF, 5 мб</span></div>
+                </div>
               </div>
             </div>
             <form class="form form--catalog" action="" method="POST">
               <div class="form__inner">
                 <div class="form__title">Куда прислать ссылку на каталог?</div>
                 <div class="form__wrapper">
-                  <div class="form__socials"><a class="form__socials-item" href="#">
+                  <div class="form__socials">
+                    <label class="form__socials-item">
+                      <input type="checkbox">
                       <svg>
                         <use xlink:href="./svg/sprite.svg#socials--viber"></use>
-                      </svg><span>Viber</span></a><a class="form__socials-item" href="#">
+                      </svg><span>Viber</span>
+                    </label>
+                    <label class="form__socials-item">
+                      <input type="checkbox">
                       <svg>
                         <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
-                      </svg><span>Telegram</span></a><a class="form__socials-item" href="#">
+                      </svg><span>Telegram</span>
+                    </label>
+                    <label class="form__socials-item">
+                      <input type="checkbox">
                       <svg>
                         <use xlink:href="./svg/sprite.svg#socials--wa"></use>
-                      </svg><span>WhatsApp</span></a><a class="form__socials-item" href="#">
+                      </svg><span>WhatsApp</span>
+                    </label>
+                    <label class="form__socials-item">
+                      <input type="checkbox">
                       <svg>
                         <use xlink:href="./svg/sprite.svg#socials--phone"></use>
-                      </svg><span>По телефону</span></a></div>
+                      </svg><span>По телефону</span>
+                    </label>
+                  </div>
                   <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
                   <button class="button form__button"><span class="flare"></span><span>получить каталог потолков</span></button>
                   <div class="form__bonus">+ персональную скидку до 50% на все позиции</div>
@@ -723,6 +773,6 @@
         </div>
       </footer>
     </main>
-    <script src="js/main.js?202091615231029"></script>
+    <script src="js/main.js?202091787870"></script>
   </body>
 </html>

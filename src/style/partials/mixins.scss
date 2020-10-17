@@ -5,11 +5,15 @@
 	border-radius: 10px;
 	border: 1px solid #f0f0f0;
 	background-color: $white;
-	font-size: 12px;
+	font-size: 18px;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	box-sizing: border-box;
+
+	&::placeholder {
+		font-size: 12px;
+	}
 
 	&:focus::placeholder {
 		opacity: 0;
@@ -104,5 +108,20 @@
 
 	span {
 		font-weight: 500;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 40px;
+		line-height: 45px;
+	}
+
+	@media (max-width: 960px) {
+		font-size: 35px;
+		line-height: 40px;
+	}
+
+	@media (max-width: 640px) {
+		font-size: 19px;
+		line-height: 23px;
 	}
 }

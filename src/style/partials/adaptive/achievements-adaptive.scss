@@ -1,0 +1,202 @@
+@media (max-width: 1600px) {
+	.achievements {
+		&__title {
+			br {
+				display: none;
+			}
+		}
+
+		&__video {
+			> img {
+				width: 116%;
+				margin-left: -64px;
+			}
+		}
+
+		&__outer {
+			top: 54.8%;
+			left: 56.4%;
+		}
+
+		&__counter {
+			margin-top: -63px;
+		}
+
+		&__counter-item {
+			max-width: 474px;
+
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+		}
+
+		&__counter-img {
+			margin-right: 30px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.achievements {
+		&__container {}
+
+		&__title {
+			max-width: 700px;
+			margin: 0 auto 36px;
+		}
+
+		&__video {
+			> img {
+				width: 135%;
+				margin-left: -166px;
+			}
+		}
+
+		&__outer {
+			top: 52.8%;
+			left: 57%;
+		}
+
+		&__counter {
+			justify-content: space-between;
+			margin-top: -69px;
+		}
+
+		&__counter-item {
+			max-width: 55%;
+
+			&:not(:last-child) {
+				max-width: 45%;
+			}
+		}
+
+		&__text {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.achievements {
+		&__title {
+			font-size: 34px;
+			max-width: 100%;
+			margin-bottom: 36px;
+		}
+
+		&__video {
+			margin-top: -9px;
+
+			> img {
+				width: 130%;
+				margin-left: -96px;
+			}
+		}
+
+		&__outer {
+			top: 70%;
+			left: 57.5%;
+		}
+
+		&__counter {
+			flex-direction: column;
+			align-items: center;
+			margin-top: 1px;
+		}
+
+		&__counter-item {
+			max-width: 80%;
+
+			&:not(:last-child) {
+				max-width: 80%;
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		}
+
+		&__counter-img {
+			margin-right: 20px;
+		}
+
+		&__text {
+			font-size: 25px;
+			line-height: 29.88px;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.achievements {
+		&__video {
+			margin-top: -21px;
+
+			> img {
+				width: 165%;
+				margin-left: -80px;
+			}
+		}
+
+		&__outer {
+			max-width: 206px;
+			width: 100%;
+			top: auto;
+			left: 66%;
+			bottom: -89px;
+		}
+
+		&__inner {
+			padding: 18px 22px 18px 32px;
+
+			p {
+				font-size: 13px;
+				line-height: 17.86px;
+				letter-spacing: 0.9px;
+			}
+		}
+
+		.play {
+			width: 111px;
+			height: 111px;
+			top: -7px;
+			left: -86px;
+
+			img {
+				width: 19%;
+			}
+		}
+
+		&__counter {
+			margin-top: 78px;
+		}
+
+		&__counter-item {
+			max-width: 100%;
+
+			&:not(:last-child) {
+				max-width: 100%;
+			}
+		}
+
+		&__counter-img {
+			max-width: 100px;
+			margin-right: 13px;
+			height: auto;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&__digit {
+			font-size: 34px;
+		}
+
+		&__text {
+			font-size: 15px;
+			line-height: 22.2px;
+		}
+	}
+}

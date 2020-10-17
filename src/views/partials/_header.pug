@@ -1,4 +1,5 @@
 header.header
+	.overlay(style='display: none;')
 	.container.header__container
 		.header__logo
 			img(src='images/logo.png' alt='logo')
@@ -20,3 +21,16 @@ header.header
 		a.header__phone-icon(href='tel:+79874919455')
 			svg
 				use(xlink:href='./svg/sprite.svg#phone-wh')
+	.header-menu
+		.header__catalog
+			img(src='images/catalog.png' alt='catalog')
+			a(href='#') Скачать каталог
+		a.header__phone(href='tel:+79874919455') +7(987) 491-94-55
+		.header__contacts Задайте вопрос в мессенджере:
+			.header__socials
+				a.header__socials-icon(href='#')
+					svg
+						use(xlink:href='./svg/sprite.svg#socials--wa')
+				a.header__socials-icon(href='#')
+					svg
+						use(xlink:href='./svg/sprite.svg#socials--telegram')

@@ -4,19 +4,23 @@ form.form(action='', method='POST')
 		.form__wrapper
 			.form__subtitle Как Вам удобнее <br> получить варианты?
 			.form__socials
-				a.form__socials-item(href='#')
+				label.form__socials-item
+					input(type='checkbox')
 					svg
 						use(xlink:href='./svg/sprite.svg#socials--viber')
 					span Viber
-				a.form__socials-item(href='#')
+				label.form__socials-item
+					input(type='checkbox')
 					svg
 						use(xlink:href='./svg/sprite.svg#socials--telegram')
 					span Telegram
-				a.form__socials-item(href='#')
+				label.form__socials-item
+					input(type='checkbox')
 					svg
 						use(xlink:href='./svg/sprite.svg#socials--wa')
 					span WhatsApp
-				a.form__socials-item(href='#')
+				label.form__socials-item
+					input(type='checkbox')
 					svg
 						use(xlink:href='./svg/sprite.svg#socials--phone')
 					span По телефону
@@ -27,4 +31,4 @@ form.form(action='', method='POST')
 		.note__inner
 			svg
 				use(xlink:href='./svg/sprite.svg#event')
-			p Акция действует до 15 июля
+			p Акция действует до <span class='bonus-day'>15</span> <span class='bonus-month'>июля</span>

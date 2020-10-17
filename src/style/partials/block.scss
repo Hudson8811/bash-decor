@@ -82,12 +82,23 @@
 	}
 
 	&__note {
+		display: block;
 		padding-top: 55px;
 		padding-left: 15px;
 		position: relative;
 
+		@media (min-width: 961px) {
+			&:hover {
+
+				img {
+					transform: scale(1.02);
+				}
+			}
+		}
+
 		p {
 			position: absolute;
+			color: $mainColor;
 
 			&:first-of-type {
 				top: 31px;
@@ -113,14 +124,21 @@
 		img {
 			position: relative;
 			z-index: 1;
+			transition: transform 0.3s ease;
 		}
 	}
 
 	&__man {
 		position: absolute;
 		bottom: 0;
-		left: 52%;
-		transform: translateX(-50%);
+		left: 0;
+		right: 0;
+		overflow: hidden;
+
+		img {
+			position: relative;
+			right: -63px;
+		}
 	}
 }
 
@@ -145,7 +163,7 @@
 		flex-direction: column;
 		width: 100%;
 		height: 100%;
-		padding: 24px 42px;
+		padding: 24px 12px;
 		border: 1px solid #f4f4f4;
 		border-radius: 50%;
 		text-align: center;
@@ -193,6 +211,28 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -50px;
+	}
+
+	.slider-arrow {
+		display: none;
+		position: absolute;
+		left: 155px;
+		bottom: -127px;
+
+		&--prev {
+			left: 79px;
+		}
+
+		&--next::after {
+			display: none;
+			content: 'Листайте, чтобы увидеть еще';
+			font-size: 20px;
+			font-weight: 300;
+			position: absolute;
+			top: 19px;
+			right: -306px;
+			color: #a7aaba;
+		}
 	}
 }
 
@@ -254,6 +294,12 @@
 		padding: 58px 86px 77px;
 		border: 1px solid #f3f3f3;
 		border-radius: 10px;
+	}
+
+	&__flex {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
 	}
 
 	&__get-it {
@@ -321,6 +367,8 @@
 }
 
 .achievements {
+	overflow: hidden;
+
 	&__video {
 		margin-top: -13px;
 		padding-left: 21px;
@@ -461,7 +509,8 @@
 	}
 
 	&--small {
-		width: 82px;
+		max-width: 82px;
+		width: 100%;
 		height: 82px;
 		position: relative;
 		top: -9px;
@@ -618,7 +667,8 @@
 	}
 
 	&__button {
-		width: 301px;
+		max-width: 301px;
+		width: 100%;
 		height: 82px;
 		margin: auto auto 0;
 	}
@@ -742,6 +792,7 @@
 .catalog {
 	background-color: #e8e9ee;
 	position: relative;
+	overflow: hidden;
 
 	&__bg {
 		position: absolute;
@@ -754,7 +805,8 @@
 		position: relative;
 	}
 
-	&__flex {
+	&__flex,
+	&__flex-inner {
 		display: flex;
 	}
 
@@ -885,6 +937,19 @@
 		flex-wrap: wrap;
 		margin: 0 -19px;
 	}
+
+	.slider-arrow {
+		&--next::after {
+			display: none;
+			content: 'Листайте, чтобы увидеть еще';
+			font-size: 20px;
+			font-weight: 300;
+			position: absolute;
+			top: 19px;
+			right: -306px;
+			color: #a7aaba;
+		}
+	}
 }
 
 .work {
@@ -935,6 +1000,10 @@
 		max-width: 130px;
 		width: 100%;
 		margin-right: 40px;
+
+		img {
+			width: 100%;
+		}
 	}
 
 	&__video-wrap {

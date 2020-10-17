@@ -1,0 +1,183 @@
+@media (max-width: 1600px) {
+	.quality {
+		&__container {
+			padding: 139px 0 0;
+		}
+
+		&__flex {
+			display: block;
+
+			.slick-list {
+				margin: 0 -20px;
+			}
+
+			.slick-slide {
+				margin: 0 20px;
+			}
+
+			.slider-arrow {
+				position: absolute;
+				bottom: -136px;
+				left: calc(35% + 34px);
+
+				&--next::after {
+					display: block;
+				}
+
+				&--prev {
+					left: calc(35% - 43px);
+				}
+			}
+		}
+
+		.product-item {
+			padding-bottom: 197px;
+			margin: 0;
+
+			&__img {
+				height: 405px;
+			}
+
+			&__content {
+				padding: 42px 40px 35px;
+			}
+
+			&--quality {
+				&:hover {
+					transform: none;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.quality {
+		&__container {
+			padding: 118px 0 144px;
+		}
+
+		&__title {
+			margin-bottom: 61px;
+
+			br {
+				display: none;
+			}
+		}
+
+		&__flex {
+			.slider-arrow {
+				bottom: -141px;
+				left: calc(31% + 41px);
+
+				&--prev {
+					left: calc(31% - 34px);
+				}
+			}
+		}
+
+		.product-item {
+			padding-bottom: 164px;
+
+			&__content {
+				min-height: 164px;
+				padding: 36px 30px 35px;
+			}
+
+			&__img {
+				height: 336px;
+			}
+
+			&__title {
+				font-size: 16px;
+				line-height: 21.23px;
+			}
+
+			&__description {
+				font-size: 14px;
+				line-height: 21.12px;
+			}
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.quality {
+		&__container {
+			padding: 216px 0 144px;
+		}
+
+		&__flex {
+			margin: 0;
+
+			.slick-list {
+				margin: 0 -16px;
+			}
+
+			.slick-slide {
+				margin: 0 16px;
+			}
+
+			.slider-arrow {
+				bottom: -124px;
+				left: calc(19% + 40px);
+
+				&--prev {
+					left: calc(19% - 37px);
+				}
+			}
+		}
+
+		.product-item {
+			padding-bottom: 159px;
+
+			&__content {
+				min-height: 159px;
+				padding: 36px 30px 35px;
+			}
+
+			&__img {
+				height: 324px;
+			}
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.quality {
+		&__container {
+			padding: 109px 0 104px;
+		}
+
+		&__title {
+			margin-bottom: 34px;
+		}
+
+		&__flex {
+			.slider-arrow {
+				bottom: -99px;
+				left: calc(38% + 40px);
+
+				&--prev {
+					left: calc(38% - 37px);
+				}
+
+				&--next::after {
+					display: none;
+				}
+			}
+		}
+
+		.product-item {
+			padding-bottom: 283px;
+
+			&__content {
+				min-height: 283px;
+			}
+
+			&__img {
+				height: 199px;
+			}
+		}
+	}
+}

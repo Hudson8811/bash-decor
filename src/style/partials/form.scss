@@ -56,8 +56,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		border-radius: 2px;
-		border: 1px solid #f1f1f1;
-		overflow: hidden;
 		margin-bottom: 20px;
 	}
 
@@ -65,7 +63,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: calc(55% + 2px);
+		width: 55%;
 		height: 68px;
 		padding: 15px 18px 15px 12px;
 		margin: -1px;
@@ -78,13 +76,17 @@
 		letter-spacing: 0.95px;
 
 		&:nth-child(odd) {
-			width: calc(45% + 2px);
+			width: 45%;
 		}
 
 		svg {
 			width: 20px;
 			height: 20px;
 			margin-right: 10px;
+		}
+
+		&--checked {
+			background-color: #f2f2f2;
 		}
 	}
 
