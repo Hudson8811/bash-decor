@@ -1,0 +1,35 @@
+.section-reviews {}
+
+.reviews-container {
+	overflow: hidden;
+}
+
+.reviews-videos {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reviews-video-item {
+	width: calc(33.33% - 32px);
+}
+
+.reviews-video-wrap {}
+
+.reviews-video-preview {}
+
+.reviews-text {}
+
+.reviews-text__name {}
+
+.reviews-text__city {}
+
+.reviews-loadmore {
+	&::before {
+		content: '';
+		display: block;
+		width: 24px;
+		height: 24px;
+		background: url(../images/preloader.gif) no-repeat center center;
+		background-size: contain;
+	}
+}

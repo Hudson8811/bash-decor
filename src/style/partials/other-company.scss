@@ -1,0 +1,142 @@
+.section-other-company {}
+
+.otcomp-container {
+	display: flex;
+	padding: 0 14px 0 177px;
+	width: 1920px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.otcomp-left {
+	padding-top: 34px;
+	width: calc(100% - 958px);
+}
+
+.otcomp-title {
+	color: #21222d;
+	font-size: 50px;
+	line-height: 60px;
+	font-weight: 300;
+
+	b {
+		font-weight: 500;
+
+	}
+}
+
+.otcomp-info {
+	margin-top: 22px;
+
+	width: 684px;
+	max-width: 100%;
+	color: #21222d;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 35px;
+	letter-spacing: 0.25px;
+
+	p {
+
+		&+p {
+			margin-top: 35px;
+		}
+	}
+}
+
+.otcomp-form-wrap {
+	background-color: #eff3f8;
+	padding: 49px 50px 53px 39px;
+	width: 642px;
+	box-sizing: border-box;
+	max-width: 100%;
+	margin-top: 38px;
+}
+
+.otcomp-form-innner {}
+
+
+
+.otcomp-form-title {
+
+	width: 473px;
+	max-width: 100%;
+	color: #21222d;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: 0.22px;
+}
+
+.otcomp--form-file-input {
+	margin-top: 29px;
+	margin-top: 17px;
+
+	color: #88a9ce;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: 0.18px;
+}
+
+.otcomp-form-flex {
+	display: flex;
+	margin-top: 21px;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 13px;
+	width: 547px;
+	max-width: 100%;
+}
+
+.otcomp-form-input {
+	width: calc(50% - 7px);
+}
+
+.otcomp-form-btn {
+	width: calc(50% - 6px);
+	margin-top: -4px;
+
+	.btn-v2__text {
+		font-size: 14px;
+		font-weight: 500;
+		font-style: normal;
+		letter-spacing: normal;
+		line-height: 22px;
+		padding: 10px 20px;
+		box-sizing: border-box;letter-spacing: 1.09px;
+	}
+}
+
+.otcomp-privacy.freemean-form-privacy {
+	margin-top: 25px;
+
+	label {}
+
+	.custom-chb {}
+
+	.wpcf7-list-item-label {
+		.wpcf7-list-item-label {}
+
+		.acceptance-text {
+			a {
+				&:hover {}
+
+				&:active {}
+
+				&:focus {}
+			}
+		}
+	}
+}
+
+
+
+
+.otcomp-right {}
+
+.otcomp-pic {
+	display: block;
+	width: 957px;
+	height: auto;
+}
