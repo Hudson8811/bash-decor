@@ -1,0 +1,101 @@
+.section-free-measurement {}
+
+.freemean-container {}
+
+.freemean-top {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.freemean-top-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.freemean-title {
+	width: 689px;
+	max-width: 100%;
+	color: #21222d;
+	font-size: 50px;
+	line-height: 60px;
+	font-weight: 300;
+
+	b {
+		font-weight: 500;
+	}
+}
+
+.freemean-steps {}
+
+
+.freemean-step {
+	&__top {}
+
+	&__text {
+		p {
+			b {}
+		}
+	}
+
+
+}
+
+.freemean-step__top-number {
+	span {}
+}
+
+.freemean-step__top-pic {}
+
+.freemean-bottom {}
+
+.freemean-form-wrap {}
+
+.freemean-discount {
+	&__percent {}
+
+	&__text {}
+}
+
+.freemean-form-warp {
+	form {}
+
+
+}
+
+.freemean-form-inner {}
+
+
+.freemean-form-title {}
+
+.freemean-form-flex {}
+
+.freemean-form-input {}
+
+.freemean-form-btn {}
+
+.freemean-form-privacy {
+	label {
+		.custom-chb {}
+
+		.wpcf7-list-item-label {}
+
+		.wpcf7-list-item-label {
+			.acceptance-text {}
+
+			a {
+				&:hover {}
+
+				&:active {}
+
+				&:focus {}
+			}
+		}
+	}
+
+}
+
+.freemean-seats {
+	&__text {}
+
+	&__number {}
+}

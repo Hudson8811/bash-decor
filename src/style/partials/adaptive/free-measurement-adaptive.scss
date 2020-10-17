@@ -1,0 +1,84 @@
+.section-free-measurement {}
+
+.freemean-container {}
+
+.freemean-top {}
+
+.freemean-title {
+	b {}
+}
+
+.freemean-steps {}
+
+
+.freemean-step {
+	&__top {}
+
+	&__text {
+		p {
+			b {}
+		}
+	}
+
+
+}
+
+.freemean-step__top-number {
+	span {}
+}
+
+.freemean-step__top-pic {}
+
+.freemean-bottom {}
+
+.freemean-form-wrap {}
+
+.freemean-discount {
+	&__percent {}
+
+	&__text {}
+}
+
+.freemean-form-warp {
+	form {}
+
+
+}
+
+.freemean-form-inner {}
+
+
+.freemean-form-title {}
+
+.freemean-form-flex {}
+
+.freemean-form-input {}
+
+.freemean-form-btn {}
+
+.freemean-form-privacy {
+	label {
+		.custom-chb {}
+
+		.wpcf7-list-item-label {}
+
+		.wpcf7-list-item-label {
+			.acceptance-text {}
+
+			a {
+				&:hover {}
+
+				&:active {}
+
+				&:focus {}
+			}
+		}
+	}
+
+}
+
+.freemean-seats {
+	&__text {}
+
+	&__number {}
+}

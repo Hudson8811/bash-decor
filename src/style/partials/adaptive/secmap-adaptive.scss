@@ -209,4 +209,73 @@
 	.secmap-info {
 		margin-top: 25px;
 	}
+
+	.secmap-info-container {
+
+		max-width: calc(100% - 40px);
+	}
+
+	.secmap-info-top {
+		padding-top: 55px;
+	}
+
+	.secmap-item {
+		padding-left: 25px;
+		padding-right: 0;
+		margin-right: 0;
+	}
+
+	.secmap-item__title {
+		font-size: 17px;
+	}
+
+	.secmap-list-item__city {
+		font-size: 15px;
+		line-height: 22.1px;
+		letter-spacing: 0.3px;
+
+	}
+
+	.secmap-list-item__street {
+		font-size: 15px;
+		line-height: 22.1px;
+		letter-spacing: 0.3px;
+	}
+
+	.secmap-time {
+		margin-top: 5px;
+	}
+
+	.secmap-time__item {
+
+		font-size: 15px;
+		line-height: 22.1px;
+		letter-spacing: 0.3px;
+	}
+	.secmap-info-bottom__phone{
+		font-size: 20px;
+		line-height: 1;
+		padding-left: 23px;
+		letter-spacing: 0px;
+	}
+	.secmap-info-bottom{
+		padding-top: 46px;
+		.secmap-info-container{
+			width: 228px;
+		}
+	}
+	.secmap-info-input {
+		height: 61px;
+	}
+	.btn-v2 .btn-v2__inner {
+		min-height: 68px;
+	}
+	.container-map{
+		padding-bottom: 0;
+	}
+	.secinfo-border{
+		display: none;
+	}.secmap-info-bottom {
+		padding-bottom: 67px;
+	}
 }
