@@ -1,35 +1,258 @@
-.section-reviews {}
-
-.reviews-container {
+.section-reviews {
 	overflow: hidden;
+
 }
 
+.reviews-container {
+	width: 1510px;
+	max-width: calc(100% - 40px);
+	margin: 0 auto;
+}
+
+
+
+.reviews-info {
+	position: relative;
+	z-index: 1;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reviews-info-bg {
+	opacity: 0.09;
+	color: #21222d;
+	font-size: 345px;
+	font-weight: 500;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 0.5px;
+	position: absolute;
+	left: 50%;
+	top: 47%;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+
+}
+
+.reviews-info-text {
+	width: 865px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+
+	color: #21222d;
+	font-size: 50px;
+	font-weight: 300;
+	line-height: 60px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	z-index: 2;
+	position: relative;
+
+	.reviews-info-digits {
+		color: #88a9ce;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+	}
+
+	.reviews-info-bold {
+		font-weight: 500;
+		letter-spacing: 0.5px;
+	}
+}
+
+
+.reviews-title {
+	color: #21222d;
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 32px;
+	text-align: center;
+	letter-spacing: 0.26px;
+	margin-top: 22px;
+}
+
+
+.reviews-controls {
+	margin: 25px auto;
+	width: 567px;
+	box-shadow: inset 0 0 9px rgba(255, 255, 255, 0.13);
+	border-radius: 10px;
+	border: 1px solid #eee6e6;
+	display: flex;
+	justify-content: space-between;
+	padding: 9px 10px;
+	box-sizing: border-box;
+
+
+	.btn-v2 {
+		width: calc(50% - 6px);
+	}
+}
+
+.reviews-tab{
+	display: none;
+	&--active{
+		display: block;
+	}
+}
 .reviews-videos {
 	display: flex;
 	flex-wrap: wrap;
+	padding-top: 61px;
+    padding-bottom: 51px;
+	margin: 0 -32px -36px;
+	padding-top: 37px;
 }
 
 .reviews-video-item {
-	width: calc(33.33% - 32px);
+	width: calc(33.33% - 64px);
+	margin: 0 32px 36px;
+
+	box-shadow: 0 0 30px 10px rgba(220, 222, 237, 0.33);
+	background-color: #ffffff;
+	border-radius: 10px;
+	position: relative;
+	display: block;
+
+	&::before {
+
+		border-radius: 10px;
+		content: '';
+		display: block;
+		position: absolute;
+		left: 8px;
+		top: 8px;
+		width: calc(100% - 16px);
+		height: calc(100% - 16px);
+		border: 1px solid #f3f3f3;
+		box-sizing: border-box;
+		pointer-events: none;
+		z-index: 3;
+	}
 }
 
-.reviews-video-wrap {}
+.reviews-video-wrap {
+	position: relative;
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+	z-index: 1;
 
-.reviews-video-preview {}
-
-.reviews-text {}
-
-.reviews-text__name {}
-
-.reviews-text__city {}
-
-.reviews-loadmore {
 	&::before {
 		content: '';
 		display: block;
-		width: 24px;
-		height: 24px;
-		background: url(../images/preloader.gif) no-repeat center center;
-		background-size: contain;
+		position: relative;
+		padding-top: 77.4403470716%;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -67.5px;
+		margin-top: -67.5px;
+		width: 135px;
+		height: 135px;
+		background-color: #87a8cd;
+		background-image: url(../img/play.svg);
+		border-radius: 50%;
+		background-size: 24px auto;
+		background-repeat: no-repeat;
+		background-position: calc(50% + 5px) center;
+		z-index: 3;
+		transition-duration: .2s;
+	}
+
+	&:hover {
+		&::after {
+			opacity: .8;
+		}
+
+	}
+}
+
+.reviews-video-preview {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+	z-index: 2;
+}
+
+.reviews-text {
+	padding: 43px 20px 49px;
+}
+
+.reviews-text__name {
+	color: #21222d;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 30.25px;
+	text-align: center;
+	letter-spacing: 2.29px;
+}
+
+.reviews-text__city {
+    margin-top: 10px;
+	color: #21222d;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 25.87px;
+	text-align: center;
+	letter-spacing: 0.45px;
+}
+
+.reviews-loadmore {
+
+
+	display: flex;
+	justify-content: center;
+	color: #88a9ce;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: 0.18px;
+	cursor: pointer;
+
+	span {
+		position: relative;
+		display: block;
+		border-bottom: 1px dashed #85a7cd;
+
+		&::before {
+			position: absolute;
+			left: -37px;
+			top: 2px;
+			top: 5px;
+			content: '';
+			display: block;
+			width: 24px;
+			height: 24px;
+			background: url(../images/preloader.gif) no-repeat center center;
+			background-size: contain;
+			opacity: 0;
+			transition-duration: .2s;
+		}
+	}
+
+	&--loading {
+
+		span {
+			&::before {
+				opacity: 1;
+			}
+		}
 	}
 }
