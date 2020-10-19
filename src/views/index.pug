@@ -324,6 +324,83 @@ block main
 								use(xlink:href='./svg/sprite.svg#clock')
 							p Среднее время монтажа <br> <span>2-2,5 часа</span>
 
+	.team
+		.container.team__container
+			+title('<span>У нас 7 бригад монтажников,</span> <br> каждая из которых готова выехать к Вам уже завтра', 'team__title')
+			.team__slider
+				.team__slide
+					.team__item-img
+						img(src='images/products/item-1.jpg' alt='')
+					.team__content
+						.team__flex
+							.team__person
+								.team__first-name Алексей
+								.team__position
+									svg
+										use(xlink:href='./svg/sprite.svg#hammer')
+									span Монтажник
+								.team__expierence
+									span 5 лет
+									span 316 монтажей
+							.team__person
+								.team__first-name Руслан
+								.team__position
+									svg
+										use(xlink:href='./svg/sprite.svg#light')
+									span Электрик
+								.team__expierence
+									span 3 года
+									span 129 монтажей
+						+button('выбрать бригаду', 'team__button')
+				.team__slide
+					.team__item-img
+						img(src='images/products/item-1.jpg' alt='')
+					.team__content
+						.team__flex
+							.team__person
+								.team__first-name Алексей
+								.team__position
+									svg
+										use(xlink:href='./svg/sprite.svg#hammer')
+									span Монтажник
+								.team__expierence
+									span 5 лет
+									span 316 монтажей
+							.team__person
+								.team__first-name Руслан
+								.team__position
+									svg
+										use(xlink:href='./svg/sprite.svg#light')
+									span Электрик
+								.team__expierence
+									span 3 года
+									span 129 монтажей
+						+button('выбрать бригаду', 'team__button')
+				.team__slide
+					.team__item-img
+						img(src='images/products/item-1.jpg' alt='')
+					.team__content
+						.team__flex
+							.team__person
+								.team__first-name Алексей
+								.team__position
+									svg
+										use(xlink:href='./svg/sprite.svg#hammer')
+									span Монтажник
+								.team__expierence
+									span 5 лет
+									span 316 монтажей
+							.team__person
+								.team__first-name Руслан
+								.team__position
+									svg
+										use(xlink:href='./svg/sprite.svg#light')
+									span Электрик
+								.team__expierence
+									span 3 года
+									span 129 монтажей
+						+button('выбрать бригаду', 'team__button')
+
 	include sections/s9-10.pug
 	include sections/reviews
 	include sections/other-company

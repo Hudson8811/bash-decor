@@ -198,6 +198,30 @@ $(document).ready(function () {
 		});
 	}
 
+	// Slider team
+	$('.team__slider').slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+		nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+		dots: false,
+		infinite: false,
+		responsive: [
+			{
+				breakpoint: 960,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 640,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
 	// Product
 	$('.product-item').hover(
 		function () {
