@@ -10,7 +10,11 @@
 				form(action="")
 					.otcomp-form-innner
 						.otcomp-form-title Прикрепите сканы или фотографии сметы, отправьте нам и получите новую смету на 10-15% дешевле
-						.otcomp--form-file-input Выбрать файлы
+						label.custom-finp
+							input(type="file" multiple)
+							.custom-finp__title Выбрать файлы
+							.custom-finp__items
+
 
 						.otcomp-form-flex
 							input.input.input--gray.otcomp-form-input(type='phone' name='phone' placeholder='введите Номер телефона')

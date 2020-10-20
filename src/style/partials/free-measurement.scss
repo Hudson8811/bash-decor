@@ -10,7 +10,7 @@
 	margin: 0 auto;
 	padding-left: 110px;
 	padding-right: 45px;
-	padding-top: 254px;
+	padding-top: 164px+81px;
 	box-sizing: border-box;
 }
 
@@ -129,6 +129,7 @@
 .freemean-discount {
 	margin-bottom: -53px;
 	max-width: calc(50% - 85px);
+	position: relative;
 
 	&__inner {
 		display: flex;
@@ -136,8 +137,14 @@
 		border: 1px solid #f3f3f3;
 		border-radius: 10px;
 		padding: 41px 30px 45px 70px;
+		position: relative;
+		z-index: 2;
 	}
+	&-wrap-2{
+		position: relative;
+		z-index: 2;
 
+	}
 	&__percent {
 		color: #88a9ce;
 		font-size: 108px;
@@ -153,6 +160,16 @@
 		font-weight: 300;
 		line-height: 32.01px;
 		letter-spacing: 0.22px;
+	}
+
+	&__pic{
+
+		position: absolute;
+		bottom: calc(100% + -47px);
+		right: 13px;
+		width: 355px;
+		height: auto;
+    z-index: 1;
 	}
 }
 

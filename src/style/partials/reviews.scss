@@ -132,6 +132,12 @@
 		pointer-events: none;
 		z-index: 3;
 	}
+
+	&--novid{
+		.reviews-video-wrap::after{
+			display: none !important;
+		}
+	}
 }
 
 .reviews-video-wrap {

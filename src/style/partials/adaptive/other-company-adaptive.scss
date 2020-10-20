@@ -1,56 +1,112 @@
-.section-other-company {}
+@media screen and (max-width:1700px) {
+	.section-other-company {
+		overflow: hidden;
+		clip-path: polygon(100% calc(100% - 164px), 69.1145833333% 100%, 0 calc(100% - 164px), 0 0, 100% 0);
+	}
 
-.otcomp-container {}
+	.otcomp-container {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 115px;
+		padding-bottom: 218px;
+		width: 1388px;
+		max-width: calc(100% - 40px);
+	}
 
-.otcomp-left {
+	.otcomp-left {
+		padding-top: 0;
+		width: 715px;
+		max-width: 100%;
+	}
 
-	p {}
+	.otcomp-right {
+		position: relative;
+		flex-grow: 1;
 
+	}
+
+	.otcomp-pic {
+		position: absolute;
+		left: 59px;
+		top: -34px;
+		width: 961px;
+		height: auto;
+		display: block;
+	}
+
+	.otcomp-form-wrap {
+		width: 684px;
+	}
+
+	.otcomp-form-flex {
+		width: 593px;
+		margin-top: 15px;
+	}
+
+	.otcomp-form-input {
+		width: calc(50% + 7px);
+	}
+
+	.otcomp-form-btn {
+		width: calc(50% - 29px);
+		margin-top: 0;
+	}
 }
 
-.otcomp-title {}
+@media screen and (max-width:1430px) {
+	.otcomp-container {
+		width: 1191px;
+		padding-top: 146px;
+	}
 
-.otcomp-info {}
+	.otcomp-pic {
+		top: -12px;
+	}
 
-.otcomp-form-wrap {}
+	.otcomp-form-wrap {
+		padding: 43px 56px 53px 41px;
+		width: 642px;
+		margin-top: 66px;
+	}
 
-.otcomp-form-innner {}
+	.custom-finp__title {
+		margin-top: 30px;
+	}
 
+	.otcomp-form-flex {
+		margin-top: 22px;
+	}
 
+	.otcomp-form-input {
+		width: calc(50% + -7px);
+	}
 
-.otcomp-form-title {}
+	.otcomp-form-btn {
+		width: calc(50% - 6px);
 
-.otcomp--form-file-input {}
+	}
 
-.otcomp-form-flex {
-}
+	.otcomp-privacy.freemean-form-privacy {
+		margin-top: 35px;
+	}
 
-.otcomp-form-input {}
-.otcomp-form-btn {}
+	.otcomp-container {
+		padding-bottom: 260px;
+	}
 
-.otcomp-privacy.freemean-form-privacy {
-	label {}
-
-	.custom-chb {}
-
-	.wpcf7-list-item-label {
-		.wpcf7-list-item-label {}
-
-		.acceptance-text {
-			a {
-				&:hover {}
-
-				&:active {}
-
-				&:focus {}
-			}
-		}
+	.section-other-company {
+		clip-path: polygon(100% calc(100% - 6.5vw), 74.4vw 100%, 0 calc(100% - 9vw), 0 0, 100% 0);
 	}
 }
 
 
+@media screen and (max-width:1100px) {
 
 
-.otcomp-right {}
+}
 
-.otcomp-pic {}
+
+@media screen and (max-width:835px) {}
+
+
+@media screen and (max-width:515px) {}

@@ -1,84 +1,106 @@
-.section-free-measurement {}
+@media screen and (max-width:1700px) {
+	.freemean-container {
+		width: 1569px;
+		max-width: calc(100% - 40px);
+		padding-left: 0;
+		padding-right: 0;
 
-.freemean-container {}
-
-.freemean-top {}
-
-.freemean-title {
-	b {}
-}
-
-.freemean-steps {}
-
-
-.freemean-step {
-	&__top {}
-
-	&__text {
-		p {
-			b {}
-		}
 	}
 
-
-}
-
-.freemean-step__top-number {
-	span {}
-}
-
-.freemean-step__top-pic {}
-
-.freemean-bottom {}
-
-.freemean-form-wrap {}
-
-.freemean-discount {
-	&__percent {}
-
-	&__text {}
-}
-
-.freemean-form-warp {
-	form {}
-
-
-}
-
-.freemean-form-inner {}
-
-
-.freemean-form-title {}
-
-.freemean-form-flex {}
-
-.freemean-form-input {}
-
-.freemean-form-btn {}
-
-.freemean-form-privacy {
-	label {
-		.custom-chb {}
-
-		.wpcf7-list-item-label {}
-
-		.wpcf7-list-item-label {
-			.acceptance-text {}
-
-			a {
-				&:hover {}
-
-				&:active {}
-
-				&:focus {}
-			}
-		}
+	.freemean-bottom {
+		padding-right: 15px;
 	}
 
+	.freemean-top-content {
+		width: 858px;
+	}
+
+	.freemean-container {
+		padding-top: 242px;
+	}
+
+	.freemean-form-wrap {
+		max-width: calc(50% - 19px);
+		padding: 55px 39px 46px 45px;
+	}
+
+	.freemean-discount {
+		max-width: calc(50% - 119px);
+	}
+
+	.freemean-discount__inner {
+		padding: 35px 33px 33px 51px;
+
+	}
+
+	.freemean-discount__percent {
+		font-size: 93px;
+	}
+
+	.freemean-discount__text {
+		font-size: 19px;
+		line-height: 27.56px;
+		letter-spacing: 0.22px;
+	}
+
+	.freemean-discount__pic {
+		bottom: calc(100% + -23px);
+		right: 33px;
+	}
+
+	.freemean-form-title {
+		margin-top: -5px;
+	}
+
+	.freemean-form-btn {
+		.btn-v2__text {
+			font-size: 14px;
+			line-height: 25.23px;
+			letter-spacing: 1.07px;
+		}
+	}
 }
 
-.freemean-seats {
-	&__text {}
+@media screen and (max-width:1430px) {
 
-	&__number {}
+	.freemean-container {
+		width: 1205px;
+		padding-top: 248px;
+	}
+
+	.freemean-top-content {
+		width: 709px;
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.freemean-title {
+		width: 100%;
+	}
+
+	.freemean-steps {
+		margin-top: 62px;
+		width: 646px;
+		max-width: 100%;
+	}
+	.freemean-step:nth-child(1) {
+		width: 266px;
+		max-width: calc(50% - 20px);
+	}
+	.freemean-step:nth-child(2) {
+		width: 341px;
+		max-width: 50%;
+	}
+	.freemean-step__text p {}
 }
+
+
+@media screen and (max-width:1100px) {}
+
+
+@media screen and (max-width:835px) {}
+
+
+@media screen and (max-width:515px) {}

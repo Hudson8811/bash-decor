@@ -1,16 +1,40 @@
-.section-other-company {}
+.section-other-company {
+	overflow: hidden;
+	margin-bottom: -164px;
+	position: relative;
+	z-index: 3;
+	background: cornflowerblue;
+	clip-path: polygon(100% calc(100% - 164px), 1317px 100%, 0 calc(100% - 164px), 0 0, 100% 0);
+}
 
 .otcomp-container {
 	display: flex;
-	padding: 130px 14px 0 177px;
+    padding: 130px 14px 168px 177px;
 	width: 1920px;
+	max-width: 100%;
 	box-sizing: border-box;
 	margin: 0 auto;
 }
 
 .otcomp-left {
 	padding-top: 34px;
-	width: calc(100% - 958px);
+	width: 771px;
+	max-width: 100%;
+}
+
+.otcomp-right {
+	position: relative;
+	flex-grow: 1;
+
+}
+
+.otcomp-pic {
+	position: absolute;
+    left: 0px;
+    top: 0px;
+	width: 957px;
+	height: auto;
+	display: block;
 }
 
 .otcomp-title {
@@ -68,22 +92,63 @@
 	letter-spacing: 0.22px;
 }
 
-.otcomp--form-file-input {
-	margin-top: 29px;
-	margin-top: 17px;
+.custom-finp {
+	input {
+		display: none;
+	}
 
-	color: #88a9ce;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 32px;
-	letter-spacing: 0.18px;
+	&__title {
+		display: inline-block;
+		cursor: pointer;
+		margin-top: 25px;
+
+		color: #88a9ce;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1;
+		letter-spacing: 0.18px;
+		position: relative;
+		padding-bottom: 3px;
+
+		margin-left: 20px;
+		border-bottom: 1px solid #85a7cd;
+		transition-duration: .2s;
+
+		&::before {
+			content: '';
+			display: block;
+			background: url(../img/screp.svg) no-repeat center center;
+			background-size: contain;
+			width: 10px;
+			height: 20px;
+			opacity: 0.39;
+			position: absolute;
+			left: -20px;
+			top: 2px;
+		}
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+
+	&__items {
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+
+	&__item {
+		font-size: 14px;
+		line-height: 1.4;
+	}
+
 }
 
 .otcomp-form-flex {
 	display: flex;
 	margin-top: 21px;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	margin-top: 13px;
 	width: 547px;
 	max-width: 100%;
@@ -104,7 +169,8 @@
 		letter-spacing: normal;
 		line-height: 22px;
 		padding: 10px 20px;
-		box-sizing: border-box;letter-spacing: 1.09px;
+		box-sizing: border-box;
+		letter-spacing: 1.09px;
 	}
 }
 
@@ -131,12 +197,3 @@
 }
 
 
-
-
-.otcomp-right {}
-
-.otcomp-pic {
-	display: block;
-	width: 957px;
-	height: auto;
-}
