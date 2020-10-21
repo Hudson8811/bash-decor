@@ -119,9 +119,14 @@
 
 @media screen and (max-width:1430px) {
 	.section-map {
-		margin-top: -228px;
+		margin-top: 0;
 
-		padding-top: 207px;
+		padding-top: 131px;
+	}
+
+	.secmap-clouds{
+		top: 170px;
+		margin-left: -961px;
 	}
 
 	.secmap-info {

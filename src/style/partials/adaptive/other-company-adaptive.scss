@@ -102,7 +102,69 @@
 
 @media screen and (max-width:1100px) {
 
+	.otcomp-container {
+		width: 959px;
+		padding-top: 115px;
+	}
 
+	.otcomp-left {
+		padding-top: 0;
+		width: 660px;
+	}
+
+	.otcomp-title {
+
+		font-size: 40px;
+		line-height: 45px;
+
+		b {
+			letter-spacing: 0.4px;
+		}
+	}
+
+	.otcomp-info {
+		margin-top: 21px;
+		margin-left: 21px;
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: .18px;
+		width: 517px;
+
+		p+p {
+			margin-top: 28px;
+		}
+	}
+
+	.otcomp-pic {
+		left: -65px;
+		top: 45px;
+		width: 620px;
+	}
+
+	.otcomp-form-wrap {
+		padding: 42px 56px 53px 52px;
+		width: 660px;
+		margin-top: 51px;
+	}
+
+	.otcomp-left {
+		position: relative;
+		z-index: 2;
+	}
+
+	.otcomp-right {
+		position: relative;
+		z-index: 1;
+
+	}
+
+	.otcomp-form-flex {
+		width: 546px;
+	}
+
+	.otcomp-container {
+		padding-bottom: 180px;
+	}
 }
 
 
