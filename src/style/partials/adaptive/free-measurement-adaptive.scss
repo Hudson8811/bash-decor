@@ -242,15 +242,52 @@
 	}
 }
 
-@media screen and (max-width:1250px) {
+@media screen and (max-width:1100px) {
 	.freemean-container {
 		width: 962px;
 		padding-top: 252px;
 	}
 
+	.freemean-bottom {
+		padding-right: 0;
+	}
 
 	.freemean-top-content {
 		width: 633px;
+	}
+
+	.freemean-discount__inner {
+		display: block;
+		padding: 26px 20px 36px 46px;
+	}
+
+	.freemean-discount {
+		width: 324px;
+		max-width: calc(100% - 585px);
+		margin-bottom: 0;
+	}
+
+	.freemean-discount__pic {
+		bottom: calc(100% + -60px);
+	}
+
+	.freemean-discount__percent {
+		font-size: 75px;
+		line-height: 1;
+		margin-bottom: 10px;
+	}
+
+	.freemean-discount__text {
+		font-size: 15px;
+		line-height: 21.7px;
+		max-width: 100%;
+		width: 209px;
+	}
+
+	.freemean-form-wrap {
+		width: 565px;
+		max-width: 100%;
+		padding: 40px 58px 55px 65px;
 	}
 
 	.freemean-title-inner {
@@ -263,15 +300,97 @@
 
 		b {}
 	}
+
 	.freemean-steps {
 		margin-top: 78px;
 	}
+
 	.freemean-discount__pic {
 		left: -60px;
 		bottom: calc(100% + -47px);
 	}
 }
 
-@media screen and (max-width:835px) {}
+@media screen and (max-width:835px) {
+
+	.freemean-container {
+		padding-top: 249px;
+	}
+
+	.freemean-title-inner {
+		width: 500px;
+		margin: 0 auto;
+		font-size: 35px;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	.freemean-steps {
+		margin-top: 85px;
+	}
+
+	.freemean-step__text p {
+		font-size: 18px;
+		line-height: 25.32px;
+		letter-spacing: .12px;
+	}
+
+	.freemean-step__text p+p {
+		margin-top: 26px;
+	}
+
+	.freemean-bottom {
+		display: block;
+
+		margin-top: 90px;
+		padding-left: 16px;
+
+	}
+
+	.freemean-discount {
+		width: 279px;
+		max-width: 100%;
+		margin-bottom: 0;
+	}
+
+	.freemean-discount-wrap-2 {
+		padding: 5px;
+	}
+
+
+	.freemean-discount__inner {
+		padding: 24px 20px 35px 39px;
+	}
+
+	.freemean-discount__percent {
+		font-size: 64px;
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+
+	.freemean-discount__text {
+		font-size: 13px;
+		line-height: 18.59px;
+		width: 180px;
+	}
+
+	.freemean-discount__pic {
+		bottom: -21px;
+		left: calc(100% + -21px);
+		/* right: calc(-100% + 10px); */
+		width: 265px;
+	}
+	.freemean-form-wrap{
+		margin-top: 16px;
+		position: relative;
+		z-index: 3;
+	}
+
+	.freemean-form-privacy.freemean-form-privacy--sec-freemean label .wpcf7-list-item-label{
+		font-size: 12px;
+	}.freemean-form-privacy--sec-freemean {
+		margin-right: -81px;
+	}
+}
 
 @media screen and (max-width:515px) {}

@@ -168,7 +168,61 @@
 }
 
 
-@media screen and (max-width:835px) {}
+@media screen and (max-width:835px) {
+	.otcomp-container {
+		padding-top: 95px;
+	}
+
+	.otcomp-info {
+		margin-top: 25px;
+		margin-left: 17px;
+	}
+
+	.otcomp-title {
+		font-size: 35px;
+		line-height: 45px;
+		width: 561px;
+		display: block;
+		max-width: 100%;
+
+		b {}
+	}
+	.section-other-company {
+		clip-path: polygon(100% 100%,0 calc(100% - 11vw),0 0,100% 0);
+	}
+	.otcomp-container {
+		padding-bottom: 193px;
+	}
+	.otcomp-form-title {
+		font-size: 20px;
+		line-height: 29.59px;
+		display: block;
+		width: 434px;
+		max-width: 100%;
+	}
+	.otcomp-form-wrap {
+		padding: 40px 50px 53px 45px;
+	}
+	.otcomp-form-flex {
+		width: 505px;
+		margin-top: 17px;
+	}
+	.otcomp-form-btn .btn-v2__text{
+		font-size: 13px;
+	}
+	.otcomp-privacy.freemean-form-privacy {
+		margin-top: 27px;
+	}
+	.freemean-form-privacy label .wpcf7-list-item-label {
+		font-size: 15px;
+	}
+
+	.otcomp-pic {
+		left: -130px;
+		top: 197px;
+		width: 238px;
+	}
+}
 
 
 @media screen and (max-width:515px) {}
