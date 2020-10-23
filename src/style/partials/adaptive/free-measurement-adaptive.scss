@@ -380,17 +380,166 @@
 		/* right: calc(-100% + 10px); */
 		width: 265px;
 	}
-	.freemean-form-wrap{
+
+	.freemean-form-wrap {
 		margin-top: 16px;
 		position: relative;
 		z-index: 3;
 	}
 
-	.freemean-form-privacy.freemean-form-privacy--sec-freemean label .wpcf7-list-item-label{
+	.freemean-form-privacy.freemean-form-privacy--sec-freemean label .wpcf7-list-item-label {
 		font-size: 12px;
-	}.freemean-form-privacy--sec-freemean {
+	}
+
+	.freemean-form-privacy--sec-freemean {
 		margin-right: -81px;
 	}
 }
 
-@media screen and (max-width:515px) {}
+@media screen and (max-width:515px) {
+	.freemean-container {
+		padding-top: 257px;
+	}
+
+	.freemean-title-inner {
+		width: 500px;
+		margin: 0 auto;
+		letter-spacing: normal;
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.freemean-steps {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 54px;
+	}
+
+	.freemean-step:nth-child(1) {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.freemean-step:nth-child(2) {
+		width: 100%;
+		max-width: 100%;
+		margin-top: 69px;
+
+		.freemean-step__top-number {
+			margin-left: -95px;
+		}
+	}
+
+	.freemean-step__top {
+		display: flex;
+		justify-content: center;
+
+	}
+
+	.freemean-step__top-number {
+		left: 50%;
+		margin-left: -87px;
+	}
+
+	.freemean-step__top-pic {
+		left: 50%;
+		margin-left: -74px;
+	}
+
+	.freemean-step__text {
+		p {
+			width: 100%;
+			text-align: center;
+			letter-spacing: normal;
+			font-size: 16px;
+			line-height: 23.58px;
+		}
+
+		margin: 31px auto 0;
+		width: 265px;
+	}
+
+
+	.freemean-bottom {
+		margin-top: 246px;
+	}
+
+	.freemean-discount__pic {
+		bottom: calc(100% + -82px);
+		left: calc(50% - 128px);
+	}
+
+	.freemean-bottom {
+		padding-left: 0;
+	}
+
+	.freemean-discount__inner {
+		padding: 20px 50px 35px 42px;
+	}
+
+	.freemean-discount__text {
+		letter-spacing: normal;
+		font-size: 13px;
+		line-height: 18.59px;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.freemean-form-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 65px;
+		margin-left: -20px;
+		margin-right: -20px;
+		width: calc(100% + 40px);
+		max-width: calc(100% + 40px);
+		padding: 54px 15px 55px;
+	}
+
+	.freemean-form-wrap-2 {
+		width: 100%;
+	}
+
+	.freemean-form-inner {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.freemean-form-title {
+		text-align: center;
+	}
+
+	.freemean-form-flex {
+		max-width: 100%;
+		width: 245px;
+	}
+
+	.freemean-form-privacy--sec-freemean {
+		margin-right: 0;
+	}
+
+	.acceptance-text__site {
+		display: none;
+	}
+
+	.freemean-form-privacy.freemean-form-privacy--sec-freemean label .custom-chb+span .wpcf7-list-item-label {
+		line-height: 22.6px;
+	}
+
+	.freemean-seats {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		margin-top: 47px;
+		padding: 1px 46px 17px;
+		&__text {
+			padding-top: 18px;
+			padding-right: 12px;}
+
+		&__number {}
+	}
+}
