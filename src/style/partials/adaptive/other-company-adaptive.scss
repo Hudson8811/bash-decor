@@ -187,12 +187,15 @@
 
 		b {}
 	}
+
 	.section-other-company {
-		clip-path: polygon(100% 100%,0 calc(100% - 11vw),0 0,100% 0);
+		clip-path: polygon(100% 100%, 0 calc(100% - 11vw), 0 0, 100% 0);
 	}
+
 	.otcomp-container {
 		padding-bottom: 193px;
 	}
+
 	.otcomp-form-title {
 		font-size: 20px;
 		line-height: 29.59px;
@@ -200,19 +203,24 @@
 		width: 434px;
 		max-width: 100%;
 	}
+
 	.otcomp-form-wrap {
 		padding: 40px 50px 53px 45px;
 	}
+
 	.otcomp-form-flex {
 		width: 505px;
 		margin-top: 17px;
 	}
-	.otcomp-form-btn .btn-v2__text{
+
+	.otcomp-form-btn .btn-v2__text {
 		font-size: 13px;
 	}
+
 	.otcomp-privacy.freemean-form-privacy {
 		margin-top: 27px;
 	}
+
 	.freemean-form-privacy label .wpcf7-list-item-label {
 		font-size: 15px;
 	}
@@ -225,4 +233,98 @@
 }
 
 
-@media screen and (max-width:515px) {}
+@media screen and (max-width:515px) {
+	.otcomp-container {
+		padding-top: 78px;
+	}
+
+	.otcomp-info {
+		font-size: 18px;
+		line-height: 27.44px;
+		text-align: center;
+		margin-left: 0;
+		margin-top: 43px;
+	}
+
+	.otcomp-title {
+		font-size: 23px;
+		line-height: 26px;
+		text-align: center;
+
+		b {}
+	}
+
+	.otcomp-form-wrap {
+		margin: 38px -20px 0;
+		width: calc(100% + 40px);
+		max-width: calc(100% + 40px);
+		padding: 41px 15px 59px;
+	}
+
+	.otcomp-form-title {
+		letter-spacing: normal;
+		font-size: 14px;
+		line-height: 20.53px;
+		text-align: center;
+		width: 268px;
+		margin: 0 auto;
+	}
+
+	.custom-finp {
+		display: flex;
+		justify-content: center;
+	}
+
+	.custom-finp__title::before {
+		left: -18px;
+		top: 4px;
+		height: 18px;
+	}
+
+	.custom-finp__title {
+
+		letter-spacing: normal;
+		font-size: 17px;
+		line-height: 20.59px;
+	}
+
+	.custom-finp__title {
+		margin-top: 26px;
+	}
+
+	.otcomp-form-flex {
+		display: block;
+		margin-top: 33px;
+	}
+
+	.otcomp-form-input {
+		width: 100%;
+	}
+
+	.otcomp-form-btn {
+		width: 100%;
+		margin-top: 17px;
+
+		.btn-v2__text {
+			width: 241px;
+		}
+	}
+
+	.freemean-form-privacy label .custom-chb+span {
+		.wpcf7-list-item-label {
+			letter-spacing: normal;
+			font-size: 11px;
+			line-height: 29.6px;
+
+		}
+	}
+
+	.otcomp-privacy.freemean-form-privacy {
+		margin-top: 19px;
+	}
+
+	.otcomp-container {
+		padding-bottom: 93px;
+	}
+
+}
