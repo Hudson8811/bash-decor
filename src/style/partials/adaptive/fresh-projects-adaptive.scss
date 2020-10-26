@@ -1,0 +1,123 @@
+@media screen and (max-width:1700px) {
+
+	.container-fresh-projects {
+		width: 1186px;
+	}
+
+
+}
+
+@media screen and (max-width:1430px) {
+	.fresh-projects {
+		padding-top: 12px;
+		padding-bottom: 69px;
+	}
+
+	.container-fresh-projects {
+		width: 1186px;
+	}
+
+	.freshpr-wrap {
+		margin-top: 46px;
+		margin-bottom: 34px;
+	}
+
+	.freshpr-item {
+		width: calc(50% - 20px);
+		margin-bottom: 34px;
+	}
+
+	.freshpr-wrap-bg-text {
+		letter-spacing: normal;
+		font-size: 249px;
+		line-height: 222px;
+		left: -188px;
+		top: -10px;
+		font-weight: 500;
+	}
+
+	.freshpr-item-bottom {
+		padding: 35px 44px 37px 48px;
+
+		&__size {
+			letter-spacing: normal;
+			font-size: 14px;
+			line-height: 21.35px;
+		}
+
+		&__flex {}
+
+		&__name {
+			letter-spacing: normal;
+			font-size: 20px;
+			line-height: 24.96px;
+			margin-top: 8px;
+		}
+
+		&__more {
+			letter-spacing: normal;
+			font-size: 14px;
+			line-height: 25.77px;
+
+			&:hover {}
+
+			&:active {}
+
+			&:focus {}
+
+		}
+	}
+
+	.freshpr-item__instaInner {
+		max-width: 100%;
+		width: 223px;
+	}
+
+	.foo-socials-item.foo-socials-item--inst {
+		width: 45px;
+		height: 45px;
+		margin-top: 10px;
+	}
+
+	.freshpr-insta-title {
+		font-size: 20px;
+		line-height: 24.96px;
+		margin-top: 10px;
+	}
+
+	.freshpr-insta-300 {
+		font-size: 14px;
+		line-height: 21.35px;
+		margin-top: 15px;
+	}
+
+	.freshpr-insta-a {
+		font-size: 24px;
+		line-height: 24.96px;
+		margin-top: 31px;
+	}
+
+	.freshpr-insta-counter {
+		font-size: 14px;
+		line-height: 21.35px;
+		margin-top: 7px;
+	}
+
+	.freshpr-insta-pic {
+		top: 53%;
+		width: 22.4%;
+	}
+}
+
+@media screen and (max-width:1100px) {
+
+	.container-fresh-projects {
+		width: 960px;
+	}
+
+
+}
+
+@media screen and (max-width:835px) {}
+
+@media screen and (max-width:515px) {}
