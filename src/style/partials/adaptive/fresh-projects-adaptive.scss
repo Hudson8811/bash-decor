@@ -1,10 +1,37 @@
 @media screen and (max-width:1700px) {
-
-	.container-fresh-projects {
-		width: 1186px;
+	.fresh-projects {
+		padding-top: 27px;
 	}
 
+	.freshpr-title {}
 
+	.container-fresh-projects {
+		width: 1472px;
+	}
+
+	.freshpr-wrap {
+		margin-top: 84px;
+	}
+
+	.freshpr-wrap-bg-text {
+		letter-spacing: normal;
+		font-size: 343px;
+		line-height: 306px;
+		top: -184px;
+		font-weight: 500;
+	}
+
+	.freshpr-item-bottom__name {
+		margin-top: 6px;
+	}
+
+	.freshpr-item-bottom {
+		padding-top: 42px;
+	}
+
+	.foo-socials-item.foo-socials-item--inst{
+		margin-top: 7px;
+	}
 }
 
 @media screen and (max-width:1430px) {
@@ -110,10 +137,11 @@
 }
 
 @media screen and (max-width:1100px) {
-
 	.container-fresh-projects {
 		width: 960px;
 	}
+
+
 
 
 }
