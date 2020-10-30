@@ -74,55 +74,304 @@ block main
 									.quiz-get__text <span>Каталог потолков,</span> <br> который подойдут именно вашему дому
 						.quiz-slider-wrap
 							.quiz-steps
-								.quiz-steps__text Шаг 1 из 5
+								.quiz-steps__text Шаг <span class="quiz-steps__current">1</span> из <span class="quiz-steps__all">5</span>
 								.quiz-steps__progress
-									.quiz-steps__progress_finished(style="width:30%;")
-							.quiz-slider
+									.quiz-steps__progress_finished(style="width:0%;")
+							#quiz-slider-1.quiz-slider.js-quiz-slider
 								.quiz-slide
-									.quiz-slide-title Куда Вы планируете  установить потолок?
-									.quiz-flex-3
-										.quiz-flex-3__item
-											input(type="checkbox", name="")
-											.quiz-flex-3__inner
-												.quiz-flex-3__pic
-													img(src="images/products/item-1.jpg", alt="")
-												.quiz-flex-3__title Вся квартира (дом)
-										.quiz-flex-3__item
-											input(type="checkbox", name="")
-											.quiz-flex-3__inner
-												.quiz-flex-3__pic
-													img(src="images/products/item-1.jpg", alt="")
-												.quiz-flex-3__title Вся квартира (дом)
-										.quiz-flex-3__item
-											input(type="checkbox", name="")
-											.quiz-flex-3__inner
-												.quiz-flex-3__pic
-													img(src="images/products/item-1.jpg", alt="")
-												.quiz-flex-3__title Вся квартира (дом)
-										.quiz-flex-3__item
-											input(type="checkbox", name="")
-											.quiz-flex-3__inner
-												.quiz-flex-3__pic
-													img(src="images/products/item-1.jpg", alt="")
-												.quiz-flex-3__title Вся квартира (дом)
-										.quiz-flex-3__item
-											input(type="checkbox", name="")
-											.quiz-flex-3__inner
-												.quiz-flex-3__pic
-													img(src="images/products/item-1.jpg", alt="")
-												.quiz-flex-3__title Вся квартира (дом)
-										.quiz-flex-3__item
-											input(type="checkbox", name="")
-											.quiz-flex-3__inner
-												.quiz-flex-3__pic
-													img(src="images/products/item-1.jpg", alt="")
-												.quiz-flex-3__title Вся квартира (дом)
+									.quiz-slide_inner
+										.quiz-slide-title Куда Вы планируете  установить потолок?
+										.quiz-flex-3
+											label.quiz-flex-3__item
+												input(type="checkbox", name="slide1" checked)
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира (дом)
+											label.quiz-flex-3__item
+												input(type="checkbox", name="slide1")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира (дом)
+											label.quiz-flex-3__item
+												input(type="checkbox", name="slide1")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира (дом)
+											label.quiz-flex-3__item
+												input(type="checkbox", name="slide1")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира (дом)
+											label.quiz-flex-3__item
+												input(type="checkbox", name="slide1")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира (дом)
+											label.quiz-flex-3__item
+												input(type="checkbox", name="slide1")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира (дом)
+
+										.quiz-btn-wrap
+											button.btn-v2.btn-quiz-next.js-quiz-next-slide
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text далее
+								.quiz-slide
+									.quiz-slide_inner
+										.quiz-slide-title Укажите примерную площадь комнат
+										.quiz-inp-sizes
+											.quiz-inp-size
+												.quiz-inp-size__name Кухня
+												.quiz-inp-size__inp
+													.custom-inp-numer.js-custom-inp-numer
+														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
+														.custom-inp-numer__btns
+															.custom-inp-numer__btn.custom-inp-numer__more
+															.custom-inp-numer__btn.custom-inp-numer__less
+												.quiz-inp-size__m м<sup>2</sup>
+											.quiz-inp-size
+												.quiz-inp-size__name Гостиная
+												.quiz-inp-size__inp
+													.custom-inp-numer.js-custom-inp-numer
+														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
+														.custom-inp-numer__btns
+															.custom-inp-numer__btn.custom-inp-numer__more
+															.custom-inp-numer__btn.custom-inp-numer__less
+												.quiz-inp-size__m м<sup>2</sup>
+											.quiz-inp-size
+												.quiz-inp-size__name Коридор
+												.quiz-inp-size__inp
+													.custom-inp-numer.js-custom-inp-numer
+														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
+														.custom-inp-numer__btns
+															.custom-inp-numer__btn.custom-inp-numer__more
+															.custom-inp-numer__btn.custom-inp-numer__less
+												.quiz-inp-size__m м<sup>2</sup>
+											.quiz-inp-size
+												.quiz-inp-size__name Кухня
+												.quiz-inp-size__inp
+													.custom-inp-numer.js-custom-inp-numer
+														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
+														.custom-inp-numer__btns
+															.custom-inp-numer__btn.custom-inp-numer__more
+															.custom-inp-numer__btn.custom-inp-numer__less
+												.quiz-inp-size__m м<sup>2</sup>
+											.quiz-inp-size
+												.quiz-inp-size__name Гостиная
+												.quiz-inp-size__inp
+													.custom-inp-numer.js-custom-inp-numer
+														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
+														.custom-inp-numer__btns
+															.custom-inp-numer__btn.custom-inp-numer__more
+															.custom-inp-numer__btn.custom-inp-numer__less
+												.quiz-inp-size__m м<sup>2</sup>
+											.quiz-inp-size
+												.quiz-inp-size__name Коридор
+												.quiz-inp-size__inp
+													.custom-inp-numer.js-custom-inp-numer
+														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
+														.custom-inp-numer__btns
+															.custom-inp-numer__btn.custom-inp-numer__more
+															.custom-inp-numer__btn.custom-inp-numer__less
+												.quiz-inp-size__m м<sup>2</sup>
+										.quiz-btn-wrap
+											button.btn-v2.btn-v2--gray.btn-v2--gray-with-bottom.btn-quiz-prev.js-quiz-prev-slide
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text назад
+											button.btn-v2.btn-quiz-next.js-quiz-next-slide
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text далее
+								.quiz-slide
+									.quiz-slide_inner
+										.quiz-slide-title Какой потолок Вы хотите?
+										.quiz-flex-3.quiz-flex-3--4
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3" checked)
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Классический белый
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира
+
+										.quiz-btn-wrap
+											button.btn-v2.btn-v2--gray.btn-v2--gray-with-bottom.btn-quiz-prev.js-quiz-prev-slide
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text назад
+											button.btn-v2.btn-quiz-next.js-quiz-next-slide
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text далее
+								.quiz-slide
+									.quiz-slide_inner
+										.quiz-slide-title Выберите фактуру
+										.quiz-flex-3.quiz-flex-3--4
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3" checked)
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Классический белый
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира
+											label.quiz-flex-3__item.quiz-flex-3__item--4
+												input(type="checkbox", name="slide3")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира
+
+										.quiz-btn-wrap
+											button.btn-v2.btn-v2--gray.btn-v2--gray-with-bottom.btn-quiz-prev.js-quiz-prev-slide
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text назад
+											button.btn-v2.btn-quiz-next.js-quiz-next-slide
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text далее
+								.quiz-slide
+									.quiz-slide_inner
+										.quiz-slide-title Укажите дополнительные предпочтения
+										.quiz-flex-3
+											label.quiz-flex-3__item
+												input(type="checkbox", name="slide1" checked)
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира (дом)
+											label.quiz-flex-3__item
+												input(type="checkbox", name="slide1")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира (дом)
+											label.quiz-flex-3__item
+												input(type="checkbox", name="slide1")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира (дом)
+											label.quiz-flex-3__item
+												input(type="checkbox", name="slide1")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира (дом)
+											label.quiz-flex-3__item
+												input(type="checkbox", name="slide1")
+												.quiz-flex-3__inner
+													.quiz-flex-3__pic
+														img(src="images/products/item-1.jpg", alt="")
+													.quiz-flex-3__title Вся квартира (дом)
+
+										.quiz-btn-wrap
+											button.btn-v2.btn-v2--gray.btn-v2--gray-with-bottom.btn-quiz-prev.js-quiz-prev-slide
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text назад
+											button.btn-v2.btn-quiz-next.js-quiz-next-slide
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text далее
+
+								.quiz-slide
+									.quiz-slide_inner
+										.quiz-slide-title Выберите подарок за прохождение теста
+											.quiz-flex-3.quiz-flex-3--4
+												label.quiz-flex-3__item.quiz-flex-3__item--4
+													input(type="checkbox", name="slide3" checked)
+													.quiz-flex-3__inner
+														.quiz-flex-3__pic.quiz-flex-3__pic--gift
+															img(src="images/products/item-1.jpg", alt="")
+															.quiz-pic-gift
+														.quiz-flex-3__title Классический белый
+												label.quiz-flex-3__item.quiz-flex-3__item--4
+													input(type="checkbox", name="slide3")
+													.quiz-flex-3__inner
+														.quiz-flex-3__pic.quiz-flex-3__pic--gift
+															img(src="images/products/item-1.jpg", alt="")
+															.quiz-pic-gift
+														.quiz-flex-3__title Вся квартира
+												label.quiz-flex-3__item.quiz-flex-3__item--4
+													input(type="checkbox", name="slide3")
+													.quiz-flex-3__inner
+														.quiz-flex-3__pic.quiz-flex-3__pic--gift
+															img(src="images/products/item-1.jpg", alt="")
+															.quiz-pic-gift
+														.quiz-flex-3__title Вся квартира
 
 
-										button.btn-v2
-											.btn-v2__inner
-												span.btn-v2__bg
-												span.btn-v2__text далее
+										.quiz-btn-wrap
+											button.btn-v2.btn-v2--gray.btn-v2--gray-with-bottom.btn-quiz-prev.js-quiz-prev-slide
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text назад
+											button.btn-v2.btn-quiz-next.js-quiz-next-slide
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text далее
 		.achievements
 			.container.achievements__container
 				+title('За 15 лет «Башдекор» установил больше потолков, <br> <span>чем все компании Стерлитамака <br> вместе взятые</span>', 'achievements__title')

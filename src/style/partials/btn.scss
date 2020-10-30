@@ -200,6 +200,12 @@
 		}
 	}
 
+	&--gray-with-bottom {
+		&::before {
+			display: block;background-color: #aeaeae;
+		}
+	}
+
 	&--orange {
 
 
