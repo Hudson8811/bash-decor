@@ -145,8 +145,54 @@
 			}
 		}
 
+		.slider-arrow {
+			width: 55px;
+			height: 55px;
+			top: 25%;
+
+			&--prev {
+				left: -24px;
+			}
+
+			&--next {
+				right: -22px;
+			}
+		}
+
 		&__slider {
 			padding: 0;
+		}
+
+		&__slide {
+			border-radius: 0;
+		}
+
+		&__item-img {
+			height: 320px;
+		}
+
+		&__content {
+			padding-bottom: 65px;
+		}
+
+		&__flex {
+			flex-direction: column;
+		}
+
+		&__person {
+			justify-content: flex-start;
+			width: 100%;
+			max-width: 205px;
+			margin: 0 auto;
+
+			+ .team__person {
+				margin-top: 29px;
+			}
+		}
+
+		&__button {
+			height: 59px;
+			font-size: 11px;
 		}
 	}
 }
