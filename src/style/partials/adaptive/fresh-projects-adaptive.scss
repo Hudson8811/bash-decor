@@ -1,10 +1,37 @@
 @media screen and (max-width:1700px) {
-
-	.container-fresh-projects {
-		width: 1186px;
+	.fresh-projects {
+		padding-top: 27px;
 	}
 
+	.freshpr-title {}
 
+	.container-fresh-projects {
+		width: 1472px;
+	}
+
+	.freshpr-wrap {
+		margin-top: 84px;
+	}
+
+	.freshpr-wrap-bg-text {
+		letter-spacing: normal;
+		font-size: 343px;
+		line-height: 306px;
+		top: -184px;
+		font-weight: 500;
+	}
+
+	.freshpr-item-bottom__name {
+		margin-top: 6px;
+	}
+
+	.freshpr-item-bottom {
+		padding-top: 42px;
+	}
+
+	.foo-socials-item.foo-socials-item--inst {
+		margin-top: 7px;
+	}
 }
 
 @media screen and (max-width:1430px) {
@@ -110,14 +137,250 @@
 }
 
 @media screen and (max-width:1100px) {
-
 	.container-fresh-projects {
 		width: 960px;
 	}
 
+	.freshpr-title {
+		letter-spacing: normal;
+		font-size: 40px;
+		line-height: 45px;
+	}
 
+	.fresh-projects {
+		padding-top: 59px;
+		padding-bottom: 43px;
+	}
+
+	.freshpr-wrap {
+		margin-top: 52px;
+	}
+
+	.freshpr-item {
+		width: calc(50% - 16px);
+		margin-bottom: 26px;
+	}
+
+	.freshpr-item-bottom {
+		padding: 20px 33px 30px 38px;
+	}
+
+
+	.freshpr-item-bottom {
+		&__size {
+			letter-spacing: normal;
+			font-size: 12px;
+			line-height: 17.29px;
+			margin-top: 6px;
+		}
+
+		&__flex {}
+
+		&__name {
+			letter-spacing: normal;
+			font-size: 16px;
+			line-height: 20.21px;
+			width: 249px;
+			max-width: calc(100% - 100px);
+		}
+
+		&__more {
+			letter-spacing: normal;
+			font-size: 12px;
+			line-height: 20.87px;
+		}
+	}
+
+
+	.freshpr-item__instaInner {
+		width: 178px;
+	}
+
+	.foo-socials-item.foo-socials-item--inst {
+		width: 37px;
+		height: 37px;
+
+		img {
+			width: 16px;
+		}
+	}
+
+	.freshpr-insta-title {
+		letter-spacing: normal;
+		font-size: 16px;
+		line-height: 20.21px;
+	}
+
+	.freshpr-insta-300 {
+		letter-spacing: normal;
+		font-size: 12px;
+		line-height: 17.29px;
+		margin-top: 11px;
+	}
+
+	.freshpr-insta-a {
+		letter-spacing: normal;
+		font-size: 20px;
+		line-height: 20.21px;
+		margin-top: 24px;
+
+		&:hover {}
+
+		&:active {}
+
+		&:focus {}
+	}
+
+	.freshpr-insta-counter {
+		letter-spacing: normal;
+		font-size: 12px;
+		line-height: 17.29px;
+	}
 }
 
-@media screen and (max-width:835px) {}
+@media screen and (max-width:835px) {
+	.fresh-projects {
+		padding-top: 47px
+	}
 
-@media screen and (max-width:515px) {}
+	.container-fresh-projects {
+		max-width: calc(100% - 30px);
+	}
+
+	.freshpr-title {
+		letter-spacing: normal;
+		font-size: 35px;
+		line-height: 40px;
+		text-align: center;
+		width: 300px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.freshpr-wrap {
+		margin-top: 40px;
+	}
+
+	.freshpr-item {
+		width: calc(50% - 10px);
+		margin-bottom: 18px;
+	}
+
+	.freshpr-item-bottom {
+		&__size {
+			font-size: 7px;
+			line-height: 11px;
+		}
+
+		&__flex {}
+
+		&__name {
+			font-size: 10px;
+			line-height: 12.86px;
+		}
+
+		&__more {
+			font-size: 7px;
+			line-height: 13.28px;
+
+			&:hover {}
+
+			&:active {}
+
+			&:focus {}
+		}
+	}
+
+	.freshpr-item-bottom__name {
+		margin-top: 5px;
+	}
+
+	.freshpr-item-bottom {
+		padding: 12px 21px 18px 25px;
+	}
+
+
+	.freshpr-item--insta {}
+
+	.freshpr-item__instaInner {
+		justify-content: flex-start;
+		width: 137px;
+	}
+
+	.foo-socials-item.foo-socials-item--inst {
+		width: 29px;
+		height: 29px;
+		margin: 0;
+
+		img {
+			width: 12px;
+		}
+	}
+
+	.freshpr-insta-title {
+		letter-spacing: normal;
+		font-size: 13px;
+		line-height: 15.8px;
+	}
+
+	.freshpr-insta-300 {
+		letter-spacing: normal;
+		font-size: 9px;
+		line-height: 13.51px;
+	}
+
+	.freshpr-insta-a {
+		letter-spacing: normal;
+		font-size: 15px;
+		line-height: 15.8px;
+
+		margin-top: 19px;
+	}
+
+	.freshpr-insta-counter {
+		letter-spacing: normal;
+		font-size: 9px;
+		line-height: 13.51px;
+		margin-top: 4px;
+	}
+
+	.freshpr-insta-pic {}
+
+	.freshpr-wrap-bg-text {
+		display: none;
+	}
+}
+
+@media screen and (max-width:515px) {
+	.fresh-projects {
+		padding-top: 23px;
+	}
+
+	.freshpr-title {
+		letter-spacing: normal;
+		font-size: 23px;
+		width: 271px;
+		line-height: 26px;
+	}
+
+	.freshpr-item {
+		margin-bottom: 30px;
+		width: 100%;
+	}
+
+	.freshpr-wrap {
+		margin-top: 31px;
+	}
+
+	.freshpr-insta-title {
+		margin-top: 7px;
+	}
+
+	.freshpr-item--insta {
+		padding-bottom: 27px;
+		padding-top: 26px;
+	}
+	.fresh-projects {
+		padding-bottom: 9px;
+	}
+}
