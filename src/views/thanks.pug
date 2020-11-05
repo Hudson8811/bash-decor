@@ -1,0 +1,64 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+		title: 'index.html'
+		};
+
+
+
+
+block main
+	.thanks
+		.container.thanks__container
+			.thanks__title Мы получили ваш запрос <br> и вскоре пришлем варианты цен
+			.thanks__flex
+				.thanks__left
+					.thanks__pic-wrapper
+						.thanks__pic
+							img(src="images/thanks/founder.jpg" alt='')
+						.play
+							.pulse.pulse-1
+							.pulse.pulse-2
+							.pulse.pulse-3
+							.pulse.pulse-4
+							.pulse-core
+								img(src='img/play.png' alt='play')
+						.s10
+							.s10__info
+								.s10__info-inner
+									.s10__info-name Айдар Галимов
+									.s10__info-text
+										span Основатель
+										img.s10__info-logo(src="images/logo.png")
+				.thanks__right
+					.thanks__text
+						p Спасибо за оказанное доверие!
+						p В знак благодарности предлагаю <span>Вам доп. скидку 10%</span> на тот потолок, что вы выберете в каталоге!
+						p Пригласите к себе замерщика. Он рассчитает точную стоимость потолка <br> у Вас дома. Это ни к чему Вас не обязывает! Вы просто получите точный расчет стоимости и возможность получить скидку 10%.
+					.thanks__flex-inner
+						.freemean-form-wrap-2
+							form(action="")
+								.freemean-form-inner
+									.freemean-form-title Давайте договоримся об удобном для вас времени
+									.freemean-form-flex
+										input.input.input--gray.freemean-form-input(type='text' name='address' placeholder='введите ваш адрес')
+										input.input.input--gray.freemean-form-input(type='text' name='time' placeholder='введите удобное время')
+									.freemean-form-privacy.freemean-form-privacy--sec-freemean
+										.freemean-form-flex
+											button.btn-v2.freemean-form-btn
+												.btn-v2__inner
+													span.btn-v2__bg
+													span.btn-v2__text договориться о времени
+											label
+												input(type="checkbox" name="acceptance-569" value="1" aria-invalid="false" checked  class="custom-chb")
+												span.wpcf7-list-item-label
+													span.wpcf7-list-item-label
+														span.acceptance-text Согласен с <a href="/privacy-policy/" target="_blank">Политикой конфиденциальности <span class="acceptance-text__site">сайта</span></a>
+						.thanks__timer
+							.timer(data-time-out="2020-11-04T00:00:00")
+								.timer__pic
+									img(src="images/thanks/clock.png" alt='')
+								.timer__title Предложение <br> действует <span>30 минут</span>
+								.timer__time <span class="js-stock-countdown-m">29</span>:<span class="js-stock-countdown-s">58</span>

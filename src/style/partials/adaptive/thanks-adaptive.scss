@@ -1,0 +1,431 @@
+@media (max-width: 1600px) {
+	.thanks {
+		.s10 {
+			bottom: -32px;
+
+			&__info {
+				width: 264px;
+				min-height: 108px;
+				margin-left: 0;
+			}
+
+			&__info-name {
+				font-size: 14px;
+				line-height: 20px;
+			}
+
+			&__info-text span {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+
+		.play {
+			width: 104px;
+			height: 104px;
+
+			.pulse-core img {
+				width: 20%;
+			}
+		}
+	}
+}
+
+@media (max-width: 1430px) {
+	.thanks {
+		.freemean-form-wrap-2 {
+			margin-right: 33px;
+		}
+
+		.freemean-form-flex {
+			margin: 26px -5px 0;
+		}
+
+		.freemean-form-input {
+			width: calc(50% - 10px);
+			margin: 0 5px;
+			padding: 0 27px;
+			font-size: 10px;
+			letter-spacing: 0.3px;
+		}
+
+		.freemean-form-btn {
+			width: calc(50% - 10px);
+			margin: 0 5px;
+		}
+
+		.freemean-form-privacy--sec-freemean {
+			margin-right: 0;
+
+			.freemean-form-flex {
+				margin-top: 20px;
+			}
+
+			label {
+				width: calc(50% - 10px);
+				margin: 0 5px;
+
+				.custom-chb + span::before {
+					top: 6px;
+				}
+
+				.custom-chb + span::after {
+					top: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.thanks {
+		.freemean-form-title {
+			width: 265px;
+			font-size: 20px;
+			line-height: 24.66px;
+		}
+
+		&__container {
+			padding: 196px 0 100px;
+		}
+
+		&__title {
+			font-size: 45px;
+			line-height: 51.36px;
+			margin-bottom: 54px;
+		}
+
+		&__pic {
+			margin-top: 20px;
+			height: 437px;
+		}
+
+		&__flex {
+			display: flex;
+			margin: 0 -22px;
+		}
+
+		&__left,
+		&__right {
+			margin: 0 22px;
+		}
+
+		&__left {
+			width: calc(50.3% - 44px);
+		}
+
+		&__right {
+			width: calc(49.7% - 44px);
+		}
+
+		&__text {
+			margin-bottom: 44px;
+
+			p {
+				&:first-child {
+					font-size: 18px;
+					margin-bottom: 14px;
+				}
+
+				&:nth-child(2) {
+					font-size: 24px;
+					line-height: 30px;
+					margin-bottom: 14px;
+
+					span {
+						font-weight: 500;
+					}
+				}
+
+				&:last-child {
+					font-size: 15px;
+					line-height: 22.08px;
+
+					br {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&__flex-inner {
+			flex-wrap: wrap;
+		}
+
+		&__timer {
+			width: 100%;
+		}
+
+		.timer {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 401px;
+			padding: 22px 24px 18px;
+			margin-top: 49px;
+
+			&__pic {
+				width: 42px;
+				position: relative;
+				bottom: auto;
+				right: auto;
+				margin-right: 22px;
+			}
+
+			&__title {
+				font-size: 15px;
+				line-height: 20.64px;
+				margin-right: 26px;
+			}
+
+			&__time {
+				font-size: 37px;
+				max-width: 105px;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.thanks {
+		.s10 {
+			bottom: -27px;
+
+			&__info {
+				width: 249px;
+				min-height: 102px;
+				margin-left: 0;
+				padding: 33px 15px 25px;
+			}
+
+			&__info-name {
+				font-size: 13px;
+				line-height: 18.84px;
+			}
+
+			&__info-text span {
+				font-size: 13px;
+				line-height: 18.84px;
+			}
+		}
+
+		.freemean-form-flex {
+			margin: 22px -5px 0;
+		}
+
+		.freemean-form-wrap-2 {
+			max-width: 425px;
+		}
+
+		&__container {
+			padding: 161px 0 114px;
+		}
+
+		&__title {
+			font-size: 34px;
+			line-height: 38.95px;
+			margin-bottom: 46px;
+		}
+
+		&__flex {
+			flex-direction: column;
+			margin: 0;
+		}
+
+		&__left,
+		&__right {
+			width: 100%;
+			margin: 0;
+		}
+
+		&__left {
+			width: 74%;
+			margin: 44px auto 0;
+			order: 1;
+		}
+
+		&__pic {
+			height: 412px;
+		}
+
+		&__text {
+			max-width: 540px;
+			margin-bottom: 54px;
+		}
+
+		&__timer {
+			width: auto;
+		}
+
+		.play {
+			width: 99px;
+			height: 99px;
+
+			.pulse-core img {
+				width: 18%;
+			}
+		}
+
+		.timer {
+			max-width: 141px;
+			flex-direction: column;
+			padding: 38px 19px 48px;
+			margin-top: 0;
+
+			&__title {
+				font-size: 12px;
+				line-height: 16px;
+				margin-right: 0;
+			}
+
+			&__pic {
+				width: 51px;
+				position: absolute;
+				bottom: -23px;
+				right: 0;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.thanks {
+		.s10 {
+			bottom: -59px;
+
+			&__info {
+				width: 293px;
+				min-height: 119px;
+				margin-left: 0;
+				padding: 33px 15px 25px;
+			}
+
+			&__info-name {
+				font-size: 15px;
+				line-height: 22.14px;
+			}
+
+			&__info-text span {
+				font-size: 15px;
+				line-height: 22.14px;
+			}
+		}
+
+		.freemean-form-wrap-2 {
+			max-width: 100%;
+			margin-right: 0;
+		}
+
+		.freemean-form-inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.freemean-form-title {
+			margin: 0 auto;
+		}
+
+		.freemean-form-flex {
+			width: 100%;
+			margin: 27px 0 0;
+		}
+
+		.freemean-form-input {
+			width: calc(100% - 36px);
+			margin: 0 auto;
+			letter-spacing: 1.38px;
+
+			+ .freemean-form-input {
+				margin-top: 14px;
+			}
+		}
+
+		.freemean-form-privacy--sec-freemean {
+			.freemean-form-flex {
+				flex-direction: column;
+				margin-top: 2px;
+			}
+
+			label {
+				width: 64%;
+				margin: 16px auto 0;
+
+				.wpcf7-list-item-label {
+					line-height: 17.73px;
+				}
+
+				.custom-chb + span .wpcf7-list-item-label {
+					font-size: 12px;
+					line-height: 19px !important;
+				}
+			}
+		}
+
+		.freemean-form-btn {
+			max-width: 100%;
+			width: 100%;
+			margin: 0;
+		}
+
+		&__container {
+			padding: 207px 0 173px;
+		}
+
+		&__left {
+			width: 100%;
+			margin-top: 48px;
+		}
+
+		&__pic {}
+
+		&__title {
+			display: none;
+		}
+
+		&__text {
+			text-align: center;
+			margin-bottom: 35px;
+
+			p {
+				&:nth-child(2) {
+					font-size: 21px;
+					line-height: 27.3px;
+					margin-bottom: 19px;
+				}
+			}
+		}
+
+		&__timer {
+			width: 100%;
+			margin-top: 28px;
+		}
+
+		.timer {
+			max-width: 100%;
+			flex-direction: row;
+			padding: 23px 13px 15px 19px;
+			justify-content: space-between;
+
+			&__pic {
+				width: 40px;
+				right: auto;
+				bottom: auto;
+				top: -22px;
+				left: -9px;
+			}
+
+			&__title {
+				font-size: 14px;
+				line-height: 19.6px;
+			}
+
+			&__time {
+				font-size: 35px;
+			}
+		}
+	}
+}
