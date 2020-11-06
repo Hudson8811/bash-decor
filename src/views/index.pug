@@ -10,7 +10,9 @@ block vars
 
 
 block main
-	.first-screen(style='background-image: url("images/bg-first.jpg");')
+	include partials/sidebar.pug
+
+	#first-screen.first-screen(style='background-image: url("images/bg-first.jpg");')
 		.container.first-screen__container
 			.first-screen__man
 				picture
@@ -50,7 +52,7 @@ block main
 							img(src='images/advantages/item-3.png' alt='advantages-3')
 						p Устанавливаем потолки строго по государственным стандартам. <br> <span>Средний опыт монтажников «Башдекор» - 4,5 года</span>
 
-		.quiz
+		#quiz.quiz
 			.container.quiz__container
 				+title('Рассчитайте стоимость <br> натяжных потолков с установкой, <br> <span>ответив на 5 вопросов за 1 минуту</span>', 'quiz__title')
 				.quiz__outer
@@ -503,7 +505,7 @@ block main
 						img(src='images/catalog.png' alt='catalog')
 						p Это не все модели потолков, что у нас есть
 
-	.catalog
+	#catalog.catalog
 		.catalog__bg
 			picture
 				source(media='(max-width: 640px)', srcset='images/bg-catalog-3.png')

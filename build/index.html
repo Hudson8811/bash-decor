@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?2020105142031477" rel="stylesheet">
+    <link href="css/main.css?202010612637117" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -45,7 +45,32 @@
       </div>
     </header>
     <main class="main">
-      <div class="first-screen" style="background-image: url(&quot;images/bg-first.jpg&quot;);">
+      <div class="sidebar"><a class="sidebar__item anchor" href="#quiz">
+          <figure>
+            <svg>
+              <use xlink:href="./svg/sprite.svg#calculator"></use>
+            </svg>
+            <p><span>Рассчитать</span> стоимость</p>
+          </figure></a><a class="sidebar__item anchor" href="#support">
+          <figure>
+            <svg>
+              <use xlink:href="./svg/sprite.svg#support"></use>
+            </svg>
+            <p><span>Консультация</span> специалиста</p>
+          </figure></a><a class="sidebar__item anchor" href="#catalog">
+          <figure>
+            <svg>
+              <use xlink:href="./svg/sprite.svg#catalog"></use>
+            </svg>
+            <p><span>Каталог потолков <br> </span> с ценами</p>
+          </figure></a><a class="sidebar__item sidebar__item--up anchor" href="#first-screen">
+          <figure>
+            <svg>
+              <use xlink:href="./svg/sprite.svg#arrow"></use>
+            </svg>
+            <p><span>Наверх</span></p>
+          </figure></a></div>
+      <div class="first-screen" id="first-screen" style="background-image: url(&quot;images/bg-first.jpg&quot;);">
         <div class="container first-screen__container">
           <div class="first-screen__man">
             <picture>
@@ -133,7 +158,7 @@
             </div>
           </div>
         </div>
-        <div class="quiz">
+        <div class="quiz" id="quiz">
           <div class="container quiz__container">
             <div class="title quiz__title">Рассчитайте стоимость <br> натяжных потолков с установкой, <br> <span>ответив на 5 вопросов за 1 минуту</span></div>
             <div class="quiz__outer">
@@ -688,7 +713,7 @@
           </div>
         </div>
       </div>
-      <div class="catalog">
+      <div class="catalog" id="catalog">
         <div class="catalog__bg">
           <picture>
             <source media="(max-width: 640px)" srcset="images/bg-catalog-3.png">
@@ -1133,7 +1158,7 @@
           <div class="reviews-loadmore reviews-loadmore--loading"><span>Посмотреть еще</span></div>
         </div>
       </div>
-      <div class="section-other-company">
+      <div class="section-other-company" id="support">
         <div class="otcomp-container">
           <div class="otcomp-left">
             <h2 class="otcomp-title"><b>Уже получили смету на&nbsp;потолок</b> от другой компании?</h2>
@@ -1425,6 +1450,6 @@
         </div>
       </footer>
     </main>
-    <script src="js/main.js?2020105142031477"></script>
+    <script src="js/main.js?202010612637117"></script>
   </body>
 </html>

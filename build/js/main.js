@@ -325,7 +325,7 @@ $(document).ready(function () {
 		});
 		$('.js-quiz-slider').slick({
 			infinite: false,
-			initialSlide: 1,
+			//initialSlide: 1,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: false,
