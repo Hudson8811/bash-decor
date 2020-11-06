@@ -80,46 +80,46 @@ block main
 								.quiz-steps__progress
 									.quiz-steps__progress_finished(style="width:0%;")
 							#quiz-slider-1.quiz-slider.js-quiz-slider
-								.quiz-slide
+								.quiz-slide.js-num-place
 									.quiz-slide_inner
 										.quiz-slide-title Куда Вы планируете  установить потолок?
 										.quiz-flex-3
 											label.quiz-flex-3__item
-												input(type="checkbox", name="slide1" checked)
+												input(type="checkbox", id="house", name="slide1" checked)
 												.quiz-flex-3__inner
 													.quiz-flex-3__pic
 														img(src="images/products/item-1.jpg", alt="")
 													.quiz-flex-3__title Вся квартира (дом)
 											label.quiz-flex-3__item
-												input(type="checkbox", name="slide1")
+												input(type="checkbox", id="living-room", name="slide1")
 												.quiz-flex-3__inner
 													.quiz-flex-3__pic
 														img(src="images/products/item-1.jpg", alt="")
-													.quiz-flex-3__title Вся квартира (дом)
+													.quiz-flex-3__title Гостиная (Зал)
 											label.quiz-flex-3__item
-												input(type="checkbox", name="slide1")
+												input(type="checkbox", id="bathroom", name="slide1")
 												.quiz-flex-3__inner
 													.quiz-flex-3__pic
 														img(src="images/products/item-1.jpg", alt="")
-													.quiz-flex-3__title Вся квартира (дом)
+													.quiz-flex-3__title Ванная / Туалет
 											label.quiz-flex-3__item
-												input(type="checkbox", name="slide1")
+												input(type="checkbox", id="kitchen", name="slide1")
 												.quiz-flex-3__inner
 													.quiz-flex-3__pic
 														img(src="images/products/item-1.jpg", alt="")
-													.quiz-flex-3__title Вся квартира (дом)
+													.quiz-flex-3__title Кухня
 											label.quiz-flex-3__item
-												input(type="checkbox", name="slide1")
+												input(type="checkbox", id="hall", name="slide1")
 												.quiz-flex-3__inner
 													.quiz-flex-3__pic
 														img(src="images/products/item-1.jpg", alt="")
-													.quiz-flex-3__title Вся квартира (дом)
+													.quiz-flex-3__title Коридор
 											label.quiz-flex-3__item
-												input(type="checkbox", name="slide1")
+												input(type="checkbox", id="other", name="slide1")
 												.quiz-flex-3__inner
 													.quiz-flex-3__pic
 														img(src="images/products/item-1.jpg", alt="")
-													.quiz-flex-3__title Вся квартира (дом)
+													.quiz-flex-3__title Другие комнаты
 
 										.quiz-btn-wrap
 											button.btn-v2.btn-quiz-next.js-quiz-next-slide
@@ -130,7 +130,34 @@ block main
 									.quiz-slide_inner
 										.quiz-slide-title Укажите примерную площадь комнат
 										.quiz-inp-sizes
-											.quiz-inp-size
+											.quiz-inp-size(data-place='house' style='display: flex')
+												.quiz-inp-size__name Вся квартира (дом)
+												.quiz-inp-size__inp
+													.custom-inp-numer.js-custom-inp-numer
+														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
+														.custom-inp-numer__btns
+															.custom-inp-numer__btn.custom-inp-numer__more
+															.custom-inp-numer__btn.custom-inp-numer__less
+												.quiz-inp-size__m м<sup>2</sup>
+											.quiz-inp-size(data-place='living-room')
+												.quiz-inp-size__name Гостиная (Зал)
+												.quiz-inp-size__inp
+													.custom-inp-numer.js-custom-inp-numer
+														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
+														.custom-inp-numer__btns
+															.custom-inp-numer__btn.custom-inp-numer__more
+															.custom-inp-numer__btn.custom-inp-numer__less
+												.quiz-inp-size__m м<sup>2</sup>
+											.quiz-inp-size(data-place='bathroom')
+												.quiz-inp-size__name Ванная / Туалет
+												.quiz-inp-size__inp
+													.custom-inp-numer.js-custom-inp-numer
+														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
+														.custom-inp-numer__btns
+															.custom-inp-numer__btn.custom-inp-numer__more
+															.custom-inp-numer__btn.custom-inp-numer__less
+												.quiz-inp-size__m м<sup>2</sup>
+											.quiz-inp-size(data-place='kitchen')
 												.quiz-inp-size__name Кухня
 												.quiz-inp-size__inp
 													.custom-inp-numer.js-custom-inp-numer
@@ -139,16 +166,7 @@ block main
 															.custom-inp-numer__btn.custom-inp-numer__more
 															.custom-inp-numer__btn.custom-inp-numer__less
 												.quiz-inp-size__m м<sup>2</sup>
-											.quiz-inp-size
-												.quiz-inp-size__name Гостиная
-												.quiz-inp-size__inp
-													.custom-inp-numer.js-custom-inp-numer
-														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
-														.custom-inp-numer__btns
-															.custom-inp-numer__btn.custom-inp-numer__more
-															.custom-inp-numer__btn.custom-inp-numer__less
-												.quiz-inp-size__m м<sup>2</sup>
-											.quiz-inp-size
+											.quiz-inp-size(data-place='hall')
 												.quiz-inp-size__name Коридор
 												.quiz-inp-size__inp
 													.custom-inp-numer.js-custom-inp-numer
@@ -157,26 +175,8 @@ block main
 															.custom-inp-numer__btn.custom-inp-numer__more
 															.custom-inp-numer__btn.custom-inp-numer__less
 												.quiz-inp-size__m м<sup>2</sup>
-											.quiz-inp-size
-												.quiz-inp-size__name Кухня
-												.quiz-inp-size__inp
-													.custom-inp-numer.js-custom-inp-numer
-														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
-														.custom-inp-numer__btns
-															.custom-inp-numer__btn.custom-inp-numer__more
-															.custom-inp-numer__btn.custom-inp-numer__less
-												.quiz-inp-size__m м<sup>2</sup>
-											.quiz-inp-size
-												.quiz-inp-size__name Гостиная
-												.quiz-inp-size__inp
-													.custom-inp-numer.js-custom-inp-numer
-														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
-														.custom-inp-numer__btns
-															.custom-inp-numer__btn.custom-inp-numer__more
-															.custom-inp-numer__btn.custom-inp-numer__less
-												.quiz-inp-size__m м<sup>2</sup>
-											.quiz-inp-size
-												.quiz-inp-size__name Коридор
+											.quiz-inp-size(data-place='other')
+												.quiz-inp-size__name Другие комнаты
 												.quiz-inp-size__inp
 													.custom-inp-numer.js-custom-inp-numer
 														input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")

@@ -383,7 +383,16 @@ $(document).ready(function () {
 		inp.val(parseInt(inp.val())-1>0?parseInt(inp.val())-1:0);
 	});
 
+	$('.js-num-place .quiz-flex-3__item').change(function () {
+		var place = $(this).find('input'),
+				numBlock = $('.quiz-inp-size[data-place="' + place.attr('id') + '"]');
 
+		if (place.prop('checked')) {
+			numBlock.css('display', 'flex');
+		} else {
+			numBlock.hide();
+		}
+	})
 
 
 });

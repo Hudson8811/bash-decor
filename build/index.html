@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?202010612637117" rel="stylesheet">
+    <link href="css/main.css?2020106155714605" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -192,50 +192,50 @@
                     </div>
                   </div>
                   <div class="quiz-slider js-quiz-slider" id="quiz-slider-1">
-                    <div class="quiz-slide">
+                    <div class="quiz-slide js-num-place">
                       <div class="quiz-slide_inner">
                         <div class="quiz-slide-title">Куда Вы планируете  установить потолок?</div>
                         <div class="quiz-flex-3">
                           <label class="quiz-flex-3__item">
-                            <input type="checkbox" name="slide1" checked>
+                            <input type="checkbox" id="house" name="slide1" checked>
                             <div class="quiz-flex-3__inner">
                               <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
                               <div class="quiz-flex-3__title">Вся квартира (дом)</div>
                             </div>
                           </label>
                           <label class="quiz-flex-3__item">
-                            <input type="checkbox" name="slide1">
+                            <input type="checkbox" id="living-room" name="slide1">
                             <div class="quiz-flex-3__inner">
                               <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
-                              <div class="quiz-flex-3__title">Вся квартира (дом)</div>
+                              <div class="quiz-flex-3__title">Гостиная (Зал)</div>
                             </div>
                           </label>
                           <label class="quiz-flex-3__item">
-                            <input type="checkbox" name="slide1">
+                            <input type="checkbox" id="bathroom" name="slide1">
                             <div class="quiz-flex-3__inner">
                               <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
-                              <div class="quiz-flex-3__title">Вся квартира (дом)</div>
+                              <div class="quiz-flex-3__title">Ванная / Туалет</div>
                             </div>
                           </label>
                           <label class="quiz-flex-3__item">
-                            <input type="checkbox" name="slide1">
+                            <input type="checkbox" id="kitchen" name="slide1">
                             <div class="quiz-flex-3__inner">
                               <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
-                              <div class="quiz-flex-3__title">Вся квартира (дом)</div>
+                              <div class="quiz-flex-3__title">Кухня</div>
                             </div>
                           </label>
                           <label class="quiz-flex-3__item">
-                            <input type="checkbox" name="slide1">
+                            <input type="checkbox" id="hall" name="slide1">
                             <div class="quiz-flex-3__inner">
                               <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
-                              <div class="quiz-flex-3__title">Вся квартира (дом)</div>
+                              <div class="quiz-flex-3__title">Коридор</div>
                             </div>
                           </label>
                           <label class="quiz-flex-3__item">
-                            <input type="checkbox" name="slide1">
+                            <input type="checkbox" id="other" name="slide1">
                             <div class="quiz-flex-3__inner">
                               <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
-                              <div class="quiz-flex-3__title">Вся квартира (дом)</div>
+                              <div class="quiz-flex-3__title">Другие комнаты</div>
                             </div>
                           </label>
                         </div>
@@ -250,7 +250,46 @@
                       <div class="quiz-slide_inner">
                         <div class="quiz-slide-title">Укажите примерную площадь комнат</div>
                         <div class="quiz-inp-sizes">
-                          <div class="quiz-inp-size">
+                          <div class="quiz-inp-size" data-place="house" style="display: flex">
+                            <div class="quiz-inp-size__name">Вся квартира (дом)</div>
+                            <div class="quiz-inp-size__inp">
+                              <div class="custom-inp-numer js-custom-inp-numer">
+                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
+                                <div class="custom-inp-numer__btns">
+                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
+                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
+                          </div>
+                          <div class="quiz-inp-size" data-place="living-room">
+                            <div class="quiz-inp-size__name">Гостиная (Зал)</div>
+                            <div class="quiz-inp-size__inp">
+                              <div class="custom-inp-numer js-custom-inp-numer">
+                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
+                                <div class="custom-inp-numer__btns">
+                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
+                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
+                          </div>
+                          <div class="quiz-inp-size" data-place="bathroom">
+                            <div class="quiz-inp-size__name">Ванная / Туалет</div>
+                            <div class="quiz-inp-size__inp">
+                              <div class="custom-inp-numer js-custom-inp-numer">
+                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
+                                <div class="custom-inp-numer__btns">
+                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
+                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
+                          </div>
+                          <div class="quiz-inp-size" data-place="kitchen">
                             <div class="quiz-inp-size__name">Кухня</div>
                             <div class="quiz-inp-size__inp">
                               <div class="custom-inp-numer js-custom-inp-numer">
@@ -263,20 +302,7 @@
                             </div>
                             <div class="quiz-inp-size__m">м<sup>2</sup></div>
                           </div>
-                          <div class="quiz-inp-size">
-                            <div class="quiz-inp-size__name">Гостиная</div>
-                            <div class="quiz-inp-size__inp">
-                              <div class="custom-inp-numer js-custom-inp-numer">
-                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
-                                <div class="custom-inp-numer__btns">
-                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
-                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
-                          </div>
-                          <div class="quiz-inp-size">
+                          <div class="quiz-inp-size" data-place="hall">
                             <div class="quiz-inp-size__name">Коридор</div>
                             <div class="quiz-inp-size__inp">
                               <div class="custom-inp-numer js-custom-inp-numer">
@@ -289,34 +315,8 @@
                             </div>
                             <div class="quiz-inp-size__m">м<sup>2</sup></div>
                           </div>
-                          <div class="quiz-inp-size">
-                            <div class="quiz-inp-size__name">Кухня</div>
-                            <div class="quiz-inp-size__inp">
-                              <div class="custom-inp-numer js-custom-inp-numer">
-                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
-                                <div class="custom-inp-numer__btns">
-                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
-                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
-                          </div>
-                          <div class="quiz-inp-size">
-                            <div class="quiz-inp-size__name">Гостиная</div>
-                            <div class="quiz-inp-size__inp">
-                              <div class="custom-inp-numer js-custom-inp-numer">
-                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
-                                <div class="custom-inp-numer__btns">
-                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
-                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
-                          </div>
-                          <div class="quiz-inp-size">
-                            <div class="quiz-inp-size__name">Коридор</div>
+                          <div class="quiz-inp-size" data-place="other">
+                            <div class="quiz-inp-size__name">Другие комнаты</div>
                             <div class="quiz-inp-size__inp">
                               <div class="custom-inp-numer js-custom-inp-numer">
                                 <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
@@ -1450,6 +1450,6 @@
         </div>
       </footer>
     </main>
-    <script src="js/main.js?202010612637117"></script>
+    <script src="js/main.js?2020106155714605"></script>
   </body>
 </html>
