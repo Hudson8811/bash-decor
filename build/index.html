@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?2020106155714605" rel="stylesheet">
+    <link href="css/main.css?2020109161754148" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -16,7 +16,7 @@
       <div class="container header__container">
         <div class="header__logo"><img src="images/logo.png" alt="logo"></div>
         <div class="header__whats-done">Смонтировали >30 000 натяжных потолков <br> <span>в Стерлитамаке с 2005 года</span></div>
-        <div class="header__catalog"><img src="images/catalog.png" alt="catalog"><a href="#">Скачать каталог</a></div>
+        <div class="header__catalog"><img src="images/catalog.png" alt="catalog"><a href="#popup-catalog">Скачать каталог</a></div>
         <div class="header__contacts">Задайте вопрос в мессенджере:
           <div class="header__socials"><a class="header__socials-icon" href="#">
               <svg>
@@ -32,7 +32,7 @@
           </svg></a>
       </div>
       <div class="header-menu">
-        <div class="header__catalog"><img src="images/catalog.png" alt="catalog"><a href="#">Скачать каталог</a></div><a class="header__phone" href="tel:+79874919455">+7(987) 491-94-55</a>
+        <div class="header__catalog"><img src="images/catalog.png" alt="catalog"><a href="#popup-catalog">Скачать каталог</a></div><a class="header__phone" href="tel:+79874919455">+7(987) 491-94-55</a>
         <div class="header__contacts">Задайте вопрос в мессенджере:
           <div class="header__socials"><a class="header__socials-icon" href="#">
               <svg>
@@ -546,6 +546,58 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popup popup--quiz" style="background-image: url(images/bg-clouds.jpg);">
+                <div class="popup__flex">
+                  <div class="popup__left">
+                    <picture>
+                      <source media="(max-width: 960px)" srcset="images/popup/phone.png"><img src="images/popup/phone.png" alt="phone">
+                    </picture>
+                  </div>
+                  <div class="popup__right">
+                    <div class="popup__subtitle">Мы получили ваши данные и приступили к расчету</div>
+                    <div class="popup__title">В течение 20 минут вышлем <br> <span>3 варианта сметы со скидкой</span> до 50% + каталог потолков</div>
+                    <form class="form" action="" method="POST">
+                      <div class="form__wrapper">
+                        <div class="form__socials">
+                          <label class="form__socials-item">
+                            <input type="checkbox">
+                            <svg>
+                              <use xlink:href="./svg/sprite.svg#socials--viber"></use>
+                            </svg><span>Viber</span>
+                          </label>
+                          <label class="form__socials-item">
+                            <input type="checkbox">
+                            <svg>
+                              <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
+                            </svg><span>Telegram</span>
+                          </label>
+                          <label class="form__socials-item">
+                            <input type="checkbox">
+                            <svg>
+                              <use xlink:href="./svg/sprite.svg#socials--wa"></use>
+                            </svg><span>WhatsApp</span>
+                          </label>
+                          <label class="form__socials-item">
+                            <input type="checkbox">
+                            <svg>
+                              <use xlink:href="./svg/sprite.svg#socials--phone"></use>
+                            </svg><span>По телефону</span>
+                          </label>
+                        </div>
+                        <div class="popup__form-flex">
+                          <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
+                          <div class="popup__block">
+                            <div class="btn-v2">
+                              <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">получить 3 варианта со скидкой</span></div>
+                            </div>
+                            <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -1450,6 +1502,57 @@
         </div>
       </footer>
     </main>
-    <script src="js/main.js?2020106155714605"></script>
+    <div class="popup" id="popup-catalog" style="display: none; background-image: url(images/bg-clouds.jpg);">
+      <picture>
+        <source media="(max-width: 960px)" srcset="images/popup/catalog-2.png"><img src="images/popup/catalog.png" alt="catalog">
+      </picture>
+      <div class="popup__title">Вместе с каталогом <br> Вы получите скидку <br> <span>до 50% на все модели</span></div>
+      <div class="popup__subtitle">Куда прислать ссылку на каталог?</div>
+      <form class="form" action="" method="POST">
+        <div class="form__wrapper">
+          <div class="form__socials">
+            <label class="form__socials-item">
+              <input type="checkbox">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--viber"></use>
+              </svg><span>Viber</span>
+            </label>
+            <label class="form__socials-item">
+              <input type="checkbox">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
+              </svg><span>Telegram</span>
+            </label>
+            <label class="form__socials-item">
+              <input type="checkbox">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--wa"></use>
+              </svg><span>WhatsApp</span>
+            </label>
+            <label class="form__socials-item">
+              <input type="checkbox">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--phone"></use>
+              </svg><span>По телефону</span>
+            </label>
+          </div>
+          <div class="popup__form-flex">
+            <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
+            <div class="popup__block">
+              <div class="btn-v2">
+                <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Получить каталог <br> и забронировать скидку до 50%</span></div>
+              </div>
+              <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
+            </div>
+            <div class="note">
+              <div class="note__inner">
+                <p>Также мы <span>закрепим <br> за вашими контактами</span> скидку</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/main.js?2020109161754148"></script>
   </body>
 </html>

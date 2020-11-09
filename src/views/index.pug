@@ -374,6 +374,46 @@ block main
 												.btn-v2__inner
 													span.btn-v2__bg
 													span.btn-v2__text далее
+					.popup.popup--quiz(style='background-image: url(images/bg-clouds.jpg);')
+						.popup__flex
+							.popup__left
+								picture
+									source(media='(max-width: 960px)', srcset='images/popup/phone.png')
+									img(src='images/popup/phone.png' alt='phone')
+							.popup__right
+								.popup__subtitle Мы получили ваши данные и приступили к расчету
+								.popup__title В течение 20 минут вышлем <br> <span>3 варианта сметы со скидкой</span> до 50% + каталог потолков
+								form.form(action='', method='POST')
+									.form__wrapper
+										.form__socials
+											label.form__socials-item
+												input(type='checkbox')
+												svg
+													use(xlink:href='./svg/sprite.svg#socials--viber')
+												span Viber
+											label.form__socials-item
+												input(type='checkbox')
+												svg
+													use(xlink:href='./svg/sprite.svg#socials--telegram')
+												span Telegram
+											label.form__socials-item
+												input(type='checkbox')
+												svg
+													use(xlink:href='./svg/sprite.svg#socials--wa')
+												span WhatsApp
+											label.form__socials-item
+												input(type='checkbox')
+												svg
+													use(xlink:href='./svg/sprite.svg#socials--phone')
+												span По телефону
+										.popup__form-flex
+											+input('phone', 'phone', 'input--gray', 'номер телефона')
+											.popup__block
+												.btn-v2
+													.btn-v2__inner
+														span.btn-v2__bg
+														span.btn-v2__text получить 3 варианта со скидкой
+												.form__privacy-policy Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a>
 		.achievements
 			.container.achievements__container
 				+title('За 15 лет «Башдекор» установил больше потолков, <br> <span>чем все компании Стерлитамака <br> вместе взятые</span>', 'achievements__title')

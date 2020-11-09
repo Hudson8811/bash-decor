@@ -13,6 +13,17 @@ $(document).ready(function () {
 		});
 	}
 
+	$('[href ^= "#popup-"]').fancybox({
+		touch: false,
+		scrolling: 'no',
+		beforeShow: function(){
+			$("body").css({'overflow-y':'hidden'});
+		},
+		afterClose: function(){
+			$("body").css({'overflow-y':'visible'});
+		}
+	});
+
 	// Open/close mobile menu
 	var header = $('.header'),
 			menu = $('.header-menu'),
@@ -302,6 +313,10 @@ $(document).ready(function () {
 			}
 			else{
 				$(this).closest('.js-quiz-slider').slick('slickNext');
+			}
+
+			if ($(this).closest('.slick-slide').is(':last-of-type')) {
+				$('.popup--quiz').addClass('slide-down');
 			}
 		});
 		$('.js-quiz-prev-slide').click(function(){

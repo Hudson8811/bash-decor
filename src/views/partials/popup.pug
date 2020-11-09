@@ -1,0 +1,41 @@
+mixin popup()
+	#popup-catalog.popup(style='display: none; background-image: url(images/bg-clouds.jpg);')
+		picture
+			source(media='(max-width: 960px)', srcset='images/popup/catalog-2.png')
+			img(src='images/popup/catalog.png' alt='catalog')
+		.popup__title Вместе с каталогом <br> Вы получите скидку <br> <span>до 50% на все модели</span>
+		.popup__subtitle Куда прислать ссылку на каталог?
+		form.form(action='', method='POST')
+			.form__wrapper
+				.form__socials
+					label.form__socials-item
+						input(type='checkbox')
+						svg
+							use(xlink:href='./svg/sprite.svg#socials--viber')
+						span Viber
+					label.form__socials-item
+						input(type='checkbox')
+						svg
+							use(xlink:href='./svg/sprite.svg#socials--telegram')
+						span Telegram
+					label.form__socials-item
+						input(type='checkbox')
+						svg
+							use(xlink:href='./svg/sprite.svg#socials--wa')
+						span WhatsApp
+					label.form__socials-item
+						input(type='checkbox')
+						svg
+							use(xlink:href='./svg/sprite.svg#socials--phone')
+						span По телефону
+				.popup__form-flex
+					+input('phone', 'phone', 'input--gray', 'номер телефона')
+					.popup__block
+						.btn-v2
+							.btn-v2__inner
+								span.btn-v2__bg
+								span.btn-v2__text Получить каталог <br> и забронировать скидку до 50%
+						.form__privacy-policy Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a>
+					.note
+						.note__inner
+							p Также мы <span>закрепим <br> за вашими контактами</span> скидку

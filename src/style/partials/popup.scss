@@ -1,0 +1,183 @@
+.popup {
+	max-width: 1305px;
+	width: 100%;
+	padding: 90px 95px 50px;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		z-index: 2;
+		width: calc(100% - 16px);
+		height: calc(100% - 16px);
+		border: 1px solid #f3f3f3;
+		border-radius: 10px;
+		pointer-events: none;
+	}
+
+	picture {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+
+		img {
+			max-width: 655px;
+			height: 100%;
+		}
+	}
+
+	&__title {
+		max-width: 512px;
+		font-size: 47px;
+		line-height: 50.94px;
+		font-weight: 300;
+		margin-bottom: 30px;
+
+		span {
+			font-weight: 500;
+		}
+	}
+
+	&__subtitle {
+		font-size: 23px;
+		font-weight: 300;
+		color: #686868;
+		margin-bottom: 35px;
+	}
+
+	&__form-flex {
+		display: inline-flex;
+		position: relative;
+		max-width: 682px;
+		width: 100%;
+	}
+
+	&__block {
+		max-width: 348px;
+		width: 100%;
+		margin-left: 8px;
+	}
+
+	.form {
+		background-color: transparent;
+		box-shadow: none;
+		max-width: 100%;
+		padding: 0;
+
+		&__wrapper {
+			max-width: 100%;
+
+			input {
+				max-width: 320px;
+			}
+		}
+
+		&__socials {
+			margin-bottom: 35px;
+		}
+
+		&__socials-item {
+			width: auto;
+			padding: 10px 31px;
+			height: 76px;
+
+			&:nth-child(odd) {
+				width: auto;
+			}
+		}
+
+		&__privacy-policy {
+			text-align: center;
+		}
+
+		.btn-v2 {
+			margin-top: -5px;
+			margin-bottom: 27px;
+			text-align: center;
+		}
+	}
+
+	.note {
+		width: 168px;
+		height: 168px;
+		position: absolute;
+		bottom: 10px;
+		right: -150px;
+		left: auto;
+		z-index: 1;
+
+		&__inner {
+			padding: 28px 25px 15px;
+
+			p {
+				font-size: 14px;
+				line-height: 19.38px;
+				font-weight: 300;
+
+				span {
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+
+.popup--quiz {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	height: 100%;
+	z-index: 5;
+	padding: 76px 95px 0 0;
+	transform: translateY(-100%);
+	transition: transform 0.3s ease;
+
+	picture {
+		position: relative;
+		height: auto;
+	}
+
+	.popup {
+		&__flex {
+			display: flex;
+			height: 100%;
+			margin: 0 -54px;
+		}
+
+		&__left,
+		&__right {
+			margin: 0 54px;
+		}
+
+		&__left {
+			width: calc(38% - 108px);
+			position: relative;
+		}
+
+		&__right {
+			width: calc(62% - 108px);
+			padding-top: 18px;
+		}
+
+		&__title {
+			max-width: 100%;
+			margin-bottom: 47px;
+		}
+
+		&__subtitle {
+			font-size: 23px;
+			line-height: 25px;
+			font-weight: 500;
+			color: #a4a4a4;
+			margin-bottom: 18px;
+		}
+	}
+}
