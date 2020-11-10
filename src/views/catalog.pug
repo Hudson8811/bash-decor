@@ -1,0 +1,66 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+		title: 'index.html'
+		};
+
+
+
+
+block main
+	.catalog.catalog--page
+		.catalog__bg
+			picture
+				source(media='(max-width: 640px)', srcset='images/bg-catalog-3.png')
+				source(media='(max-width: 960px)', srcset='images/bg-catalog-2.png')
+				img(src='images/bg-catalog.png' alt='catalog')
+		.container.catalog__container
+			.catalog__flex
+				.catalog__flex-inner
+					+title('Получите доступ <br> <span>к каталогу из >500 самых популярных</span> натяжных потолков 2020 года', 'catalog__title')
+					.catalog__list
+						span Мы собрали потолки на любой вкус:
+						ul
+							li Классические
+							li Резные
+							li Цветные
+							li С подсветкой
+							li С фотопечатью
+							li Звездное небо
+							li Несколько уровней
+							li Double Vision
+							li Парящие
+						.catalog__pdf
+							.catalog__pdf-inner
+								img(src='img/pdf.png' alt='pdf')
+								span PDF, 5 мб
+				form.form.form--catalog(action='', method='POST')
+					.form__inner
+						.form__title Куда прислать ссылку на каталог?
+						.form__wrapper
+							.form__socials
+								label.form__socials-item
+									input(type='checkbox')
+									svg
+										use(xlink:href='./svg/sprite.svg#socials--viber')
+									span Viber
+								label.form__socials-item
+									input(type='checkbox')
+									svg
+										use(xlink:href='./svg/sprite.svg#socials--telegram')
+									span Telegram
+								label.form__socials-item
+									input(type='checkbox')
+									svg
+										use(xlink:href='./svg/sprite.svg#socials--wa')
+									span WhatsApp
+								label.form__socials-item
+									input(type='checkbox')
+									svg
+										use(xlink:href='./svg/sprite.svg#socials--phone')
+									span По телефону
+							+input('phone', 'phone', 'input--gray', 'номер телефона')
+							+button('получить каталог потолков', 'form__button')
+							.form__privacy-policy Оставляя заявку, вы соглашаетесь с <a href="#" target="_blank">политикой <br> конфиденциальности</a>

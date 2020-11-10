@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?2020109161754148" rel="stylesheet">
+    <link href="css/main.css?202010101378546" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -51,13 +51,13 @@
               <use xlink:href="./svg/sprite.svg#calculator"></use>
             </svg>
             <p><span>Рассчитать</span> стоимость</p>
-          </figure></a><a class="sidebar__item anchor" href="#support">
+          </figure></a><a class="sidebar__item" href="#popup-consult">
           <figure>
             <svg>
               <use xlink:href="./svg/sprite.svg#support"></use>
             </svg>
             <p><span>Консультация</span> специалиста</p>
-          </figure></a><a class="sidebar__item anchor" href="#catalog">
+          </figure></a><a class="sidebar__item" href="#popup-catalog">
           <figure>
             <svg>
               <use xlink:href="./svg/sprite.svg#catalog"></use>
@@ -1553,6 +1553,67 @@
         </div>
       </form>
     </div>
-    <script src="js/main.js?2020109161754148"></script>
+    <div class="popup popup--consult" id="popup-consult" style="display: none; background-image: url(images/bg-clouds.jpg);">
+      <div class="popup__flex">
+        <div class="popup__left">
+          <picture>
+            <source media="(max-width: 960px)" srcset="images/popup/manager-2.png"><img src="images/popup/manager.png" alt="manager">
+          </picture>
+          <div class="s10">
+            <div class="s10__info">
+              <div class="s10__info-inner">
+                <div class="s10__info-name">Александр Иванов</div>
+                <div class="s10__info-text"><span>Менеджер</span><img class="s10__info-logo" src="images/logo.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__right">
+          <div class="popup__title">Получите консультацию специалиста «Башдекор»</div>
+          <div class="popup__subtitle"><span>- он ответит на все ваши вопросы и подскажет, <br></span> какой потолок выбрать для вашего интерьера <br> в рамках вашего бюджета</div>
+          <div class="popup__question">Как удобнее получить консультацию?</div>
+          <form class="form" action="" method="POST">
+            <div class="form__wrapper">
+              <div class="form__socials">
+                <label class="form__socials-item">
+                  <input type="checkbox">
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#socials--viber"></use>
+                  </svg><span>Viber</span>
+                </label>
+                <label class="form__socials-item">
+                  <input type="checkbox">
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
+                  </svg><span>Telegram</span>
+                </label>
+                <label class="form__socials-item">
+                  <input type="checkbox">
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#socials--wa"></use>
+                  </svg><span>WhatsApp</span>
+                </label>
+                <label class="form__socials-item">
+                  <input type="checkbox">
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#socials--phone"></use>
+                  </svg><span>По телефону</span>
+                </label>
+              </div>
+              <div class="popup__form-flex">
+                <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
+                <div class="popup__block">
+                  <div class="btn-v2">
+                    <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">получить консультацию</span></div>
+                  </div>
+                  <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js?202010101378546"></script>
   </body>
 </html>

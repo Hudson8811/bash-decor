@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?202010101378686" rel="stylesheet">
+    <link href="css/main.css?202010101377596" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -45,67 +45,70 @@
       </div>
     </header>
     <main class="main">
-      <div class="thanks">
-        <div class="container thanks__container">
-          <div class="thanks__title">Мы получили ваш запрос <br> и вскоре пришлем варианты цен</div>
-          <div class="thanks__flex">
-            <div class="thanks__left">
-              <div class="thanks__pic-wrapper">
-                <div class="thanks__pic"><img src="images/thanks/founder.jpg" alt=""></div>
-                <div class="play">
-                  <div class="pulse pulse-1"></div>
-                  <div class="pulse pulse-2"></div>
-                  <div class="pulse pulse-3"></div>
-                  <div class="pulse pulse-4"></div>
-                  <div class="pulse-core"><img src="img/play.png" alt="play"></div>
-                </div>
-                <div class="s10">
-                  <div class="s10__info">
-                    <div class="s10__info-inner">
-                      <div class="s10__info-name">Айдар Галимов</div>
-                      <div class="s10__info-text"><span>Основатель</span><img class="s10__info-logo" src="images/logo.png"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="thanks__right">
-              <div class="thanks__text">
-                <p>Спасибо за оказанное доверие!</p>
-                <p>В знак благодарности предлагаю <span>Вам доп. скидку 10%</span> на тот потолок, что вы выберете в каталоге!</p>
-                <p>Пригласите к себе замерщика. Он рассчитает точную стоимость потолка <br> у Вас дома. Это ни к чему Вас не обязывает! Вы просто получите точный расчет стоимости и возможность получить скидку 10%.</p>
-              </div>
-              <div class="thanks__flex-inner">
-                <div class="freemean-form-wrap-2">
-                  <form action="">
-                    <div class="freemean-form-inner">
-                      <div class="freemean-form-title">Давайте договоримся об удобном для вас времени</div>
-                      <div class="freemean-form-flex">
-                        <input class="input input--gray freemean-form-input" type="text" name="address" placeholder="введите ваш адрес">
-                        <input class="input input--gray freemean-form-input" type="text" name="time" placeholder="введите удобное время">
-                      </div>
-                      <div class="freemean-form-privacy freemean-form-privacy--sec-freemean">
-                        <div class="freemean-form-flex">
-                          <button class="btn-v2 freemean-form-btn">
-                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">договориться о времени</span></div>
-                          </button>
-                          <label>
-                            <input class="custom-chb" type="checkbox" name="acceptance-569" value="1" aria-invalid="false" checked><span class="wpcf7-list-item-label"><span class="wpcf7-list-item-label"><span class="acceptance-text">Согласен с <a href="/privacy-policy/" target="_blank">Политикой конфиденциальности <span class="acceptance-text__site">сайта</span></a></span></span></span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="thanks__timer">
-                  <div class="timer" data-time-out="2020-11-04T00:00:00">
-                    <div class="timer__pic"><img src="images/thanks/clock.png" alt=""></div>
-                    <div class="timer__title">Предложение <br> действует <span>30 минут</span></div>
-                    <div class="timer__time"><span class="js-stock-countdown-m">29</span>:<span class="js-stock-countdown-s">58</span></div>
-                  </div>
+      <div class="catalog catalog--page">
+        <div class="catalog__bg">
+          <picture>
+            <source media="(max-width: 640px)" srcset="images/bg-catalog-3.png">
+            <source media="(max-width: 960px)" srcset="images/bg-catalog-2.png"><img src="images/bg-catalog.png" alt="catalog">
+          </picture>
+        </div>
+        <div class="container catalog__container">
+          <div class="catalog__flex">
+            <div class="catalog__flex-inner">
+              <div class="title catalog__title">Получите доступ <br> <span>к каталогу из >500 самых популярных</span> натяжных потолков 2020 года</div>
+              <div class="catalog__list"><span>Мы собрали потолки на любой вкус:</span>
+                <ul>
+                  <li>Классические</li>
+                  <li>Резные</li>
+                  <li>Цветные</li>
+                  <li>С подсветкой</li>
+                  <li>С фотопечатью</li>
+                  <li>Звездное небо</li>
+                  <li>Несколько уровней</li>
+                  <li>Double Vision</li>
+                  <li>Парящие</li>
+                </ul>
+                <div class="catalog__pdf">
+                  <div class="catalog__pdf-inner"><img src="img/pdf.png" alt="pdf"><span>PDF, 5 мб</span></div>
                 </div>
               </div>
             </div>
+            <form class="form form--catalog" action="" method="POST">
+              <div class="form__inner">
+                <div class="form__title">Куда прислать ссылку на каталог?</div>
+                <div class="form__wrapper">
+                  <div class="form__socials">
+                    <label class="form__socials-item">
+                      <input type="checkbox">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#socials--viber"></use>
+                      </svg><span>Viber</span>
+                    </label>
+                    <label class="form__socials-item">
+                      <input type="checkbox">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
+                      </svg><span>Telegram</span>
+                    </label>
+                    <label class="form__socials-item">
+                      <input type="checkbox">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#socials--wa"></use>
+                      </svg><span>WhatsApp</span>
+                    </label>
+                    <label class="form__socials-item">
+                      <input type="checkbox">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#socials--phone"></use>
+                      </svg><span>По телефону</span>
+                    </label>
+                  </div>
+                  <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
+                  <button class="button form__button"><span class="flare"></span><span>получить каталог потолков</span></button>
+                  <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь с <a href="#" target="_blank">политикой <br> конфиденциальности</a></div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -275,6 +278,6 @@
         </div>
       </div>
     </div>
-    <script src="js/main.js?202010101378686"></script>
+    <script src="js/main.js?202010101377596"></script>
   </body>
 </html>

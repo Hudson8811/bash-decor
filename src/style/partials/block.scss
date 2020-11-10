@@ -803,7 +803,7 @@
 	}
 
 	&__container {
-		padding: 122px 0 211px;
+		padding: 122px 0 371px;
 		position: relative;
 	}
 
@@ -921,6 +921,12 @@
 				letter-spacing: 0.22px;
 				margin-bottom: 23px;
 			}
+		}
+	}
+
+	&--page {
+		.catalog__container {
+			padding-top: 200px;
 		}
 	}
 }

@@ -41,7 +41,7 @@
 @media (max-width: 1200px) {
 	.catalog {
 		&__container {
-			padding: 101px 0 29.3%;
+			padding: 101px 0 32.3%;
 			max-width: calc(100% - 58px);
 		}
 
@@ -147,8 +147,9 @@
 		}
 
 		&__bg {
-			bottom: 124px;
-			left: 26px;
+			bottom: 40px;
+			left: auto;
+			right: 0;
 
 			img {
 				width: 100%;
@@ -195,6 +196,12 @@
 			margin-top: 79px;
 			margin-left: 32px;
 		}
+
+		&--page {
+			.catalog__container {
+				padding-top: 140px;
+			}
+		}
 	}
 }
 
@@ -205,7 +212,7 @@
 		}
 
 		&__bg {
-			bottom: 265px;
+			bottom: -31%;
 			left: 0;
 		}
 
@@ -280,6 +287,20 @@
 			&__socials-item {
 				height: 63px;
 			}
+		}
+
+		&--page {
+			.catalog__container {
+				padding-top: 180px;
+			}
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.catalog {
+		&__bg {
+			bottom: 16%;
 		}
 	}
 }

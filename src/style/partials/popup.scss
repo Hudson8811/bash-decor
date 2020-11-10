@@ -181,3 +181,99 @@
 		}
 	}
 }
+
+.popup--consult {
+	padding: 45px 95px 0 0;
+
+	picture {
+		position: relative;
+		height: auto;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.popup {
+		&__flex {
+			display: flex;
+			margin: 0 -12px;
+		}
+
+		&__left,
+		&__right {
+			margin: 0 12px;
+		}
+
+		&__left {
+			width: calc(41% - 24px);
+			position: relative;
+		}
+
+		&__right {
+			width: calc(59% - 24px);
+			padding-top: 25px;
+		}
+
+		&__title {
+			max-width: 100%;
+			font-size: 47px;
+			line-height: 50.94px;
+			margin-bottom: 18px;
+		}
+
+		&__subtitle {
+			font-size: 23px;
+			line-height: 32.94px;
+			color: #a4a4a4;
+
+			span {
+				font-weight: 500;
+			}
+		}
+
+		&__question {
+			font-size: 23px;
+			font-weight: 300;
+			margin-bottom: 34px;
+		}
+	}
+
+	.form {
+		&__socials-item {
+			padding: 10px 25px;
+		}
+	}
+
+	.s10 {
+		position: absolute;
+		bottom: 161px;
+		left: 55%;
+		transform: translateX(-50%);
+
+		&__info {
+			width: 265px;
+			min-height: 120px;
+		}
+
+		&__info-inner {
+			text-align: center;
+		}
+
+		&__info-name {
+			font-size: 15px;
+			font-weight: 500;
+			margin-bottom: 7px;
+		}
+
+		&__info-text span {
+			font-size: 15px;
+			font-weight: 300;
+		}
+
+		&__info-logo {
+			width: 86px;
+		}
+	}
+}

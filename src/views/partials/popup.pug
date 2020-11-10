@@ -39,3 +39,52 @@ mixin popup()
 					.note
 						.note__inner
 							p Также мы <span>закрепим <br> за вашими контактами</span> скидку
+
+	#popup-consult.popup.popup--consult(style='display: none; background-image: url(images/bg-clouds.jpg);')
+		.popup__flex
+			.popup__left
+				picture
+					source(media='(max-width: 960px)', srcset='images/popup/manager-2.png')
+					img(src='images/popup/manager.png' alt='manager')
+				.s10
+					.s10__info
+						.s10__info-inner
+							.s10__info-name Александр Иванов
+							.s10__info-text
+								span Менеджер
+								img.s10__info-logo(src="images/logo.png")
+			.popup__right
+				.popup__title Получите консультацию специалиста «Башдекор»
+				.popup__subtitle <span>- он ответит на все ваши вопросы и подскажет, <br></span> какой потолок выбрать для вашего интерьера <br> в рамках вашего бюджета
+				.popup__question Как удобнее получить консультацию?
+				form.form(action='', method='POST')
+					.form__wrapper
+						.form__socials
+							label.form__socials-item
+								input(type='checkbox')
+								svg
+									use(xlink:href='./svg/sprite.svg#socials--viber')
+								span Viber
+							label.form__socials-item
+								input(type='checkbox')
+								svg
+									use(xlink:href='./svg/sprite.svg#socials--telegram')
+								span Telegram
+							label.form__socials-item
+								input(type='checkbox')
+								svg
+									use(xlink:href='./svg/sprite.svg#socials--wa')
+								span WhatsApp
+							label.form__socials-item
+								input(type='checkbox')
+								svg
+									use(xlink:href='./svg/sprite.svg#socials--phone')
+								span По телефону
+						.popup__form-flex
+							+input('phone', 'phone', 'input--gray', 'номер телефона')
+							.popup__block
+								.btn-v2
+									.btn-v2__inner
+										span.btn-v2__bg
+										span.btn-v2__text получить консультацию
+								.form__privacy-policy Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a>
