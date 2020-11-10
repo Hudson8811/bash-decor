@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/main.css?202010101588147" rel="stylesheet">
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay" style="display: none;"></div>
+      <div class="container header__container">
+        <div class="header__logo"><img src="images/logo.png" alt="logo"></div>
+        <div class="header__whats-done">Смонтировали >30 000 натяжных потолков <br> <span>в Стерлитамаке с 2005 года</span></div>
+        <div class="header__catalog"><img src="images/catalog.png" alt="catalog"><a href="#popup-catalog">Скачать каталог</a></div>
+        <div class="header__contacts">Задайте вопрос в мессенджере:
+          <div class="header__socials"><a class="header__socials-icon" href="#">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--wa"></use>
+              </svg></a><a class="header__socials-icon" href="#">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
+              </svg></a></div><a class="header__phone" href="tel:+79874919455">+7(987) 491-94-55</a>
+        </div>
+        <div class="header__burger"><span></span></div><a class="header__phone-icon" href="tel:+79874919455">
+          <svg>
+            <use xlink:href="./svg/sprite.svg#phone-wh"></use>
+          </svg></a>
+      </div>
+      <div class="header-menu">
+        <div class="header__catalog"><img src="images/catalog.png" alt="catalog"><a href="#popup-catalog">Скачать каталог</a></div><a class="header__phone" href="tel:+79874919455">+7(987) 491-94-55</a>
+        <div class="header__contacts">Задайте вопрос в мессенджере:
+          <div class="header__socials"><a class="header__socials-icon" href="#">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--wa"></use>
+              </svg></a><a class="header__socials-icon" href="#">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
+              </svg></a></div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="bg-clouds" style="background-image: url(images/bg-clouds.jpg)">
+        <div class="quiz quiz--page" id="quiz">
+          <div class="container quiz__container">
+            <div class="quiz__sticker"><span>Хотите натяжной потолок?</span></div>
+            <div class="title quiz__title">Рассчитайте стоимость <br> натяжных потолков с установкой, <br> <span>ответив на 5 вопросов за 1 минуту</span></div>
+            <div class="quiz__bg-pic"><img src="images/quiz-pic.png" alt="quiz-pic"></div>
+            <div class="quiz__bg-text">Башдекор</div>
+            <div class="quiz__outer">
+              <div class="quiz__inner">
+                <div class="quiz__get-it">
+                  <div class="quiz__get-it-text">Вы получите:</div>
+                  <div class="quiz__flex">
+                    <div class="quiz-get">
+                      <div class="quiz-get__value">3</div>
+                      <div class="quiz-get__text"><span>варианта</span> сметы <br> по вашим параметрам</div>
+                    </div>
+                    <div class="quiz-get">
+                      <div class="quiz-get__value">50%</div>
+                      <div class="quiz-get__text"><span>скидка</span> на все варианты</div>
+                    </div>
+                    <div class="quiz-get quiz-get--with-pic">
+                      <div class="quiz-get__picture"><img src="images/quiz-get-1.png" alt="quiz-get-1"></div>
+                      <div class="quiz-get__text"><span>Подарок ценой</span> <br> до 5000 рублей <br> за ваши ответы</div>
+                    </div>
+                    <div class="quiz-get quiz-get--with-pic">
+                      <div class="quiz-get__picture"><img src="images/quiz-get-2.png" alt="quiz-get-2"></div>
+                      <div class="quiz-get__text"><span>Каталог потолков,</span> <br> который подойдут именно вашему дому</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="quiz-slider-wrap">
+                  <div class="quiz-steps">
+                    <div class="quiz-steps__text">Шаг <span class="quiz-steps__current">1</span> из <span class="quiz-steps__all">5</span></div>
+                    <div class="quiz-steps__progress">
+                      <div class="quiz-steps__progress_finished" style="width:0%;"></div>
+                    </div>
+                  </div>
+                  <div class="quiz-slider js-quiz-slider" id="quiz-slider-1">
+                    <div class="quiz-slide js-num-place">
+                      <div class="quiz-slide_inner">
+                        <div class="quiz-slide-title">Куда Вы планируете  установить потолок?</div>
+                        <div class="quiz-flex-3">
+                          <label class="quiz-flex-3__item">
+                            <input type="checkbox" id="house" name="slide1" checked>
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира (дом)</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item">
+                            <input type="checkbox" id="living-room" name="slide1">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Гостиная (Зал)</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item">
+                            <input type="checkbox" id="bathroom" name="slide1">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Ванная / Туалет</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item">
+                            <input type="checkbox" id="kitchen" name="slide1">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Кухня</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item">
+                            <input type="checkbox" id="hall" name="slide1">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Коридор</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item">
+                            <input type="checkbox" id="other" name="slide1">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Другие комнаты</div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="quiz-btn-wrap">
+                          <button class="btn-v2 btn-quiz-next js-quiz-next-slide">
+                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">далее</span></div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="quiz-slide">
+                      <div class="quiz-slide_inner">
+                        <div class="quiz-slide-title">Укажите примерную площадь комнат</div>
+                        <div class="quiz-inp-sizes">
+                          <div class="quiz-inp-size" data-place="house" style="display: flex">
+                            <div class="quiz-inp-size__name">Вся квартира (дом)</div>
+                            <div class="quiz-inp-size__inp">
+                              <div class="custom-inp-numer js-custom-inp-numer">
+                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
+                                <div class="custom-inp-numer__btns">
+                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
+                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
+                          </div>
+                          <div class="quiz-inp-size" data-place="living-room">
+                            <div class="quiz-inp-size__name">Гостиная (Зал)</div>
+                            <div class="quiz-inp-size__inp">
+                              <div class="custom-inp-numer js-custom-inp-numer">
+                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
+                                <div class="custom-inp-numer__btns">
+                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
+                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
+                          </div>
+                          <div class="quiz-inp-size" data-place="bathroom">
+                            <div class="quiz-inp-size__name">Ванная / Туалет</div>
+                            <div class="quiz-inp-size__inp">
+                              <div class="custom-inp-numer js-custom-inp-numer">
+                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
+                                <div class="custom-inp-numer__btns">
+                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
+                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
+                          </div>
+                          <div class="quiz-inp-size" data-place="kitchen">
+                            <div class="quiz-inp-size__name">Кухня</div>
+                            <div class="quiz-inp-size__inp">
+                              <div class="custom-inp-numer js-custom-inp-numer">
+                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
+                                <div class="custom-inp-numer__btns">
+                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
+                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
+                          </div>
+                          <div class="quiz-inp-size" data-place="hall">
+                            <div class="quiz-inp-size__name">Коридор</div>
+                            <div class="quiz-inp-size__inp">
+                              <div class="custom-inp-numer js-custom-inp-numer">
+                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
+                                <div class="custom-inp-numer__btns">
+                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
+                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
+                          </div>
+                          <div class="quiz-inp-size" data-place="other">
+                            <div class="quiz-inp-size__name">Другие комнаты</div>
+                            <div class="quiz-inp-size__inp">
+                              <div class="custom-inp-numer js-custom-inp-numer">
+                                <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
+                                <div class="custom-inp-numer__btns">
+                                  <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
+                                  <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="quiz-inp-size__m">м<sup>2</sup></div>
+                          </div>
+                        </div>
+                        <div class="quiz-btn-wrap">
+                          <button class="btn-v2 btn-v2--gray btn-v2--gray-with-bottom btn-quiz-prev js-quiz-prev-slide">
+                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">назад</span></div>
+                          </button>
+                          <button class="btn-v2 btn-quiz-next js-quiz-next-slide">
+                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">далее</span></div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="quiz-slide">
+                      <div class="quiz-slide_inner">
+                        <div class="quiz-slide-title">Какой потолок Вы хотите?</div>
+                        <div class="quiz-flex-3 quiz-flex-3--4">
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3" checked>
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Классический белый</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира</div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="quiz-btn-wrap">
+                          <button class="btn-v2 btn-v2--gray btn-v2--gray-with-bottom btn-quiz-prev js-quiz-prev-slide">
+                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">назад</span></div>
+                          </button>
+                          <button class="btn-v2 btn-quiz-next js-quiz-next-slide">
+                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">далее</span></div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="quiz-slide">
+                      <div class="quiz-slide_inner">
+                        <div class="quiz-slide-title">Выберите фактуру</div>
+                        <div class="quiz-flex-3 quiz-flex-3--4">
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3" checked>
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Классический белый</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                            <input type="checkbox" name="slide3">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира</div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="quiz-btn-wrap">
+                          <button class="btn-v2 btn-v2--gray btn-v2--gray-with-bottom btn-quiz-prev js-quiz-prev-slide">
+                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">назад</span></div>
+                          </button>
+                          <button class="btn-v2 btn-quiz-next js-quiz-next-slide">
+                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">далее</span></div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="quiz-slide">
+                      <div class="quiz-slide_inner">
+                        <div class="quiz-slide-title">Укажите дополнительные предпочтения</div>
+                        <div class="quiz-flex-3">
+                          <label class="quiz-flex-3__item">
+                            <input type="checkbox" name="slide1" checked>
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира (дом)</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item">
+                            <input type="checkbox" name="slide1">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира (дом)</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item">
+                            <input type="checkbox" name="slide1">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира (дом)</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item">
+                            <input type="checkbox" name="slide1">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира (дом)</div>
+                            </div>
+                          </label>
+                          <label class="quiz-flex-3__item">
+                            <input type="checkbox" name="slide1">
+                            <div class="quiz-flex-3__inner">
+                              <div class="quiz-flex-3__pic"><img src="images/products/item-1.jpg" alt=""></div>
+                              <div class="quiz-flex-3__title">Вся квартира (дом)</div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="quiz-btn-wrap">
+                          <button class="btn-v2 btn-v2--gray btn-v2--gray-with-bottom btn-quiz-prev js-quiz-prev-slide">
+                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">назад</span></div>
+                          </button>
+                          <button class="btn-v2 btn-quiz-next js-quiz-next-slide">
+                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">далее</span></div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="quiz-slide">
+                      <div class="quiz-slide_inner">
+                        <div class="quiz-slide-title">Выберите подарок за прохождение теста
+                          <div class="quiz-flex-3 quiz-flex-3--4">
+                            <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                              <input type="checkbox" name="slide3" checked>
+                              <div class="quiz-flex-3__inner">
+                                <div class="quiz-flex-3__pic quiz-flex-3__pic--gift"><img src="images/products/item-1.jpg" alt="">
+                                  <div class="quiz-pic-gift"></div>
+                                </div>
+                                <div class="quiz-flex-3__title">Классический белый</div>
+                              </div>
+                            </label>
+                            <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                              <input type="checkbox" name="slide3">
+                              <div class="quiz-flex-3__inner">
+                                <div class="quiz-flex-3__pic quiz-flex-3__pic--gift"><img src="images/products/item-1.jpg" alt="">
+                                  <div class="quiz-pic-gift"></div>
+                                </div>
+                                <div class="quiz-flex-3__title">Вся квартира</div>
+                              </div>
+                            </label>
+                            <label class="quiz-flex-3__item quiz-flex-3__item--4">
+                              <input type="checkbox" name="slide3">
+                              <div class="quiz-flex-3__inner">
+                                <div class="quiz-flex-3__pic quiz-flex-3__pic--gift"><img src="images/products/item-1.jpg" alt="">
+                                  <div class="quiz-pic-gift"></div>
+                                </div>
+                                <div class="quiz-flex-3__title">Вся квартира</div>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="quiz-btn-wrap">
+                          <button class="btn-v2 btn-v2--gray btn-v2--gray-with-bottom btn-quiz-prev js-quiz-prev-slide">
+                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">назад</span></div>
+                          </button>
+                          <button class="btn-v2 btn-quiz-next js-quiz-next-slide">
+                            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">далее</span></div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popup popup--quiz" style="background-image: url(images/bg-clouds.jpg);">
+                <div class="popup__flex">
+                  <div class="popup__left">
+                    <picture>
+                      <source media="(max-width: 960px)" srcset="images/popup/phone.png"><img src="images/popup/phone.png" alt="phone">
+                    </picture>
+                  </div>
+                  <div class="popup__right">
+                    <div class="popup__subtitle">Мы получили ваши данные и приступили к расчету</div>
+                    <div class="popup__title">В течение 20 минут вышлем <br> <span>3 варианта сметы со скидкой</span> до 50% + каталог потолков</div>
+                    <form class="form" action="" method="POST">
+                      <div class="form__wrapper">
+                        <div class="form__socials">
+                          <label class="form__socials-item">
+                            <input type="checkbox">
+                            <svg>
+                              <use xlink:href="./svg/sprite.svg#socials--viber"></use>
+                            </svg><span>Viber</span>
+                          </label>
+                          <label class="form__socials-item">
+                            <input type="checkbox">
+                            <svg>
+                              <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
+                            </svg><span>Telegram</span>
+                          </label>
+                          <label class="form__socials-item">
+                            <input type="checkbox">
+                            <svg>
+                              <use xlink:href="./svg/sprite.svg#socials--wa"></use>
+                            </svg><span>WhatsApp</span>
+                          </label>
+                          <label class="form__socials-item">
+                            <input type="checkbox">
+                            <svg>
+                              <use xlink:href="./svg/sprite.svg#socials--phone"></use>
+                            </svg><span>По телефону</span>
+                          </label>
+                        </div>
+                        <div class="popup__form-flex">
+                          <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
+                          <div class="popup__block">
+                            <div class="btn-v2">
+                              <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">получить 3 варианта со скидкой</span></div>
+                            </div>
+                            <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-top-flex">
+            <div class="foo-tf-item foo-tf-item--first">
+              <div class="foo-logo"><img src="images/logo-part.png" alt=""></div>
+              <div class="foo-progress"><b>Смонтировали >30 000 натяжных потолков</b> в Стерлитамаке с 2005 года</div>
+            </div>
+            <div class="foo-tf-group foo-tf-group--info">
+              <div class="foo-tf-item foo-tf-item--addr">
+                <div class="foo-addr">
+                  <div class="foo-addr-top">
+                    <div class="foo-addr-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M256 0C156.748 0 76 80.748 76 180c0 33.534 9.289 66.26 26.869 94.652l142.885 230.257c2.737 4.411 7.559 7.091 12.745 7.091h.119c5.231-.041 10.063-2.804 12.75-7.292L410.611 272.22C427.221 244.428 436 212.539 436 180 436 80.748 355.252 0 256 0zm128.866 256.818L258.272 468.186l-129.905-209.34C113.734 235.214 105.8 207.95 105.8 180c0-82.71 67.49-150.2 150.2-150.2S406.1 97.29 406.1 180c0 27.121-7.411 53.688-21.234 76.818z"/> <path d="M256 90c-49.626 0-90 40.374-90 90 0 49.309 39.717 90 90 90 50.903 0 90-41.233 90-90 0-49.626-40.374-90-90-90zm0 150.2c-33.257 0-60.2-27.033-60.2-60.2 0-33.084 27.116-60.2 60.2-60.2s60.1 27.116 60.1 60.2c0 32.683-26.316 60.2-60.1 60.2z"/></svg></div>
+                    <div class="foo-addr-title"> Адрес офиса:</div>
+                  </div>
+                  <div class="foo-addr__items">
+                    <div class="foo-addr__item">г. Стерлитамак,</div>
+                    <div class="foo-addr__item">ул. Строителей, дом 24</div>
+                  </div>
+                </div>
+              </div>
+              <div class="foo-tf-item foo-tf-item--time">
+                <div class="foo-addr">
+                  <div class="foo-addr-top">
+                    <div class="foo-addr-icon"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612"><path d="M286.875 535.5h38.25v-38.25h-38.25v38.25zM306 76.5c-10.557 0-19.125 8.568-19.125 19.125v191.709h-153c-10.557 0-19.125 8.568-19.125 19.125s8.568 19.125 19.125 19.125H306c10.557 0 19.125-8.568 19.125-19.125V95.625c0-10.557-8.568-19.125-19.125-19.125zM128.769 436.662l26.469 26.526 26.469-26.526-26.469-26.526-26.469 26.526zm56.609-277.485l-27.062-27.042-27.043 27.042 27.043 27.043 27.062-27.043zm236.825-.956l26.47 26.526 26.469-26.526-26.469-26.526-26.47 26.526zM416.6 435.629l27.043 27.043 27.043-27.043-27.043-27.042-27.043 27.042zm80.65-148.754v38.25h38.25v-38.25h-38.25zM306 0C136.992 0 0 137.012 0 306c0 169.008 136.992 306 306 306s306-137.012 306-306S475.008 0 306 0zm0 573.75C158.125 573.75 38.25 453.875 38.25 306S158.125 38.25 306 38.25 573.75 158.125 573.75 306 453.875 573.75 306 573.75z"/></svg></div>
+                    <div class="foo-addr-title"> Время работы:</div>
+                  </div>
+                  <div class="foo-addr__items">
+                    <div class="foo-addr__item">Пн-Пт: 9:00 - 20:00</div>
+                    <div class="foo-addr__item">Сб-Вс: 9-00 - 17:00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="foo-tf-group foo-tf-group--soc">
+              <div class="foo-tf-item foo-tf-item--soc">
+                <div class="foo-soc-wrap">
+                  <div class="foo-soc-title foo-addr-title">Мы в соцсетях</div>
+                  <div class="foo-socials"><a class="foo-socials-item foo-socials-item--vk" href=""><img src="images/footer/vk.svg" alt=""></a><a class="foo-socials-item foo-socials-item--inst" href=""><img src="images/footer/instagram.svg" alt=""></a><a class="foo-socials-item foo-socials-item--yt" href=""><img src="images/footer/youtube.svg" alt=""></a></div>
+                </div>
+              </div>
+              <div class="foo-tf-item foo-tf-item--mes"><a class="foo-phone" href="tel:79874919455">+7(987) 491-94-55</a>
+                <div class="foo-messengers-wrap">
+                  <div class="foo-messengers-title">Задайте вопрос <br>  в мессенджере:</div>
+                  <div class="foo-messengers"><a class="foo-messengers-item" href=""><img src="images/footer/whatsapp.svg" alt=""></a><a class="foo-messengers-item" href=""><img src="images/footer/telegram.svg" alt=""></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="fb-privacy"><a href="">Политика конфиденциальности</a></div>
+        </div>
+      </footer>
+    </main>
+    <div class="popup" id="popup-catalog" style="display: none; background-image: url(images/bg-clouds.jpg);">
+      <picture>
+        <source media="(max-width: 960px)" srcset="images/popup/catalog-2.png"><img src="images/popup/catalog.png" alt="catalog">
+      </picture>
+      <div class="popup__title">Вместе с каталогом <br> Вы получите скидку <br> <span>до 50% на все модели</span></div>
+      <div class="popup__subtitle">Куда прислать ссылку на каталог?</div>
+      <form class="form" action="" method="POST">
+        <div class="form__wrapper">
+          <div class="form__socials">
+            <label class="form__socials-item">
+              <input type="checkbox">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--viber"></use>
+              </svg><span>Viber</span>
+            </label>
+            <label class="form__socials-item">
+              <input type="checkbox">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
+              </svg><span>Telegram</span>
+            </label>
+            <label class="form__socials-item">
+              <input type="checkbox">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--wa"></use>
+              </svg><span>WhatsApp</span>
+            </label>
+            <label class="form__socials-item">
+              <input type="checkbox">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#socials--phone"></use>
+              </svg><span>По телефону</span>
+            </label>
+          </div>
+          <div class="popup__form-flex">
+            <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
+            <div class="popup__block">
+              <div class="btn-v2">
+                <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Получить каталог <br> и забронировать скидку до 50%</span></div>
+              </div>
+              <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
+            </div>
+            <div class="note">
+              <div class="note__inner">
+                <p>Также мы <span>закрепим <br> за вашими контактами</span> скидку</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="popup popup--consult" id="popup-consult" style="display: none; background-image: url(images/bg-clouds.jpg);">
+      <div class="popup__flex">
+        <div class="popup__left">
+          <picture>
+            <source media="(max-width: 960px)" srcset="images/popup/manager-2.png"><img src="images/popup/manager.png" alt="manager">
+          </picture>
+          <div class="s10">
+            <div class="s10__info">
+              <div class="s10__info-inner">
+                <div class="s10__info-name">Александр Иванов</div>
+                <div class="s10__info-text"><span>Менеджер</span><img class="s10__info-logo" src="images/logo.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__right">
+          <div class="popup__title">Получите консультацию специалиста «Башдекор»</div>
+          <div class="popup__subtitle"><span>- он ответит на все ваши вопросы и подскажет, <br></span> какой потолок выбрать для вашего интерьера <br> в рамках вашего бюджета</div>
+          <div class="popup__question">Как удобнее получить консультацию?</div>
+          <form class="form" action="" method="POST">
+            <div class="form__wrapper">
+              <div class="form__socials">
+                <label class="form__socials-item">
+                  <input type="checkbox">
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#socials--viber"></use>
+                  </svg><span>Viber</span>
+                </label>
+                <label class="form__socials-item">
+                  <input type="checkbox">
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
+                  </svg><span>Telegram</span>
+                </label>
+                <label class="form__socials-item">
+                  <input type="checkbox">
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#socials--wa"></use>
+                  </svg><span>WhatsApp</span>
+                </label>
+                <label class="form__socials-item">
+                  <input type="checkbox">
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#socials--phone"></use>
+                  </svg><span>По телефону</span>
+                </label>
+              </div>
+              <div class="popup__form-flex">
+                <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
+                <div class="popup__block">
+                  <div class="btn-v2">
+                    <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">получить консультацию</span></div>
+                  </div>
+                  <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js?202010101588147"></script>
+  </body>
+</html>
