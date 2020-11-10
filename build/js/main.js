@@ -281,7 +281,7 @@ $(document).ready(function () {
 	});
 
 	// Product
-	$('.product-item').hover(
+	$('.products__flex .product-item').hover(
 		function () {
 			var prodBtn = $(this).find('.product-item__button'),
 				prodContent = $(this).find('.product-item__content'),

@@ -1286,3 +1286,184 @@
 		font-size: 15px;
 	}
 }
+
+.choice {
+	position: relative;
+	overflow: hidden;
+
+	&__left-pic {
+		position: absolute;
+		top: 41%;
+		left: -23px;
+		z-index: 1;
+	}
+
+	&__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+
+		&-top,
+		&-bottom {
+			position: relative;
+
+			> img {
+				width: 100%;
+			}
+		}
+	}
+
+	&__man {
+		position: absolute;
+		bottom: 0;
+		right: 9%;
+	}
+
+	&__container {
+		padding: 278px 0 140px;
+		position: relative;
+	}
+	
+	&__title {
+		font-size: 54px;
+		line-height: 62.87px;
+		text-align: left;
+		max-width: 1010px;
+		margin-bottom: 30px;
+	}
+
+	&__subtitle {
+		font-size: 25px;
+		line-height: 32.62px;
+		font-weight: 500;
+		color: #969696;
+		padding-left: 85px;
+		margin-bottom: 84px;
+	}
+
+	&__flex {
+		display: flex;
+		margin: 0 -39px;
+	}
+
+	.product-item {
+		width: calc(33.3333% - 78px);
+		margin: 0 39px;
+		padding-bottom: 593px;
+		overflow: unset;
+
+		&__img {
+			height: 204px;
+		}
+
+		&__content {
+			padding: 50px 44px 76px 93px;
+			align-items: flex-start;
+			justify-content: flex-start;
+			min-height: 593px;
+		}
+
+		&__title {
+			font-size: 25px;
+			line-height: 31px;
+			font-weight: 500;
+			margin: 0 0 20px;
+		}
+
+		&__description {
+			opacity: 1;
+			margin-bottom: 42px;
+
+			li {
+				font-size: 18px;
+				line-height: 26.51px;
+				position: relative;
+
+				+ li {
+					margin-top: 20px;
+				}
+
+				&::before {
+					content: '';
+					display: block;
+					width: 10px;
+					height: 10px;
+					background-color: #87a8cd;
+					box-shadow: 0 0 30px 10px rgba(220, 222, 237, 0.18), inset 0 0 35px rgba(255, 255, 255, 0.16);
+					border-radius: 50%;
+					position: absolute;
+					top: 9px;
+					left: -27px;
+				}
+			}
+		}
+
+		.btn-v2 {
+			margin-top: auto;
+			pointer-events: none;
+
+			&__inner {
+				width: 273px;
+				padding: 15px 10px;
+				box-sizing: border-box;
+			}
+
+			&__text {
+				position: relative;
+				padding-left: 10px;
+				text-transform: none;
+
+				&::before {
+					content: '';
+					display: block;
+					width: 10px;
+					height: 10px;
+					background-color: $white;
+					border-radius: 50%;
+					position: absolute;
+					left: -13px;
+					top: 20px;
+				}
+
+				p {
+					&:first-child {
+						font-size: 21px;
+						font-weight: 400;
+					}
+
+					&:last-child {
+						font-size: 19px;
+						font-weight: 300;
+					}
+				}
+			}
+		}
+
+		.note {
+			bottom: -18px;
+			left: auto;
+			right: -47px;
+			z-index: 2;
+
+			&__inner {
+				padding: 21px 19px;
+
+				svg {
+					margin-bottom: 4px;
+				}
+
+				p {
+					font-size: 15px;
+					line-height: 19.52px;
+					font-weight: 300;
+
+					span {
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+}
