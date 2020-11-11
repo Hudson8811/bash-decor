@@ -216,6 +216,18 @@ $(document).ready(function () {
 		}
 	});
 
+	// Slider choice
+	if (window.matchMedia('(min-width: 641px) and (max-width: 960px)').matches) {
+		$('.choice__flex').slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+			nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+			dots: false,
+			infinite: false
+		});
+	}
+
 	// Slider advantages
 	if (window.matchMedia('(max-width: 960px)').matches) {
 		$('.advantages__flex').slick({
