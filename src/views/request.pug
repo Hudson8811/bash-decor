@@ -1,0 +1,108 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+		title: 'index.html'
+		};
+
+
+
+
+block main
+	.request
+		.section-reviews
+			.reviews-container
+				.request__title Мы получили ваш запрос <br> и вскоре свяжемся с Вами для подтверждения
+				h2.reviews-title Посмотрите свежие отзывы
+
+				.reviews-controls
+					.btn-v2.btn-v2--gray.js-reviews-control
+						.btn-v2__inner
+							span.btn-v2__bg
+							span.btn-v2__text анкеты с баллами
+
+					.btn-v2.btn-v2--orange.js-reviews-control
+						.btn-v2__inner
+							span.btn-v2__bg
+							span.btn-v2__text Видеоотзывы
+				.reviews-tabs
+					.reviews-tab.js-reviews-tab
+						.reviews-videos
+							.reviews-video-item.reviews-video-item--novid
+								a.reviews-video-wrap(href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name 1Илья Миронов
+									.reviews-text__city г. Стерлитамак
+							.reviews-video-item.reviews-video-item--novid
+								a.reviews-video-wrap(href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name Илья Миронов
+									.reviews-text__city г. Стерлитамак
+							.reviews-video-item.reviews-video-item--novid
+								a.reviews-video-wrap(href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name Илья Миронов
+									.reviews-text__city г. Стерлитамак
+							.reviews-video-item.reviews-video-item--novid
+								a.reviews-video-wrap(href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name Илья Миронов
+									.reviews-text__city г. Стерлитамак
+							.reviews-video-item.reviews-video-item--novid
+								a.reviews-video-wrap(href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name Илья Миронов
+									.reviews-text__city г. Стерлитамак
+							.reviews-video-item.reviews-video-item--novid
+								a.reviews-video-wrap(href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name Илья Миронов
+									.reviews-text__city г. Стерлитамак
+
+					.reviews-tab.reviews-tab--active.js-sreviews-tab
+						.reviews-videos
+							.reviews-video-item
+								a.reviews-video-wrap(href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name 2Илья Миронов
+									.reviews-text__city г. Стерлитамак
+							.reviews-video-item
+								a.reviews-video-wrap(href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name Илья Миронов
+									.reviews-text__city г. Стерлитамак
+							.reviews-video-item
+								a.reviews-video-wrap(href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name Илья Миронов
+									.reviews-text__city г. Стерлитамак
+							.reviews-video-item
+								a.reviews-video-wrap(href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name Илья Миронов
+									.reviews-text__city г. Стерлитамак
+							.reviews-video-item
+								a.reviews-video-wrap(href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name Илья Миронов
+									.reviews-text__city г. Стерлитамак
+							.reviews-video-item
+								a.reviews-video-wrap(href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox)
+									img.reviews-video-preview(src="images/review.jpg", alt="")
+								.reviews-text
+									.reviews-text__name Илья Миронов
+									.reviews-text__city г. Стерлитамак
+				.reviews-loadmore.reviews-loadmore--loading
+					span Посмотреть еще
