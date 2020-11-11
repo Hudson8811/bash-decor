@@ -88,3 +88,50 @@ mixin popup()
 										span.btn-v2__bg
 										span.btn-v2__text получить консультацию
 								.form__privacy-policy Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a>
+
+	#popup-team.popup.popup--team(style='display: none; background-image: url(images/bg-clouds.jpg);')
+		.popup__team
+			img(src='images/popup/team.png' alt='team')
+			.s10
+				.s10__info
+					.team
+						.team__person
+							.team__first-name Руслан
+							.team__position
+								svg
+									use(xlink:href='./svg/sprite.svg#light')
+								span Электрик
+							.team__expierence
+								span 3 года
+								span 129 монтажей
+			.s10
+				.s10__info
+					.team__person
+						.team__first-name Алексей
+						.team__position
+							svg
+								use(xlink:href='./svg/sprite.svg#hammer')
+							span Монтажник
+						.team__expierence
+							span 5 лет
+							span 316 монтажей
+		.popup__title Прежде чем приедет бригада монтажников, <span>необходимо сделать замеры помещений</span> <br> и выбрать подходящий потолок
+		.popup__services
+			.popup__services-item
+				.popup__services-item-pic
+					img(src='images/popup/team-item-2.png' alt='team-item-2')
+				p <span>Замерщик привозит с собой все каталоги потолков</span> и светильников. Вы сможете выбрать подходящий потолок, не выходя из дома.
+			.popup__services-item
+				.popup__services-item-pic
+					img(src='images/popup/team-item-1.png' alt='team-item-1')
+				p <span>Вы получите точный расчет стоимости в день вызова.</span> Для расчета у замерщика есть ноутбук со специальной программой.
+		form.form(action='', method='POST')
+			.form__wrapper
+				.popup__form-flex
+					+input('phone', 'phone', 'input--gray', 'номер телефона')
+					.popup__block
+						.btn-v2
+							.btn-v2__inner
+								span.btn-v2__bg
+								span.btn-v2__text договориться о времени
+						.form__privacy-policy Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a>

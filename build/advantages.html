@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?20201011104636830" rel="stylesheet">
+    <link href="css/main.css?20201011162854385" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -801,6 +801,62 @@
         </div>
       </div>
     </div>
-    <script src="js/main.js?20201011104636830"></script>
+    <div class="popup popup--team" id="popup-team" style="display: none; background-image: url(images/bg-clouds.jpg);">
+      <div class="popup__team"><img src="images/popup/team.png" alt="team">
+        <div class="s10">
+          <div class="s10__info">
+            <div class="team">
+              <div class="team__person">
+                <div class="team__first-name">Руслан</div>
+                <div class="team__position">
+                  <svg>
+                    <use xlink:href="./svg/sprite.svg#light"></use>
+                  </svg><span>Электрик</span>
+                </div>
+                <div class="team__expierence"><span>3 года</span><span>129 монтажей</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s10">
+          <div class="s10__info">
+            <div class="team__person">
+              <div class="team__first-name">Алексей</div>
+              <div class="team__position">
+                <svg>
+                  <use xlink:href="./svg/sprite.svg#hammer"></use>
+                </svg><span>Монтажник</span>
+              </div>
+              <div class="team__expierence"><span>5 лет</span><span>316 монтажей</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup__title">Прежде чем приедет бригада монтажников, <span>необходимо сделать замеры помещений</span> <br> и выбрать подходящий потолок</div>
+      <div class="popup__services">
+        <div class="popup__services-item">
+          <div class="popup__services-item-pic"><img src="images/popup/team-item-2.png" alt="team-item-2"></div>
+          <p><span>Замерщик привозит с собой все каталоги потолков</span> и светильников. Вы сможете выбрать подходящий потолок, не выходя из дома.</p>
+        </div>
+        <div class="popup__services-item">
+          <div class="popup__services-item-pic"><img src="images/popup/team-item-1.png" alt="team-item-1"></div>
+          <p><span>Вы получите точный расчет стоимости в день вызова.</span> Для расчета у замерщика есть ноутбук со специальной программой.</p>
+        </div>
+      </div>
+      <form class="form" action="" method="POST">
+        <div class="form__wrapper">
+          <div class="popup__form-flex">
+            <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
+            <div class="popup__block">
+              <div class="btn-v2">
+                <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">договориться о времени</span></div>
+              </div>
+              <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/main.js?20201011162854385"></script>
   </body>
 </html>

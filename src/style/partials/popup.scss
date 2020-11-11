@@ -277,3 +277,123 @@
 		}
 	}
 }
+
+.popup--team {
+	padding: 90px 95px 95px;
+
+	.popup {
+		position: relative;
+
+		&__team {
+			position: absolute;
+			bottom: 8px;
+			right: 8px;
+		}
+
+		&__title {
+			max-width: 675px;
+			font-size: 45px;
+			line-height: 49.2px;
+			margin-bottom: 36px;
+		}
+
+		&__services {
+			margin-bottom: 51px;
+		}
+
+		&__services-item {
+			display: flex;
+			align-items: center;
+			margin-left: -85px;
+
+			+ .popup__services-item {
+				margin-top: 6px;
+			}
+
+			&-pic {
+				max-width: 180px;
+				width: 100%;
+
+				img {
+					margin-left: auto;
+				}
+			}
+
+			p {
+				font-size: 20px;
+				line-height: 28.65px;
+				font-weight: 300;
+				max-width: 455px;
+				margin-left: 10px;
+
+				span {
+					font-weight: 500;
+				}
+			}
+		}
+
+		&__block {
+			max-width: 312px;
+		}
+	}
+
+	.s10 {
+		position: absolute;
+		top: 40%;
+		left: 41px;
+
+		&:last-child {
+			top: 66%;
+			left: auto;
+			right: 57px;
+		}
+
+		&__info {
+			width: 273px;
+			min-height: 120px;
+			margin-top: 0;
+			padding: 18px 24px 20px 40px;
+		}
+	}
+
+	.team {
+		background-color: $white;
+
+		&::after {
+			display: none;
+		}
+
+		&__person {
+			width: 100%;
+			margin: 0;
+		}
+
+		&__first-name {
+			width: 91px;
+			height: 30px;
+			font-size: 13px;
+		}
+
+		&__position {
+			font-size: 13px;
+
+			svg {
+				max-width: 17px;
+			}
+		}
+
+		&__expierence {
+			margin-top: 16px;
+
+			span {
+				font-size: 13px;
+				padding-left: 18px;
+
+				&::before {
+					width: 6px;
+					height: 6px;
+				}
+			}
+		}
+	}
+}
