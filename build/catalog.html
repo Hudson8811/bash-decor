@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?20201011171251963" rel="stylesheet">
+    <link href="css/main.css?202010121791449" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -26,18 +26,15 @@
                 <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
               </svg></a></div><a class="header__phone" href="tel:+79874919455">+7(987) 491-94-55</a>
         </div>
-        <div class="header__burger"><span></span></div><a class="header__phone-icon" href="tel:+79874919455">
+        <div class="header__burger"><span></span></div><a class="header__socials-icon header__socials-icon--mobile" href="#">
           <svg>
-            <use xlink:href="./svg/sprite.svg#phone-wh"></use>
+            <use xlink:href="./svg/sprite.svg#socials--wa"></use>
           </svg></a>
       </div>
       <div class="header-menu">
         <div class="header__catalog"><img src="images/catalog.png" alt="catalog"><a href="#popup-catalog">Скачать каталог</a></div><a class="header__phone" href="tel:+79874919455">+7(987) 491-94-55</a>
         <div class="header__contacts">Задайте вопрос в мессенджере:
           <div class="header__socials"><a class="header__socials-icon" href="#">
-              <svg>
-                <use xlink:href="./svg/sprite.svg#socials--wa"></use>
-              </svg></a><a class="header__socials-icon" href="#">
               <svg>
                 <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
               </svg></a></div>
@@ -334,6 +331,41 @@
         </div>
       </form>
     </div>
-    <script src="js/main.js?20201011171251963"></script>
+    <div class="popup popup--gallery" id="popup-gallery" style="display: none; background-image: url(images/bg-clouds.jpg);">
+      <div class="popup__title"><span class="js-gallery-name">Классический потолок в спальню</span>
+        <div class="popup__square"><span>22м <sup>2</sup></span></div>
+      </div>
+      <div class="popup__gallery">
+        <div class="popup__thumbs">
+          <div class="popup__thumbs-item popup__gallery--active"><img src="images/products/item-1.jpg" alt=""></div>
+          <div class="popup__thumbs-item"><img src="images/products/item-1.jpg" alt=""></div>
+          <div class="popup__thumbs-item"><img src="images/products/item-1.jpg" alt=""></div>
+        </div>
+        <div class="popup__content"><img src="images/products/item-1.jpg" alt=""></div>
+      </div>
+      <div class="popup__liked">
+        <div class="popup__liked-text">
+          <p>Понравился этот потолок?</p>
+          <p>Укажите площадь вашего помещения <br> и получите расчет стоимости в течение 15 минут</p>
+        </div>
+        <form class="form" action="" method="POST">
+          <div class="quiz-inp-size__inp">
+            <div class="custom-inp-numer js-custom-inp-numer">
+              <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
+              <div class="custom-inp-numer__btns">
+                <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
+                <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-inp-size__m">м<sup>2</sup></div>
+          <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
+          <div class="btn-v2">
+            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">получить рассчет</span></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/main.js?202010121791449"></script>
   </body>
 </html>

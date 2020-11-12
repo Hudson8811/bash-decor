@@ -25,7 +25,10 @@ form.form(action='', method='POST')
 						use(xlink:href='./svg/sprite.svg#socials--phone')
 					span По телефону
 			+input('phone', 'phone', 'input--gray', 'номер телефона')
-			+button('получить 3 варианта со скидкой', 'form__button')
+			.btn-v2
+				.btn-v2__inner
+					span.btn-v2__bg
+					span.btn-v2__text получить 3 варианта со скидкой
 			.form__privacy-policy Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a>
 	.note
 		.note__inner

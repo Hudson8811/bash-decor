@@ -41,15 +41,18 @@ block main
 				.advantages__flex
 					.advantages-item
 						.advantages-item__picture
-							img(src='images/advantages/item-1.png' alt='advantages-1')
+							a(href='#popup-consult')
+								img(src='images/advantages/item-1.png' alt='advantages-1')
 						p Заявленная вначале стоимость остается неизменной до конца работ. <br> <span>Если не укладываемся в смету - <br> платим из своего кармана</span>
 					.advantages-item
 						.advantages-item__picture
-							img(src='images/advantages/item-2.png' alt='advantages-2')
+							a(href='#popup-consult')
+								img(src='images/advantages/item-2.png' alt='advantages-2')
 						p Потолки «Башдекор» сохраняют качество <br> <span>и внешний вид в течение 25 лет <br> - без потребности в уходе</span>
 					.advantages-item
 						.advantages-item__picture
-							img(src='images/advantages/item-3.png' alt='advantages-3')
+							a(href='#popup-consult')
+								img(src='images/advantages/item-3.png' alt='advantages-3')
 						p Устанавливаем потолки строго по государственным стандартам. <br> <span>Средний опыт монтажников «Башдекор» - 4,5 года</span>
 
 		#quiz.quiz
@@ -343,21 +346,21 @@ block main
 										.quiz-slide-title Выберите подарок за прохождение теста
 											.quiz-flex-3.quiz-flex-3--4
 												label.quiz-flex-3__item.quiz-flex-3__item--4
-													input(type="checkbox", name="slide3" checked)
+													input(type="checkbox", name="slide3" checked required)
 													.quiz-flex-3__inner
 														.quiz-flex-3__pic.quiz-flex-3__pic--gift
 															img(src="images/products/item-1.jpg", alt="")
 															.quiz-pic-gift
 														.quiz-flex-3__title Классический белый
 												label.quiz-flex-3__item.quiz-flex-3__item--4
-													input(type="checkbox", name="slide3")
+													input(type="checkbox", name="slide3" required)
 													.quiz-flex-3__inner
 														.quiz-flex-3__pic.quiz-flex-3__pic--gift
 															img(src="images/products/item-1.jpg", alt="")
 															.quiz-pic-gift
 														.quiz-flex-3__title Вся квартира
 												label.quiz-flex-3__item.quiz-flex-3__item--4
-													input(type="checkbox", name="slide3")
+													input(type="checkbox", name="slide3" required)
 													.quiz-flex-3__inner
 														.quiz-flex-3__pic.quiz-flex-3__pic--gift
 															img(src="images/products/item-1.jpg", alt="")
@@ -459,7 +462,10 @@ block main
 								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
 								p Его заказывают 80% заказчиков.
 								p от 189 ₽/м2
-							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+							a.btn-v2.btn-v2--gray(href='#popup-gallery')
+								.btn-v2__inner
+									span.btn-v2__bg
+									span.btn-v2__text Рассчитать стоимость
 					.product-item
 						.product-item__img
 							img(src='images/products/item-1.jpg' alt='products-item-1')
@@ -469,7 +475,10 @@ block main
 								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
 								p Его заказывают 80% заказчиков.
 								p от 189 ₽/м2
-							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+							a.btn-v2.btn-v2--gray(href='#popup-gallery')
+								.btn-v2__inner
+									span.btn-v2__bg
+									span.btn-v2__text Рассчитать стоимость
 					.product-item
 						.product-item__img
 							img(src='images/products/item-1.jpg' alt='products-item-1')
@@ -479,7 +488,10 @@ block main
 								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
 								p Его заказывают 80% заказчиков.
 								p от 189 ₽/м2
-							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+							a.btn-v2.btn-v2--gray(href='#popup-gallery')
+								.btn-v2__inner
+									span.btn-v2__bg
+									span.btn-v2__text Рассчитать стоимость
 					.product-item
 						.product-item__img
 							img(src='images/products/item-1.jpg' alt='products-item-1')
@@ -489,7 +501,10 @@ block main
 								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
 								p Его заказывают 80% заказчиков.
 								p от 189 ₽/м2
-							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+							a.btn-v2.btn-v2--gray(href='#popup-gallery')
+								.btn-v2__inner
+									span.btn-v2__bg
+									span.btn-v2__text Рассчитать стоимость
 					.product-item
 						.product-item__img
 							img(src='images/products/item-1.jpg' alt='products-item-1')
@@ -499,7 +514,10 @@ block main
 								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
 								p Его заказывают 80% заказчиков.
 								p от 189 ₽/м2
-							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+							a.btn-v2.btn-v2--gray(href='#popup-gallery')
+								.btn-v2__inner
+									span.btn-v2__bg
+									span.btn-v2__text Рассчитать стоимость
 					.product-item
 						.product-item__img
 							img(src='images/products/item-1.jpg' alt='products-item-1')
@@ -509,7 +527,10 @@ block main
 								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
 								p Его заказывают 80% заказчиков.
 								p от 189 ₽/м2
-							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+							a.btn-v2.btn-v2--gray(href='#popup-gallery')
+								.btn-v2__inner
+									span.btn-v2__bg
+									span.btn-v2__text Рассчитать стоимость
 					.product-item
 						.product-item__img
 							img(src='images/products/item-1.jpg' alt='products-item-1')
@@ -519,7 +540,10 @@ block main
 								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
 								p Его заказывают 80% заказчиков.
 								p от 189 ₽/м2
-							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+							a.btn-v2.btn-v2--gray(href='#popup-gallery')
+								.btn-v2__inner
+									span.btn-v2__bg
+									span.btn-v2__text Рассчитать стоимость
 					.product-item
 						.product-item__img
 							img(src='images/products/item-1.jpg' alt='products-item-1')
@@ -529,9 +553,12 @@ block main
 								p Монотонное белое полотно без излишек - самый популярный вариант исполнения.
 								p Его заказывают 80% заказчиков.
 								p от 189 ₽/м2
-							+button('Рассчитать стоимость', 'button--inactive product-item__button')
+							a.btn-v2.btn-v2--gray(href='#popup-gallery')
+								.btn-v2__inner
+									span.btn-v2__bg
+									span.btn-v2__text Рассчитать стоимость
 					.product-item.product-item--social
-						.product-item__insta
+						a.product-item__insta(href='https://www.instagram.com/bashdekor_str/' target='_blank')
 							svg
 								use(xlink:href='./svg/sprite.svg#socials--insta')
 						.product-item__subs
@@ -597,73 +624,81 @@ block main
 										use(xlink:href='./svg/sprite.svg#socials--phone')
 									span По телефону
 							+input('phone', 'phone', 'input--gray', 'номер телефона')
-							+button('получить каталог потолков', 'form__button')
+							.btn-v2
+								.btn-v2__inner
+									span.btn-v2__bg
+									span.btn-v2__text получить каталог потолков
 							.form__bonus + персональную скидку до 50% на все позиции
 							.form__privacy-policy Оставляя заявку, вы соглашаетесь с <a href="#" target="_blank">политикой <br> конфиденциальности</a>
 
-	.quality
-		.container.quality__container
-			+title('Почему потолок сохраняет качество <br> <span>и внешний вид в течение 25 лет </span> <br> без потребности в уходе', 'quality__title')
-			.quality__flex
-				.product-item.product-item--quality
-					.product-item__img
-						img(src='images/products/item-1.jpg' alt='products-item-1')
-					.product-item__content
-						.product-item__title Потолок не <br> требует ухода <br> и обновления
-						.product-item__description(style='display: none;') В отличие от побелки <br> не трескается, не сыпется <br> и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
-				.product-item.product-item--quality
-					.product-item__img
-						img(src='images/products/item-1.jpg' alt='products-item-1')
-					.product-item__content
-						.product-item__title Надежное крепление <span>гарантирует безопасность конструкции</span>
-						.product-item__description(style='display: none;') В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
-				.product-item.product-item--quality
-					.product-item__img
-						img(src='images/products/item-1.jpg' alt='products-item-1')
-					.product-item__content
-						.product-item__title Полотно <br> выдерживает <br> <span>нагрузку до 200 кг</span>
-						.product-item__description(style='display: none;') В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
-				.product-item.product-item--quality
-					.product-item__img
-						img(src='images/products/item-1.jpg' alt='products-item-1')
-					.product-item__content
-						.product-item__title Гарантируют <br> <span>пожарную <br> безопасность</span>
-						.product-item__description(style='display: none;') В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
+	.bg-clouds(style='background-image: url(images/bg-clouds.jpg)')
+		.quality
+			.container.quality__container
+				+title('Почему потолок сохраняет качество <br> <span>и внешний вид в течение 25 лет </span> <br> без потребности в уходе', 'quality__title')
+				.quality__flex
+					.product-item.product-item--quality
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Потолок не <br> требует ухода <br> и обновления
+							.product-item__description(style='display: none;') В отличие от побелки <br> не трескается, не сыпется <br> и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
+					.product-item.product-item--quality
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Надежное крепление <span>гарантирует безопасность конструкции</span>
+							.product-item__description(style='display: none;') В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
+					.product-item.product-item--quality
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Полотно <br> выдерживает <br> <span>нагрузку до 200 кг</span>
+							.product-item__description(style='display: none;') В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
+					.product-item.product-item--quality
+						.product-item__img
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.product-item__content
+							.product-item__title Гарантируют <br> <span>пожарную <br> безопасность</span>
+							.product-item__description(style='display: none;') В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне
 
-	.work
-		.container.work__container
-			+title('<span>Установка потолков строго <br> по госстандартамот специалистов, </span> каждый из которых смонтировал минимум 50 потолков', 'work__title')
-			.work__flex
-				.work__items
-					.work__item
-						.work__item-img
-							img(src='images/work/item-1.png' alt='')
-						p <span>Средний опыт монтажников</span> "БашДекор" - 4,5 года и >100 установленных потолков. Наши монтажники обучают грамотному монтажу на ютубе
-					.work__item
-						.work__item-img
-							img(src='images/work/item-2.png' alt='')
-						p <span>Электромонтажные работы строго по СНИПу.</span> Выполняет профессиональный электрик, который есть в каждой бригаде
-					.work__item
-						.work__item-img
-							img(src='images/work/item-3.png' alt='')
-						p <span>Перед установкой проверяем</span> стены специальным оборудованием, чтобы обнаружить проводку <br> и не повредить при монтаже
-					.work__item
-						.work__item-img
-							img(src='images/work/item-4.png' alt='')
-						p <span>Все сотрудники проходят 2-недельное обучение</span> <br> в компании и сдают выпускной экзамен прежде, <br> чем приступить к монтажу
-				.work__video-wrap
-					.work__video
-						p Узнайте как мы монтируем <br> потолки из 5-минутного видео
-						a.play.play--small(href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox)
-							.pulse-core
-								img(src='img/play.png' alt='play')
-					.work__picture
-						img(src='images/products/item-1.jpg' alt='products-item-1')
-					.note.note--work
-						.note__inner
-							svg
-								use(xlink:href='./svg/sprite.svg#clock')
-							p Среднее время монтажа <br> <span>2-2,5 часа</span>
+		.work
+			.container.work__container
+				+title('<span>Установка потолков строго <br> по госстандартамот специалистов, </span> каждый из которых смонтировал минимум 50 потолков', 'work__title')
+				.work__flex
+					.work__items
+						.work__item
+							.work__item-img
+								img(src='images/work/item-1.png' alt='')
+							p <span>Средний опыт монтажников</span> "БашДекор" - 4,5 года и >100 установленных потолков. Наши монтажники обучают грамотному монтажу на ютубе
+						.work__item
+							.work__item-img
+								img(src='images/work/item-2.png' alt='')
+							p <span>Электромонтажные работы строго по СНИПу.</span> Выполняет профессиональный электрик, который есть в каждой бригаде
+						.work__item
+							.work__item-img
+								img(src='images/work/item-3.png' alt='')
+							p <span>Перед установкой проверяем</span> стены специальным оборудованием, чтобы обнаружить проводку <br> и не повредить при монтаже
+						.work__item
+							.work__item-img
+								img(src='images/work/item-4.png' alt='')
+							p <span>Все сотрудники проходят 2-недельное обучение</span> <br> в компании и сдают выпускной экзамен прежде, <br> чем приступить к монтажу
+					.work__video-wrap
+						.work__video
+							p Узнайте как мы монтируем <br> потолки из 5-минутного видео
+							a.play.play--small(href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox)
+								.pulse.pulse-1
+								.pulse.pulse-2
+								.pulse.pulse-3
+								.pulse.pulse-4
+								.pulse-core
+									img(src='img/play.png' alt='play')
+						.work__picture
+							img(src='images/products/item-1.jpg' alt='products-item-1')
+						.note.note--work
+							.note__inner
+								svg
+									use(xlink:href='./svg/sprite.svg#clock')
+								p Среднее время монтажа <br> <span>2-2,5 часа</span>
 
 	.team
 		.container.team__container
@@ -673,7 +708,7 @@ block main
 					.team__item-img
 						img(src='images/products/item-1.jpg' alt='')
 					.team__content
-						.team__flex
+						.team__flex(style='display: none')
 							.team__person
 								.team__first-name Алексей
 								.team__position
@@ -751,9 +786,10 @@ block main
 								span.btn-v2__bg
 								span.btn-v2__text выбрать бригаду
 
-	include sections/s9-10.pug
-	include sections/fresh-projects
-	include sections/reviews
-	include sections/other-company
-	include sections/free-measurement
+	.bg-clouds(style='background-image: url(images/bg-clouds.jpg)')
+		include sections/s9-10.pug
+		include sections/fresh-projects
+		include sections/reviews
+		include sections/other-company
+		include sections/free-measurement
 	include sections/map

@@ -66,10 +66,13 @@
 				height: 70px;
 			}
 
-			&__button {
+			.btn-v2 {
 				margin: 12px 0 22px;
 				height: 69px;
-				font-size: 12px;
+
+				&__text {
+					font-size: 12px;
+				}
 			}
 		}
 
@@ -278,7 +281,7 @@
 			}
 
 			.input,
-			&__button {
+			.btn-v2 {
 				width: calc(50% - 10px);
 			}
 
@@ -288,10 +291,13 @@
 				font-size: 10px;
 			}
 
-			&__button {
+			.btn-v2 {
 				display: inline-flex;
 				margin: 0 0 15px;
-				font-size: 9px;
+
+				&__text {
+					font-size: 9px;
+				}
 			}
 
 			&__privacy-policy {
@@ -432,7 +438,7 @@
 			}
 
 			.input,
-			&__button {
+			.btn-v2 {
 				width: 100%;
 				height: 60px;
 			}
@@ -441,7 +447,7 @@
 				padding: 0 21px;
 			}
 
-			&__button {
+			.btn-v2 {
 				margin: 15px 0 21px;
 			}
 		}

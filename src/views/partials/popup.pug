@@ -135,3 +135,36 @@ mixin popup()
 								span.btn-v2__bg
 								span.btn-v2__text договориться о времени
 						.form__privacy-policy Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a>
+
+	#popup-gallery.popup.popup--gallery(style='display: none; background-image: url(images/bg-clouds.jpg);')
+		.popup__title
+			span.js-gallery-name Классический потолок в спальню
+			.popup__square
+				span 22м <sup>2</sup>
+		.popup__gallery
+			.popup__thumbs
+				.popup__thumbs-item.popup__gallery--active
+					img(src='images/products/item-1.jpg' alt='')
+				.popup__thumbs-item
+					img(src='images/products/item-1.jpg' alt='')
+				.popup__thumbs-item
+					img(src='images/products/item-1.jpg' alt='')
+			.popup__content
+				img(src='images/products/item-1.jpg' alt='')
+		.popup__liked
+			.popup__liked-text
+				p Понравился этот потолок?
+				p Укажите площадь вашего помещения <br> и получите расчет стоимости в течение 15 минут
+			form.form(action='', method='POST')
+				.quiz-inp-size__inp
+					.custom-inp-numer.js-custom-inp-numer
+						input.custom-inp-numer__inp(type="number" min="0" max="9999" value="0")
+						.custom-inp-numer__btns
+							.custom-inp-numer__btn.custom-inp-numer__more
+							.custom-inp-numer__btn.custom-inp-numer__less
+				.quiz-inp-size__m м<sup>2</sup>
+				+input('phone', 'phone', 'input--gray', 'номер телефона')
+				.btn-v2
+					.btn-v2__inner
+						span.btn-v2__bg
+						span.btn-v2__text получить рассчет

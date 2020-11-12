@@ -397,3 +397,171 @@
 		}
 	}
 }
+
+.popup--gallery {
+	padding: 78px 86px 192px 77px;
+
+	.popup {
+		&__title {
+			max-width: 100%;
+			margin-bottom: 42px;
+
+			span {
+				font-weight: 300;
+			}
+		}
+
+		&__gallery {
+			display: flex;
+			padding-bottom: 86px;
+
+			&--active {
+				border: 5px solid #89aace !important;
+			}
+		}
+
+		&__thumbs {
+			width: 100%;
+			max-width: 170px;
+			margin-right: 53px;
+		}
+
+		&__thumbs-item {
+			width: 100%;
+			height: 89px;
+			border-radius: 5px;
+			overflow: hidden;
+			box-sizing: border-box;
+
+			+ .popup__thumbs-item {
+				margin-top: 22px;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__content {
+			width: 100%;
+			max-height: 362px;
+			border-radius: 5px;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__liked {
+			width: 100%;
+			height: 192px;
+			padding: 48px 78px 57px;
+			display: flex;
+			background-color: #eff3f8;
+			border-radius: 10px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+			box-sizing: border-box;
+		}
+
+		&__liked-text {
+			max-width: 420px;
+			width: 100%;
+			margin-right: 65px;
+
+			p {
+				&:first-child {
+					font-size: 29px;
+					font-weight: 300;
+					margin-bottom: 13px;
+				}
+
+				&:last-child {
+					font-size: 17px;
+					line-height: 19.95px;
+					font-weight: 500;
+					color: #a4a4a4;
+				}
+			}
+		}
+
+		&__square {
+			display: inline-block;
+			width: 101px;
+			height: 46px;
+			position: relative;
+			top: 10px;
+			left: 8px;
+
+			&::before,
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+			}
+
+			&::before {
+				width: 100%;
+				height: 100%;
+				border-radius: 10px;
+				box-shadow: 0 0 30px 10px rgba(220, 222, 237, 0.18), inset 0 0 35px rgba(255, 255, 255, 0.16);
+				background-color: #7a9fc8;
+				top: 0;
+				left: 0;
+			}
+
+			&::after {
+				width: 9px;
+				height: 9px;
+				background-color: $white;
+				border-radius: 50%;
+				top: 18px;
+				left: 15px;
+			}
+
+			span {
+				position: absolute;
+				top: 0;
+				left: 38px;
+				font-size: 18px;
+				line-height: 38px;
+				color: $white;
+				font-weight: 400;
+
+				sup {
+					font-size: 10px;
+				}
+			}
+		}
+	}
+
+	.form {
+		display: flex;
+		align-items: center;
+
+		> input {
+			max-width: 220px;
+			margin-left: 32px;
+		}
+
+		.custom-inp-numer {
+			width: 107px;
+		}
+
+		.quiz-inp-size__m {
+			margin-left: 18px;
+		}
+
+		.btn-v2 {
+			width: 230px;
+			margin-left: 8px;
+			margin-bottom: 0;
+		}
+	}
+}

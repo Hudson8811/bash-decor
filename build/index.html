@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?20201011171252614" rel="stylesheet">
+    <link href="css/main.css?20201012179260" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -26,18 +26,15 @@
                 <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
               </svg></a></div><a class="header__phone" href="tel:+79874919455">+7(987) 491-94-55</a>
         </div>
-        <div class="header__burger"><span></span></div><a class="header__phone-icon" href="tel:+79874919455">
+        <div class="header__burger"><span></span></div><a class="header__socials-icon header__socials-icon--mobile" href="#">
           <svg>
-            <use xlink:href="./svg/sprite.svg#phone-wh"></use>
+            <use xlink:href="./svg/sprite.svg#socials--wa"></use>
           </svg></a>
       </div>
       <div class="header-menu">
         <div class="header__catalog"><img src="images/catalog.png" alt="catalog"><a href="#popup-catalog">Скачать каталог</a></div><a class="header__phone" href="tel:+79874919455">+7(987) 491-94-55</a>
         <div class="header__contacts">Задайте вопрос в мессенджере:
           <div class="header__socials"><a class="header__socials-icon" href="#">
-              <svg>
-                <use xlink:href="./svg/sprite.svg#socials--wa"></use>
-              </svg></a><a class="header__socials-icon" href="#">
               <svg>
                 <use xlink:href="./svg/sprite.svg#socials--telegram"></use>
               </svg></a></div>
@@ -124,7 +121,9 @@
                   </label>
                 </div>
                 <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
-                <button class="button form__button"><span class="flare"></span><span>получить 3 варианта со скидкой</span></button>
+                <div class="btn-v2">
+                  <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">получить 3 варианта со скидкой</span></div>
+                </div>
                 <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь <br> с <a href="#" target="_blank">политикой конфиденциальности</a></div>
               </div>
             </div>
@@ -144,15 +143,15 @@
           <div class="container advantages__container">
             <div class="advantages__flex">
               <div class="advantages-item">
-                <div class="advantages-item__picture"><img src="images/advantages/item-1.png" alt="advantages-1"></div>
+                <div class="advantages-item__picture"><a href="#popup-consult"><img src="images/advantages/item-1.png" alt="advantages-1"></a></div>
                 <p>Заявленная вначале стоимость остается неизменной до конца работ. <br> <span>Если не укладываемся в смету - <br> платим из своего кармана</span></p>
               </div>
               <div class="advantages-item">
-                <div class="advantages-item__picture"><img src="images/advantages/item-2.png" alt="advantages-2"></div>
+                <div class="advantages-item__picture"><a href="#popup-consult"><img src="images/advantages/item-2.png" alt="advantages-2"></a></div>
                 <p>Потолки «Башдекор» сохраняют качество <br> <span>и внешний вид в течение 25 лет <br> - без потребности в уходе</span></p>
               </div>
               <div class="advantages-item">
-                <div class="advantages-item__picture"><img src="images/advantages/item-3.png" alt="advantages-3"></div>
+                <div class="advantages-item__picture"><a href="#popup-consult"><img src="images/advantages/item-3.png" alt="advantages-3"></a></div>
                 <p>Устанавливаем потолки строго по государственным стандартам. <br> <span>Средний опыт монтажников «Башдекор» - 4,5 года</span></p>
               </div>
             </div>
@@ -508,7 +507,7 @@
                         <div class="quiz-slide-title">Выберите подарок за прохождение теста
                           <div class="quiz-flex-3 quiz-flex-3--4">
                             <label class="quiz-flex-3__item quiz-flex-3__item--4">
-                              <input type="checkbox" name="slide3" checked>
+                              <input type="checkbox" name="slide3" checked required>
                               <div class="quiz-flex-3__inner">
                                 <div class="quiz-flex-3__pic quiz-flex-3__pic--gift"><img src="images/products/item-1.jpg" alt="">
                                   <div class="quiz-pic-gift"></div>
@@ -517,7 +516,7 @@
                               </div>
                             </label>
                             <label class="quiz-flex-3__item quiz-flex-3__item--4">
-                              <input type="checkbox" name="slide3">
+                              <input type="checkbox" name="slide3" required>
                               <div class="quiz-flex-3__inner">
                                 <div class="quiz-flex-3__pic quiz-flex-3__pic--gift"><img src="images/products/item-1.jpg" alt="">
                                   <div class="quiz-pic-gift"></div>
@@ -526,7 +525,7 @@
                               </div>
                             </label>
                             <label class="quiz-flex-3__item quiz-flex-3__item--4">
-                              <input type="checkbox" name="slide3">
+                              <input type="checkbox" name="slide3" required>
                               <div class="quiz-flex-3__inner">
                                 <div class="quiz-flex-3__pic quiz-flex-3__pic--gift"><img src="images/products/item-1.jpg" alt="">
                                   <div class="quiz-pic-gift"></div>
@@ -654,8 +653,8 @@
                     <p>Монотонное белое полотно без излишек - самый популярный вариант исполнения.</p>
                     <p>Его заказывают 80% заказчиков.</p>
                     <p>от 189 ₽/м2</p>
-                  </div>
-                  <button class="button button--inactive product-item__button"><span class="flare"></span><span>Рассчитать стоимость</span></button>
+                  </div><a class="btn-v2 btn-v2--gray" href="#popup-gallery">
+                    <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Рассчитать стоимость</span></div></a>
                 </div>
               </div>
               <div class="product-item">
@@ -666,8 +665,8 @@
                     <p>Монотонное белое полотно без излишек - самый популярный вариант исполнения.</p>
                     <p>Его заказывают 80% заказчиков.</p>
                     <p>от 189 ₽/м2</p>
-                  </div>
-                  <button class="button button--inactive product-item__button"><span class="flare"></span><span>Рассчитать стоимость</span></button>
+                  </div><a class="btn-v2 btn-v2--gray" href="#popup-gallery">
+                    <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Рассчитать стоимость</span></div></a>
                 </div>
               </div>
               <div class="product-item">
@@ -678,8 +677,8 @@
                     <p>Монотонное белое полотно без излишек - самый популярный вариант исполнения.</p>
                     <p>Его заказывают 80% заказчиков.</p>
                     <p>от 189 ₽/м2</p>
-                  </div>
-                  <button class="button button--inactive product-item__button"><span class="flare"></span><span>Рассчитать стоимость</span></button>
+                  </div><a class="btn-v2 btn-v2--gray" href="#popup-gallery">
+                    <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Рассчитать стоимость</span></div></a>
                 </div>
               </div>
               <div class="product-item">
@@ -690,8 +689,8 @@
                     <p>Монотонное белое полотно без излишек - самый популярный вариант исполнения.</p>
                     <p>Его заказывают 80% заказчиков.</p>
                     <p>от 189 ₽/м2</p>
-                  </div>
-                  <button class="button button--inactive product-item__button"><span class="flare"></span><span>Рассчитать стоимость</span></button>
+                  </div><a class="btn-v2 btn-v2--gray" href="#popup-gallery">
+                    <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Рассчитать стоимость</span></div></a>
                 </div>
               </div>
               <div class="product-item">
@@ -702,8 +701,8 @@
                     <p>Монотонное белое полотно без излишек - самый популярный вариант исполнения.</p>
                     <p>Его заказывают 80% заказчиков.</p>
                     <p>от 189 ₽/м2</p>
-                  </div>
-                  <button class="button button--inactive product-item__button"><span class="flare"></span><span>Рассчитать стоимость</span></button>
+                  </div><a class="btn-v2 btn-v2--gray" href="#popup-gallery">
+                    <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Рассчитать стоимость</span></div></a>
                 </div>
               </div>
               <div class="product-item">
@@ -714,8 +713,8 @@
                     <p>Монотонное белое полотно без излишек - самый популярный вариант исполнения.</p>
                     <p>Его заказывают 80% заказчиков.</p>
                     <p>от 189 ₽/м2</p>
-                  </div>
-                  <button class="button button--inactive product-item__button"><span class="flare"></span><span>Рассчитать стоимость</span></button>
+                  </div><a class="btn-v2 btn-v2--gray" href="#popup-gallery">
+                    <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Рассчитать стоимость</span></div></a>
                 </div>
               </div>
               <div class="product-item">
@@ -726,8 +725,8 @@
                     <p>Монотонное белое полотно без излишек - самый популярный вариант исполнения.</p>
                     <p>Его заказывают 80% заказчиков.</p>
                     <p>от 189 ₽/м2</p>
-                  </div>
-                  <button class="button button--inactive product-item__button"><span class="flare"></span><span>Рассчитать стоимость</span></button>
+                  </div><a class="btn-v2 btn-v2--gray" href="#popup-gallery">
+                    <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Рассчитать стоимость</span></div></a>
                 </div>
               </div>
               <div class="product-item">
@@ -738,16 +737,14 @@
                     <p>Монотонное белое полотно без излишек - самый популярный вариант исполнения.</p>
                     <p>Его заказывают 80% заказчиков.</p>
                     <p>от 189 ₽/м2</p>
-                  </div>
-                  <button class="button button--inactive product-item__button"><span class="flare"></span><span>Рассчитать стоимость</span></button>
+                  </div><a class="btn-v2 btn-v2--gray" href="#popup-gallery">
+                    <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Рассчитать стоимость</span></div></a>
                 </div>
               </div>
-              <div class="product-item product-item--social">
-                <div class="product-item__insta">
+              <div class="product-item product-item--social"><a class="product-item__insta" href="https://www.instagram.com/bashdekor_str/" target="_blank">
                   <svg>
                     <use xlink:href="./svg/sprite.svg#socials--insta"></use>
-                  </svg>
-                </div>
+                  </svg></a>
                 <div class="product-item__subs">
                   <p>Больше работ <br> в нашем инстаграме</p>
                   <p>Получите 300 рублей <br> за подписку в инстаграме</p><a href="https://www.instagram.com/bashdekor_str/" target="_blank">@bashdekor_str</a>
@@ -822,7 +819,9 @@
                     </label>
                   </div>
                   <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
-                  <button class="button form__button"><span class="flare"></span><span>получить каталог потолков</span></button>
+                  <div class="btn-v2">
+                    <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">получить каталог потолков</span></div>
+                  </div>
                   <div class="form__bonus">+ персональную скидку до 50% на все позиции</div>
                   <div class="form__privacy-policy">Оставляя заявку, вы соглашаетесь с <a href="#" target="_blank">политикой <br> конфиденциальности</a></div>
                 </div>
@@ -831,75 +830,81 @@
           </div>
         </div>
       </div>
-      <div class="quality">
-        <div class="container quality__container">
-          <div class="title quality__title">Почему потолок сохраняет качество <br> <span>и внешний вид в течение 25 лет </span> <br> без потребности в уходе</div>
-          <div class="quality__flex">
-            <div class="product-item product-item--quality">
-              <div class="product-item__img"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
-              <div class="product-item__content">
-                <div class="product-item__title">Потолок не <br> требует ухода <br> и обновления</div>
-                <div class="product-item__description" style="display: none;">В отличие от побелки <br> не трескается, не сыпется <br> и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне</div>
+      <div class="bg-clouds" style="background-image: url(images/bg-clouds.jpg)">
+        <div class="quality">
+          <div class="container quality__container">
+            <div class="title quality__title">Почему потолок сохраняет качество <br> <span>и внешний вид в течение 25 лет </span> <br> без потребности в уходе</div>
+            <div class="quality__flex">
+              <div class="product-item product-item--quality">
+                <div class="product-item__img"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
+                <div class="product-item__content">
+                  <div class="product-item__title">Потолок не <br> требует ухода <br> и обновления</div>
+                  <div class="product-item__description" style="display: none;">В отличие от побелки <br> не трескается, не сыпется <br> и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне</div>
+                </div>
               </div>
-            </div>
-            <div class="product-item product-item--quality">
-              <div class="product-item__img"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
-              <div class="product-item__content">
-                <div class="product-item__title">Надежное крепление <span>гарантирует безопасность конструкции</span></div>
-                <div class="product-item__description" style="display: none;">В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне</div>
+              <div class="product-item product-item--quality">
+                <div class="product-item__img"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
+                <div class="product-item__content">
+                  <div class="product-item__title">Надежное крепление <span>гарантирует безопасность конструкции</span></div>
+                  <div class="product-item__description" style="display: none;">В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне</div>
+                </div>
               </div>
-            </div>
-            <div class="product-item product-item--quality">
-              <div class="product-item__img"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
-              <div class="product-item__content">
-                <div class="product-item__title">Полотно <br> выдерживает <br> <span>нагрузку до 200 кг</span></div>
-                <div class="product-item__description" style="display: none;">В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне</div>
+              <div class="product-item product-item--quality">
+                <div class="product-item__img"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
+                <div class="product-item__content">
+                  <div class="product-item__title">Полотно <br> выдерживает <br> <span>нагрузку до 200 кг</span></div>
+                  <div class="product-item__description" style="display: none;">В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне</div>
+                </div>
               </div>
-            </div>
-            <div class="product-item product-item--quality">
-              <div class="product-item__img"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
-              <div class="product-item__content">
-                <div class="product-item__title">Гарантируют <br> <span>пожарную <br> безопасность</span></div>
-                <div class="product-item__description" style="display: none;">В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне</div>
+              <div class="product-item product-item--quality">
+                <div class="product-item__img"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
+                <div class="product-item__content">
+                  <div class="product-item__title">Гарантируют <br> <span>пожарную <br> безопасность</span></div>
+                  <div class="product-item__description" style="display: none;">В отличие от побелки не трескается, не сыпется и не выцветает на солнце. Остается чистым и не впитывает запахи даже на кухне</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="work">
-        <div class="container work__container">
-          <div class="title work__title"><span>Установка потолков строго <br> по госстандартамот специалистов, </span> каждый из которых смонтировал минимум 50 потолков</div>
-          <div class="work__flex">
-            <div class="work__items">
-              <div class="work__item">
-                <div class="work__item-img"><img src="images/work/item-1.png" alt=""></div>
-                <p><span>Средний опыт монтажников</span> "БашДекор" - 4,5 года и >100 установленных потолков. Наши монтажники обучают грамотному монтажу на ютубе</p>
+        <div class="work">
+          <div class="container work__container">
+            <div class="title work__title"><span>Установка потолков строго <br> по госстандартамот специалистов, </span> каждый из которых смонтировал минимум 50 потолков</div>
+            <div class="work__flex">
+              <div class="work__items">
+                <div class="work__item">
+                  <div class="work__item-img"><img src="images/work/item-1.png" alt=""></div>
+                  <p><span>Средний опыт монтажников</span> "БашДекор" - 4,5 года и >100 установленных потолков. Наши монтажники обучают грамотному монтажу на ютубе</p>
+                </div>
+                <div class="work__item">
+                  <div class="work__item-img"><img src="images/work/item-2.png" alt=""></div>
+                  <p><span>Электромонтажные работы строго по СНИПу.</span> Выполняет профессиональный электрик, который есть в каждой бригаде</p>
+                </div>
+                <div class="work__item">
+                  <div class="work__item-img"><img src="images/work/item-3.png" alt=""></div>
+                  <p><span>Перед установкой проверяем</span> стены специальным оборудованием, чтобы обнаружить проводку <br> и не повредить при монтаже</p>
+                </div>
+                <div class="work__item">
+                  <div class="work__item-img"><img src="images/work/item-4.png" alt=""></div>
+                  <p><span>Все сотрудники проходят 2-недельное обучение</span> <br> в компании и сдают выпускной экзамен прежде, <br> чем приступить к монтажу</p>
+                </div>
               </div>
-              <div class="work__item">
-                <div class="work__item-img"><img src="images/work/item-2.png" alt=""></div>
-                <p><span>Электромонтажные работы строго по СНИПу.</span> Выполняет профессиональный электрик, который есть в каждой бригаде</p>
-              </div>
-              <div class="work__item">
-                <div class="work__item-img"><img src="images/work/item-3.png" alt=""></div>
-                <p><span>Перед установкой проверяем</span> стены специальным оборудованием, чтобы обнаружить проводку <br> и не повредить при монтаже</p>
-              </div>
-              <div class="work__item">
-                <div class="work__item-img"><img src="images/work/item-4.png" alt=""></div>
-                <p><span>Все сотрудники проходят 2-недельное обучение</span> <br> в компании и сдают выпускной экзамен прежде, <br> чем приступить к монтажу</p>
-              </div>
-            </div>
-            <div class="work__video-wrap">
-              <div class="work__video">
-                <p>Узнайте как мы монтируем <br> потолки из 5-минутного видео</p><a class="play play--small" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox>
-                  <div class="pulse-core"><img src="img/play.png" alt="play"></div></a>
-              </div>
-              <div class="work__picture"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
-              <div class="note note--work">
-                <div class="note__inner">
-                  <svg>
-                    <use xlink:href="./svg/sprite.svg#clock"></use>
-                  </svg>
-                  <p>Среднее время монтажа <br> <span>2-2,5 часа</span></p>
+              <div class="work__video-wrap">
+                <div class="work__video">
+                  <p>Узнайте как мы монтируем <br> потолки из 5-минутного видео</p><a class="play play--small" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox>
+                    <div class="pulse pulse-1"></div>
+                    <div class="pulse pulse-2"></div>
+                    <div class="pulse pulse-3"></div>
+                    <div class="pulse pulse-4"></div>
+                    <div class="pulse-core"><img src="img/play.png" alt="play"></div></a>
+                </div>
+                <div class="work__picture"><img src="images/products/item-1.jpg" alt="products-item-1"></div>
+                <div class="note note--work">
+                  <div class="note__inner">
+                    <svg>
+                      <use xlink:href="./svg/sprite.svg#clock"></use>
+                    </svg>
+                    <p>Среднее время монтажа <br> <span>2-2,5 часа</span></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -913,7 +918,7 @@
             <div class="team__slide">
               <div class="team__item-img"><img src="images/products/item-1.jpg" alt=""></div>
               <div class="team__content">
-                <div class="team__flex">
+                <div class="team__flex" style="display: none">
                   <div class="team__person">
                     <div class="team__first-name">Алексей</div>
                     <div class="team__position">
@@ -991,318 +996,320 @@
           </div>
         </div>
       </div>
-      <div class="s9">
-        <div class="container s9__container">
-          <div class="s9__left">
-            <div class="title s9__title">Быстро и адекватно реагируем <span>на ваши просьбы и рекламации</span></div>
-            <div class="s9__text">Мы хотим, чтобы Вы полностью остались довольны нашей работой и рекомендовали нас друзьям. Поэтому на следующий день после монтажа мы позвоним Вам, чтобы уточнить как прошел монтаж</div>
-            <div class="s9__stoptext"><img class="s9__stoptext-img" src="images/s9/s9-stopwatch.png">
-              <div class="s9__stoptext-text"><span>Если после установки потолка что-то пошло не так</span> (не горит свет, на полотне появились полосы или пятна), <span>то мы решим возникшие проблемы в течение 24 часов бесплатно</span></div>
-            </div>
-          </div>
-          <div class="s9__right">
-            <div class="s9-pic"><img class="s9-pic__1" src="images/s9-img-1.png" alt=""><img class="s9-pic__2" src="images/s9-img-2.png" alt=""><img class="s9-pic__3" src="images/s9-img-3.png" alt=""></div>
-          </div>
-        </div><img class="s9__bush" src="images/s9/s9-brush.png">
-      </div>
-      <div class="s10">
-        <div class="container s10__container">
-          <div class="s10__flex">
-            <div class="s10__left">
-              <div class="s10__img"><img src="images/s10/s10-mans.png"></div>
-              <div class="s10__info">
-                <div class="s10__info-inner">
-                  <div class="s10__info-name">Айдар и Елена Галимовы</div>
-                  <div class="s10__info-text"><span>Основатели</span><img class="s10__info-logo" src="images/logo.png"></div>
-                </div>
+      <div class="bg-clouds" style="background-image: url(images/bg-clouds.jpg)">
+        <div class="s9">
+          <div class="container s9__container">
+            <div class="s9__left">
+              <div class="title s9__title">Быстро и адекватно реагируем <span>на ваши просьбы и рекламации</span></div>
+              <div class="s9__text">Мы хотим, чтобы Вы полностью остались довольны нашей работой и рекомендовали нас друзьям. Поэтому на следующий день после монтажа мы позвоним Вам, чтобы уточнить как прошел монтаж</div>
+              <div class="s9__stoptext"><img class="s9__stoptext-img" src="images/s9/s9-stopwatch.png">
+                <div class="s9__stoptext-text"><span>Если после установки потолка что-то пошло не так</span> (не горит свет, на полотне появились полосы или пятна), <span>то мы решим возникшие проблемы в течение 24 часов бесплатно</span></div>
               </div>
             </div>
-            <div class="s10__right">
-              <div class="title s10__title">Вы получите с нашей стороны <span>честность, комфорт, вежливость и заботу</span></div>
-              <div class="s10__items">
-                <div class="s10__item">
-                  <div class="s10__item-img"><img src="images/s10/s10-w-1.png"></div>
-                  <div class="s10__item-content">
-                    <div class="s10__item-title">Делаем все под ключ, чтобы Вам не пришлось самим что-то доделывать</div>
-                    <div class="s10__item-text">Доставляем потолок, заносим, устанавливаем,  крепим все ваши светильники. Если светильников нет, то поможем подобрать в нашей компании.</div>
-                  </div>
-                </div>
-                <div class="s10__item">
-                  <div class="s10__item-img"><img src="images/s10/s10-w-2.png"></div>
-                  <div class="s10__item-content">
-                    <div class="s10__item-title">Заявленная в начале стоимость остается неизменной до конца</div>
-                    <div class="s10__item-text">Если не укладываемся в смету — платим из своего кармана</div>
-                  </div>
-                </div>
-                <div class="s10__item">
-                  <div class="s10__item-img"><img src="images/s10/s10-w-3.png"></div>
-                  <div class="s10__item-content">
-                    <div class="s10__item-title">Ценим ваше время и нервы</div>
-                    <div class="s10__item-text">Замерщик и монтажники приедут с максимальным опозданием 10&nbsp;мин. За каждые дополнительные 5&nbsp;минут опоздания Вы получите денежную компенсацию</div>
+            <div class="s9__right">
+              <div class="s9-pic"><img class="s9-pic__1" src="images/s9-img-1.png" alt=""><img class="s9-pic__2" src="images/s9-img-2.png" alt=""><img class="s9-pic__3" src="images/s9-img-3.png" alt=""></div>
+            </div>
+          </div><img class="s9__bush" src="images/s9/s9-brush.png">
+        </div>
+        <div class="s10">
+          <div class="container s10__container">
+            <div class="s10__flex">
+              <div class="s10__left">
+                <div class="s10__img"><img src="images/s10/s10-mans.png"></div>
+                <div class="s10__info">
+                  <div class="s10__info-inner">
+                    <div class="s10__info-name">Айдар и Елена Галимовы</div>
+                    <div class="s10__info-text"><span>Основатели</span><img class="s10__info-logo" src="images/logo.png"></div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div><img class="s10__bush" src="images/s10/s10-brush.png">
-      </div>
-      <div class="fresh-projects">
-        <div class="container-fresh-projects">
-          <h2 class="freshpr-title">Посмотрите наши <b>свежие проекты</b></h2>
-          <div class="freshpr-wrap">
-            <div class="freshpr-wrap-bg-text">Башдекор</div>
-            <div class="freshpr-item"><img class="freshpr-item__img" src="images/products/item-1.jpg" alt="">
-              <div class="freshpr-item-bottom">
-                <div class="freshpr-item-bottom__size">22 м2</div>
-                <div class="freshpr-item-bottom__flex">
-                  <div class="freshpr-item-bottom__name">Классический потолок в&nbsp;спальню</div><a class="freshpr-item-bottom__more" href="images/products/item-1.jpg" data-fancybox="freshpr-item-1">Больше фото</a>
+              <div class="s10__right">
+                <div class="title s10__title">Вы получите с нашей стороны <span>честность, комфорт, вежливость и заботу</span></div>
+                <div class="s10__items">
+                  <div class="s10__item">
+                    <div class="s10__item-img"><img src="images/s10/s10-w-1.png"></div>
+                    <div class="s10__item-content">
+                      <div class="s10__item-title">Делаем все под ключ, чтобы Вам не пришлось самим что-то доделывать</div>
+                      <div class="s10__item-text">Доставляем потолок, заносим, устанавливаем,  крепим все ваши светильники. Если светильников нет, то поможем подобрать в нашей компании.</div>
+                    </div>
+                  </div>
+                  <div class="s10__item">
+                    <div class="s10__item-img"><img src="images/s10/s10-w-2.png"></div>
+                    <div class="s10__item-content">
+                      <div class="s10__item-title">Заявленная в начале стоимость остается неизменной до конца</div>
+                      <div class="s10__item-text">Если не укладываемся в смету — платим из своего кармана</div>
+                    </div>
+                  </div>
+                  <div class="s10__item">
+                    <div class="s10__item-img"><img src="images/s10/s10-w-3.png"></div>
+                    <div class="s10__item-content">
+                      <div class="s10__item-title">Ценим ваше время и нервы</div>
+                      <div class="s10__item-text">Замерщик и монтажники приедут с максимальным опозданием 10&nbsp;мин. За каждые дополнительные 5&nbsp;минут опоздания Вы получите денежную компенсацию</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="freshpr-item__links"><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a></div>
             </div>
-            <div class="freshpr-item"><img class="freshpr-item__img" src="images/products/item-1.jpg" alt="">
-              <div class="freshpr-item-bottom">
-                <div class="freshpr-item-bottom__size">22 м2</div>
-                <div class="freshpr-item-bottom__flex">
-                  <div class="freshpr-item-bottom__name">Классический потолок в&nbsp;спальню</div><a class="freshpr-item-bottom__more" href="images/products/item-1.jpg" data-fancybox="freshpr-item-1">Больше фото</a>
+          </div><img class="s10__bush" src="images/s10/s10-brush.png">
+        </div>
+        <div class="fresh-projects">
+          <div class="container-fresh-projects">
+            <h2 class="freshpr-title">Посмотрите наши <b>свежие проекты</b></h2>
+            <div class="freshpr-wrap">
+              <div class="freshpr-wrap-bg-text">Башдекор</div>
+              <div class="freshpr-item"><img class="freshpr-item__img" src="images/products/item-1.jpg" alt="">
+                <div class="freshpr-item-bottom">
+                  <div class="freshpr-item-bottom__size">22 м2</div>
+                  <div class="freshpr-item-bottom__flex">
+                    <div class="freshpr-item-bottom__name">Классический потолок в&nbsp;спальню</div><a class="freshpr-item-bottom__more" href="#popup-gallery">Больше фото</a>
+                  </div>
                 </div>
+                <div class="freshpr-item__links"><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a></div>
               </div>
-              <div class="freshpr-item__links"><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a></div>
-            </div>
-            <div class="freshpr-item"><img class="freshpr-item__img" src="images/products/item-1.jpg" alt="">
-              <div class="freshpr-item-bottom">
-                <div class="freshpr-item-bottom__size">22 м2</div>
-                <div class="freshpr-item-bottom__flex">
-                  <div class="freshpr-item-bottom__name">Классический потолок в&nbsp;спальню</div><a class="freshpr-item-bottom__more" href="images/products/item-1.jpg" data-fancybox="freshpr-item-1">Больше фото</a>
+              <div class="freshpr-item"><img class="freshpr-item__img" src="images/products/item-1.jpg" alt="">
+                <div class="freshpr-item-bottom">
+                  <div class="freshpr-item-bottom__size">22 м2</div>
+                  <div class="freshpr-item-bottom__flex">
+                    <div class="freshpr-item-bottom__name">Классический потолок в&nbsp;спальню</div><a class="freshpr-item-bottom__more" href="#popup-gallery">Больше фото</a>
+                  </div>
                 </div>
+                <div class="freshpr-item__links"><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a></div>
               </div>
-              <div class="freshpr-item__links"><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a></div>
-            </div>
-            <div class="freshpr-item"><img class="freshpr-item__img" src="images/products/item-1.jpg" alt="">
-              <div class="freshpr-item-bottom">
-                <div class="freshpr-item-bottom__size">22 м2</div>
-                <div class="freshpr-item-bottom__flex">
-                  <div class="freshpr-item-bottom__name">Классический потолок в&nbsp;спальню</div><a class="freshpr-item-bottom__more" href="images/products/item-1.jpg" data-fancybox="freshpr-item-1">Больше фото</a>
+              <div class="freshpr-item"><img class="freshpr-item__img" src="images/products/item-1.jpg" alt="">
+                <div class="freshpr-item-bottom">
+                  <div class="freshpr-item-bottom__size">22 м2</div>
+                  <div class="freshpr-item-bottom__flex">
+                    <div class="freshpr-item-bottom__name">Классический потолок в&nbsp;спальню</div><a class="freshpr-item-bottom__more" href="#popup-gallery">Больше фото</a>
+                  </div>
                 </div>
+                <div class="freshpr-item__links"><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a></div>
               </div>
-              <div class="freshpr-item__links"><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a></div>
-            </div>
-            <div class="freshpr-item"><img class="freshpr-item__img" src="images/products/item-1.jpg" alt="">
-              <div class="freshpr-item-bottom">
-                <div class="freshpr-item-bottom__size">22 м2</div>
-                <div class="freshpr-item-bottom__flex">
-                  <div class="freshpr-item-bottom__name">Классический потолок в&nbsp;спальню</div><a class="freshpr-item-bottom__more" href="images/products/item-1.jpg" data-fancybox="freshpr-item-1">Больше фото</a>
+              <div class="freshpr-item"><img class="freshpr-item__img" src="images/products/item-1.jpg" alt="">
+                <div class="freshpr-item-bottom">
+                  <div class="freshpr-item-bottom__size">22 м2</div>
+                  <div class="freshpr-item-bottom__flex">
+                    <div class="freshpr-item-bottom__name">Классический потолок в&nbsp;спальню</div><a class="freshpr-item-bottom__more" href="#popup-gallery">Больше фото</a>
+                  </div>
                 </div>
+                <div class="freshpr-item__links"><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a></div>
               </div>
-              <div class="freshpr-item__links"><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a></div>
-            </div>
-            <div class="freshpr-item freshpr-item--insta">
-              <div class="freshpr-item__instaInner"><a class="foo-socials-item foo-socials-item--inst" href=""><img src="images/footer/instagram.svg" alt=""></a>
-                <div class="freshpr-insta-title">Больше работ в&nbsp;нашем инстаграме</div>
-                <div class="freshpr-insta-300">Получите 300 рублей за подписку в инстаграме</div><a class="freshpr-insta-a" href="https://instagram.com/">@bashdekor_str</a>
-                <div class="freshpr-insta-counter" href="https://instagram.com/">3 859 подписчиков</div>
-              </div><img class="freshpr-insta-pic" src="images/grey-logo-part.png">
+              <div class="freshpr-item"><img class="freshpr-item__img" src="images/products/item-1.jpg" alt="">
+                <div class="freshpr-item-bottom">
+                  <div class="freshpr-item-bottom__size">22 м2</div>
+                  <div class="freshpr-item-bottom__flex">
+                    <div class="freshpr-item-bottom__name">Классический потолок в&nbsp;спальню</div><a class="freshpr-item-bottom__more" href="#popup-gallery">Больше фото</a>
+                  </div>
+                </div>
+                <div class="freshpr-item__links"><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a><a href="images/products/item-1.jpg" data-fancybox="freshpr-item-1"></a></div>
+              </div>
+              <div class="freshpr-item freshpr-item--insta">
+                <div class="freshpr-item__instaInner"><a class="foo-socials-item foo-socials-item--inst" href=""><img src="images/footer/instagram.svg" alt=""></a>
+                  <div class="freshpr-insta-title">Больше работ в&nbsp;нашем инстаграме</div>
+                  <div class="freshpr-insta-300">Получите 300 рублей за подписку в инстаграме</div><a class="freshpr-insta-a" href="https://instagram.com/">@bashdekor_str</a>
+                  <div class="freshpr-insta-counter" href="https://instagram.com/">3 859 подписчиков</div>
+                </div><img class="freshpr-insta-pic" src="images/grey-logo-part.png">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="section-reviews">
-        <div class="reviews-container">
-          <div class="reviews-info">
-            <div class="reviews-info-bg">97,2</div>
-            <div class="reviews-info-text"><span class="reviews-info-digits">97,2%</span> <span class="reviews-info-bold">заказчиков поставили нам </span> 7 и более по 10-бальной шкале при анкетировании по&nbsp;окончании работ</div>
-          </div>
-          <h2 class="reviews-title">Посмотрите свежие отзывы</h2>
-          <div class="reviews-controls">
-            <div class="btn-v2 btn-v2--gray js-reviews-control">
-              <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">анкеты с баллами</span></div>
+        <div class="section-reviews">
+          <div class="reviews-container">
+            <div class="reviews-info">
+              <div class="reviews-info-bg">97,2</div>
+              <div class="reviews-info-text"><span class="reviews-info-digits">97,2%</span> <span class="reviews-info-bold">заказчиков поставили нам </span> 7 и более по 10-бальной шкале при анкетировании по&nbsp;окончании работ</div>
             </div>
-            <div class="btn-v2 btn-v2--orange js-reviews-control">
-              <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Видеоотзывы</span></div>
+            <h2 class="reviews-title">Посмотрите свежие отзывы</h2>
+            <div class="reviews-controls">
+              <div class="btn-v2 btn-v2--gray js-reviews-control">
+                <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">анкеты с баллами</span></div>
+              </div>
+              <div class="btn-v2 btn-v2--orange js-reviews-control">
+                <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Видеоотзывы</span></div>
+              </div>
             </div>
-          </div>
-          <div class="reviews-tabs">
-            <div class="reviews-tab js-reviews-tab">
-              <div class="reviews-videos">
-                <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">1Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
+            <div class="reviews-tabs">
+              <div class="reviews-tab js-reviews-tab">
+                <div class="reviews-videos">
+                  <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">1Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
+                  </div>
+                  <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
+                  </div>
+                  <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
+                  </div>
+                  <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
+                  </div>
+                  <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
+                  </div>
+                  <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
                   </div>
                 </div>
-                <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
+              </div>
+              <div class="reviews-tab reviews-tab--active js-sreviews-tab">
+                <div class="reviews-videos">
+                  <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">2Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
                   </div>
-                </div>
-                <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
+                  <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
                   </div>
-                </div>
-                <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
+                  <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
                   </div>
-                </div>
-                <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="https://pokrovsk.news/uploads/news/redactor/ganfw58fauskdabh.jpg" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
+                  <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
                   </div>
-                </div>
-                <div class="reviews-video-item reviews-video-item--novid"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
+                  <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
+                  </div>
+                  <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
+                    <div class="reviews-text">
+                      <div class="reviews-text__name">Илья Миронов</div>
+                      <div class="reviews-text__city">г. Стерлитамак</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="reviews-tab reviews-tab--active js-sreviews-tab">
-              <div class="reviews-videos">
-                <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">2Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
-                  </div>
-                </div>
-                <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
-                  </div>
-                </div>
-                <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
-                  </div>
-                </div>
-                <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
-                  </div>
-                </div>
-                <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
-                  </div>
-                </div>
-                <div class="reviews-video-item"><a class="reviews-video-wrap" href="http://www.youtube.com/embed/DkaUsBwe0fo" data-fancybox><img class="reviews-video-preview" src="images/review.jpg" alt=""></a>
-                  <div class="reviews-text">
-                    <div class="reviews-text__name">Илья Миронов</div>
-                    <div class="reviews-text__city">г. Стерлитамак</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="reviews-loadmore reviews-loadmore--loading"><span>Посмотреть еще</span></div>
           </div>
-          <div class="reviews-loadmore reviews-loadmore--loading"><span>Посмотреть еще</span></div>
         </div>
-      </div>
-      <div class="section-other-company" id="support">
-        <div class="otcomp-container">
-          <div class="otcomp-left">
-            <h2 class="otcomp-title"><b>Уже получили смету на&nbsp;потолок</b> от другой компании?</h2>
-            <div class="otcomp-info">
-              <p>Отправьте ее нам. Мы проверим цены и ошибки в расчетах. С вероятностью 60% мы сможем уменьшить стоимость натяжного потолка на 10-15% без потери качества.</p>
-              <p>Вы получите от нас смету с более низкой ценой и аргументацию, на чем можно сэкономить.</p>
-            </div>
-            <div class="otcomp-form-wrap">
-              <form action="">
-                <div class="otcomp-form-innner">
-                  <div class="otcomp-form-title">Прикрепите сканы или фотографии сметы, отправьте нам и получите новую смету на 10-15% дешевле</div>
-                  <label class="custom-finp">
-                    <input type="file" multiple>
-                    <div class="custom-finp__title">Выбрать файлы</div>
-                    <div class="custom-finp__items"></div>
-                  </label>
-                  <div class="otcomp-form-flex">
-                    <input class="input input--gray otcomp-form-input" type="phone" name="phone" placeholder="введите Номер телефона">
-                    <button class="btn-v2 otcomp-form-btn">
-                      <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Получить новую смету на 10-15% дешевле</span></div>
-                    </button>
-                  </div>
-                  <div class="otcomp-privacy freemean-form-privacy">
-                    <label>
-                      <input class="custom-chb" type="checkbox" name="acceptance-569" value="1" aria-invalid="false" checked><span class="wpcf7-list-item-label"><span class="wpcf7-list-item-label"><span class="acceptance-text">Согласен с <a href="/privacy-policy/" target="_blank">Политикой конфиденциальности сайта</a></span></span></span>
-                    </label>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="otcomp-right"><img class="otcomp-pic" src="images/other-company.png" alt=""></div>
-        </div>
-      </div>
-      <section class="section-free-measurement">
-        <div class="freemean-container">
-          <div class="freemean-top">
-            <div class="freemean-top-content">
-              <div class="freemean-title"><span class="freemean-title-inner"><b>Бесплатный замер потолка и расчет точной стоимости</b> у Вас дома уже сегодня</span></div>
-              <div class="freemean-steps">
-                <div class="freemean-step">
-                  <div class="freemean-step__top">
-                    <div class="freemean-step__top-number"><span>01</span></div><img class="freemean-step__top-pic" src="images/freem/Levels_.png" alt="">
-                  </div>
-                  <div class="freemean-step__text">
-                    <p>Замерщик привозит с собой все?тиызжкаталоги потолков и светильников.<b> Вы сможете выбрать подходящий потолок, не выходя из дома</b></p>
-                  </div>
-                </div>
-                <div class="freemean-step">
-                  <div class="freemean-step__top">
-                    <div class="freemean-step__top-number"><span>02</span></div><img class="freemean-step__top-pic" src="images/freem/Levels_2.png" alt="">
-                  </div>
-                  <div class="freemean-step__text">
-                    <p><b> Вы получите точный расчет стоимости в день вызова.</b> Для расчета у замерщика есть ноутбук со специальной программой.</p>
-                    <p><b>Гарантируем, что эта стоимость потом не изменится!</b></p>
-                  </div>
-                </div>
+        <div class="section-other-company" id="support">
+          <div class="otcomp-container">
+            <div class="otcomp-left">
+              <h2 class="otcomp-title"><b>Уже получили смету на&nbsp;потолок</b> от другой компании?</h2>
+              <div class="otcomp-info">
+                <p>Отправьте ее нам. Мы проверим цены и ошибки в расчетах. С вероятностью 60% мы сможем уменьшить стоимость натяжного потолка на 10-15% без потери качества.</p>
+                <p>Вы получите от нас смету с более низкой ценой и аргументацию, на чем можно сэкономить.</p>
               </div>
-            </div>
-          </div>
-          <div class="freemean-bottom">
-            <div class="freemean-discount"><img class="freemean-discount__pic" src="images/freem/case.png" alt="">
-              <div class="freemean-discount-wrap-2">
-                <div class="freemean-discount__inner">
-                  <div class="freemean-discount__percent">5%</div>
-                  <div class="freemean-discount__text">При желании мы можем подписать договор в&nbsp;этот&nbsp;же день. В этом случае Вы получите дополнительную скидку 5%.</div>
-                </div>
-              </div>
-            </div>
-            <div class="freemean-form-wrap">
-              <div class="freemean-form-wrap-2">
+              <div class="otcomp-form-wrap">
                 <form action="">
-                  <div class="freemean-form-inner">
-                    <div class="freemean-form-title">Пригласите замерщика в&nbsp;удобное для Вас время</div>
-                    <div class="freemean-form-flex">
-                      <input class="input input--gray freemean-form-input" type="phone" name="phone" placeholder="введите Номер телефона">
-                      <button class="btn-v2 freemean-form-btn">
-                        <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">договориться о времени</span></div>
+                  <div class="otcomp-form-innner">
+                    <div class="otcomp-form-title">Прикрепите сканы или фотографии сметы, отправьте нам и получите новую смету на 10-15% дешевле</div>
+                    <label class="custom-finp">
+                      <input type="file" multiple>
+                      <div class="custom-finp__title">Выбрать файлы</div>
+                      <div class="custom-finp__items"></div>
+                    </label>
+                    <div class="otcomp-form-flex">
+                      <input class="input input--gray otcomp-form-input" type="phone" name="phone" placeholder="введите Номер телефона">
+                      <button class="btn-v2 otcomp-form-btn">
+                        <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">Получить новую смету на 10-15% дешевле</span></div>
                       </button>
                     </div>
-                    <div class="freemean-form-privacy freemean-form-privacy--sec-freemean">
+                    <div class="otcomp-privacy freemean-form-privacy">
                       <label>
-                        <input class="custom-chb" type="checkbox" name="acceptance-569" value="1" aria-invalid="false" checked><span class="wpcf7-list-item-label"><span class="wpcf7-list-item-label"><span class="acceptance-text">Согласен с <a href="/privacy-policy/" target="_blank">Политикой конфиденциальности <span class="acceptance-text__site">сайта</span></a></span></span></span>
+                        <input class="custom-chb" type="checkbox" name="acceptance-569" value="1" aria-invalid="false" checked><span class="wpcf7-list-item-label"><span class="wpcf7-list-item-label"><span class="acceptance-text">Согласен с <a href="/privacy-policy/" target="_blank">Политикой конфиденциальности сайта</a></span></span></span>
                       </label>
                     </div>
                   </div>
                 </form>
               </div>
-              <div class="freemean-seats">
-                <div class="freemean-seats__text">Свободных мест на&nbsp;сегодня:</div>
-                <div class="freemean-seats__number">2</div>
+            </div>
+            <div class="otcomp-right"><img class="otcomp-pic" src="images/other-company.png" alt=""></div>
+          </div>
+        </div>
+        <section class="section-free-measurement">
+          <div class="freemean-container">
+            <div class="freemean-top">
+              <div class="freemean-top-content">
+                <div class="freemean-title"><span class="freemean-title-inner"><b>Бесплатный замер потолка и расчет точной стоимости</b> у Вас дома уже сегодня</span></div>
+                <div class="freemean-steps">
+                  <div class="freemean-step">
+                    <div class="freemean-step__top">
+                      <div class="freemean-step__top-number"><span>01</span></div><img class="freemean-step__top-pic" src="images/freem/Levels_.png" alt="">
+                    </div>
+                    <div class="freemean-step__text">
+                      <p>Замерщик привозит с собой все каталоги потолков и светильников.<b> Вы сможете выбрать подходящий потолок, не выходя из дома</b></p>
+                    </div>
+                  </div>
+                  <div class="freemean-step">
+                    <div class="freemean-step__top">
+                      <div class="freemean-step__top-number"><span>02</span></div><img class="freemean-step__top-pic" src="images/freem/Levels_2.png" alt="">
+                    </div>
+                    <div class="freemean-step__text">
+                      <p><b> Вы получите точный расчет стоимости в день вызова.</b> Для расчета у замерщика есть ноутбук со специальной программой.</p>
+                      <p><b>Гарантируем, что эта стоимость потом не изменится!</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="freemean-bottom">
+              <div class="freemean-discount"><img class="freemean-discount__pic" src="images/freem/case.png" alt="">
+                <div class="freemean-discount-wrap-2">
+                  <div class="freemean-discount__inner">
+                    <div class="freemean-discount__percent">5%</div>
+                    <div class="freemean-discount__text">При желании мы можем подписать договор в&nbsp;этот&nbsp;же день. В этом случае Вы получите дополнительную скидку 5%.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="freemean-form-wrap">
+                <div class="freemean-form-wrap-2">
+                  <form action="">
+                    <div class="freemean-form-inner">
+                      <div class="freemean-form-title">Пригласите замерщика в&nbsp;удобное для Вас время</div>
+                      <div class="freemean-form-flex">
+                        <input class="input input--gray freemean-form-input" type="phone" name="phone" placeholder="введите Номер телефона">
+                        <button class="btn-v2 freemean-form-btn">
+                          <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">договориться о времени</span></div>
+                        </button>
+                      </div>
+                      <div class="freemean-form-privacy freemean-form-privacy--sec-freemean">
+                        <label>
+                          <input class="custom-chb" type="checkbox" name="acceptance-569" value="1" aria-invalid="false" checked><span class="wpcf7-list-item-label"><span class="wpcf7-list-item-label"><span class="acceptance-text">Согласен с <a href="/privacy-policy/" target="_blank">Политикой конфиденциальности <span class="acceptance-text__site">сайта</span></a></span></span></span>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="freemean-seats">
+                  <div class="freemean-seats__text">Свободных мест на&nbsp;сегодня:</div>
+                  <div class="freemean-seats__number">2</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section class="section-map">
         <div class="secmap-bg"><img class="secmap-clouds" src="images/map/clouds.png" alt="">
           <div class="secmap-map" id="secmap-map"></div>
@@ -1666,6 +1673,41 @@
         </div>
       </form>
     </div>
-    <script src="js/main.js?20201011171252614"></script>
+    <div class="popup popup--gallery" id="popup-gallery" style="display: none; background-image: url(images/bg-clouds.jpg);">
+      <div class="popup__title"><span class="js-gallery-name">Классический потолок в спальню</span>
+        <div class="popup__square"><span>22м <sup>2</sup></span></div>
+      </div>
+      <div class="popup__gallery">
+        <div class="popup__thumbs">
+          <div class="popup__thumbs-item popup__gallery--active"><img src="images/products/item-1.jpg" alt=""></div>
+          <div class="popup__thumbs-item"><img src="images/products/item-1.jpg" alt=""></div>
+          <div class="popup__thumbs-item"><img src="images/products/item-1.jpg" alt=""></div>
+        </div>
+        <div class="popup__content"><img src="images/products/item-1.jpg" alt=""></div>
+      </div>
+      <div class="popup__liked">
+        <div class="popup__liked-text">
+          <p>Понравился этот потолок?</p>
+          <p>Укажите площадь вашего помещения <br> и получите расчет стоимости в течение 15 минут</p>
+        </div>
+        <form class="form" action="" method="POST">
+          <div class="quiz-inp-size__inp">
+            <div class="custom-inp-numer js-custom-inp-numer">
+              <input class="custom-inp-numer__inp" type="number" min="0" max="9999" value="0">
+              <div class="custom-inp-numer__btns">
+                <div class="custom-inp-numer__btn custom-inp-numer__more"></div>
+                <div class="custom-inp-numer__btn custom-inp-numer__less"></div>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-inp-size__m">м<sup>2</sup></div>
+          <input class="input input--gray" type="phone" name="phone" placeholder="номер телефона">
+          <div class="btn-v2">
+            <div class="btn-v2__inner"><span class="btn-v2__bg"></span><span class="btn-v2__text">получить рассчет</span></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/main.js?20201012179260"></script>
   </body>
 </html>
