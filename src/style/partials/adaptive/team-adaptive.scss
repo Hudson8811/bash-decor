@@ -181,6 +181,10 @@
 
 		&__flex {
 			flex-direction: column;
+			opacity: 1;
+			display: flex !important;
+			height: unset !important;
+			max-height: unset !important;
 		}
 
 		&__person {

@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta property="og:image" content="images/logo.svg">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/main.css?20201012179260" rel="stylesheet">
+    <link href="css/main.css?20201018154840728" rel="stylesheet">
     <!--title= `${page.title}`-->
   </head>
   <body>
@@ -44,27 +44,35 @@
     <main class="main">
       <div class="sidebar"><a class="sidebar__item anchor" href="#quiz">
           <figure>
-            <svg>
-              <use xlink:href="./svg/sprite.svg#calculator"></use>
-            </svg>
+            <div class="sidebar__pic-wrap">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#calculator"></use>
+              </svg>
+            </div>
             <p><span>Рассчитать</span> стоимость</p>
           </figure></a><a class="sidebar__item" href="#popup-consult">
           <figure>
-            <svg>
-              <use xlink:href="./svg/sprite.svg#support"></use>
-            </svg>
+            <div class="sidebar__pic-wrap">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#support"></use>
+              </svg>
+            </div>
             <p><span>Консультация</span> специалиста</p>
           </figure></a><a class="sidebar__item" href="#popup-catalog">
           <figure>
-            <svg>
-              <use xlink:href="./svg/sprite.svg#catalog"></use>
-            </svg>
+            <div class="sidebar__pic-wrap">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#catalog"></use>
+              </svg>
+            </div>
             <p><span>Каталог потолков <br> </span> с ценами</p>
           </figure></a><a class="sidebar__item sidebar__item--up anchor" href="#first-screen">
           <figure>
-            <svg>
-              <use xlink:href="./svg/sprite.svg#arrow"></use>
-            </svg>
+            <div class="sidebar__pic-wrap">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#arrow"></use>
+              </svg>
+            </div>
             <p><span>Наверх</span></p>
           </figure></a></div>
       <div class="first-screen" id="first-screen" style="background-image: url(&quot;images/bg-first.jpg&quot;);">
@@ -763,7 +771,7 @@
       <div class="catalog" id="catalog">
         <div class="catalog__bg">
           <picture>
-            <source media="(max-width: 640px)" srcset="images/bg-catalog-3.png">
+            <source media="(max-width: 640px)" srcset="images/Hand.png">
             <source media="(max-width: 960px)" srcset="images/bg-catalog-2.png"><img src="images/bg-catalog.png" alt="catalog">
           </picture>
         </div>
@@ -1505,7 +1513,7 @@
         </div>
       </footer>
     </main>
-    <div class="popup" id="popup-catalog" style="display: none; background-image: url(images/bg-clouds.jpg);">
+    <div class="popup popup-catalog popup-catalog--type-2" id="popup-catalog" style="display: none; background-image: url(images/bg-clouds.jpg);">
       <picture>
         <source media="(max-width: 960px)" srcset="images/popup/catalog-2.png"><img src="images/popup/catalog.png" alt="catalog">
       </picture>
@@ -1708,6 +1716,6 @@
         </form>
       </div>
     </div>
-    <script src="js/main.js?20201012179260"></script>
+    <script src="js/main.js?20201018154840728"></script>
   </body>
 </html>

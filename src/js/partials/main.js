@@ -189,8 +189,8 @@ $(document).ready(function () {
 		$('.choice__flex').slick({
 			slidesToShow: 2,
 			slidesToScroll: 1,
-			prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
-			nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+			prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.823 240.823" id="arrow"><path d="M57.633 129.007L165.93 237.268c4.752 4.74 12.451 4.74 17.215 0 4.752-4.74 4.752-12.439 0-17.179l-99.707-99.671 99.695-99.671c4.752-4.74 4.752-12.439 0-17.191-4.752-4.74-12.463-4.74-17.215 0L57.621 111.816c-4.679 4.691-4.679 12.511.012 17.191z"/></svg></button>',
+			nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.823 240.823" id="arrow"><path d="M57.633 129.007L165.93 237.268c4.752 4.74 12.451 4.74 17.215 0 4.752-4.74 4.752-12.439 0-17.179l-99.707-99.671 99.695-99.671c4.752-4.74 4.752-12.439 0-17.191-4.752-4.74-12.463-4.74-17.215 0L57.621 111.816c-4.679 4.691-4.679 12.511.012 17.191z"/></svg></button>',
 			dots: false,
 			infinite: false
 		});
@@ -201,16 +201,14 @@ $(document).ready(function () {
 		$('.advantages__flex').slick({
 			slidesToShow: 2,
 			slidesToScroll: 1,
-			prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
-			nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+			prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.823 240.823" id="arrow"><path d="M57.633 129.007L165.93 237.268c4.752 4.74 12.451 4.74 17.215 0 4.752-4.74 4.752-12.439 0-17.179l-99.707-99.671 99.695-99.671c4.752-4.74 4.752-12.439 0-17.191-4.752-4.74-12.463-4.74-17.215 0L57.621 111.816c-4.679 4.691-4.679 12.511.012 17.191z"/></svg></button>',
+			nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.823 240.823" id="arrow"><path d="M57.633 129.007L165.93 237.268c4.752 4.74 12.451 4.74 17.215 0 4.752-4.74 4.752-12.439 0-17.179l-99.707-99.671 99.695-99.671c4.752-4.74 4.752-12.439 0-17.191-4.752-4.74-12.463-4.74-17.215 0L57.621 111.816c-4.679 4.691-4.679 12.511.012 17.191z"/></svg></button>',
 			dots: false,
 			infinite: false,
 			responsive: [
 				{
 					breakpoint: 640,
-					settings: {
-						slidesToShow: 1
-					}
+					settings: 'unslick'
 				}
 			]
 		});
@@ -221,8 +219,8 @@ $(document).ready(function () {
 		$('.quality__flex').slick({
 			slidesToShow: 3,
 			slidesToScroll: 1,
-			prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
-			nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+			prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.823 240.823" id="arrow"><path d="M57.633 129.007L165.93 237.268c4.752 4.74 12.451 4.74 17.215 0 4.752-4.74 4.752-12.439 0-17.179l-99.707-99.671 99.695-99.671c4.752-4.74 4.752-12.439 0-17.191-4.752-4.74-12.463-4.74-17.215 0L57.621 111.816c-4.679 4.691-4.679 12.511.012 17.191z"/></svg></button>',
+			nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.823 240.823" id="arrow"><path d="M57.633 129.007L165.93 237.268c4.752 4.74 12.451 4.74 17.215 0 4.752-4.74 4.752-12.439 0-17.179l-99.707-99.671 99.695-99.671c4.752-4.74 4.752-12.439 0-17.191-4.752-4.74-12.463-4.74-17.215 0L57.621 111.816c-4.679 4.691-4.679 12.511.012 17.191z"/></svg></button>',
 			dots: false,
 			infinite: false,
 			responsive: [
@@ -234,9 +232,7 @@ $(document).ready(function () {
 				},
 				{
 					breakpoint: 640,
-					settings: {
-						slidesToShow: 1
-					}
+					settings: 'unslick'
 				}
 			]
 		});
@@ -246,8 +242,8 @@ $(document).ready(function () {
 	$('.team__slider').slick({
 		slidesToShow: 2,
 		slidesToScroll: 1,
-		prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
-		nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg><use xlink:href="./svg/sprite.svg#arrow"></use></svg></button>',
+		prevArrow: '<button class="slider-arrow slider-arrow--prev" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.823 240.823" id="arrow"><path d="M57.633 129.007L165.93 237.268c4.752 4.74 12.451 4.74 17.215 0 4.752-4.74 4.752-12.439 0-17.179l-99.707-99.671 99.695-99.671c4.752-4.74 4.752-12.439 0-17.191-4.752-4.74-12.463-4.74-17.215 0L57.621 111.816c-4.679 4.691-4.679 12.511.012 17.191z"/></svg></button>',
+		nextArrow: '<button class="slider-arrow slider-arrow--next" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.823 240.823" id="arrow"><path d="M57.633 129.007L165.93 237.268c4.752 4.74 12.451 4.74 17.215 0 4.752-4.74 4.752-12.439 0-17.179l-99.707-99.671 99.695-99.671c4.752-4.74 4.752-12.439 0-17.191-4.752-4.74-12.463-4.74-17.215 0L57.621 111.816c-4.679 4.691-4.679 12.511.012 17.191z"/></svg></button>',
 		dots: false,
 		infinite: false,
 		responsive: [

@@ -349,6 +349,10 @@
 	.freshpr-wrap-bg-text {
 		display: none;
 	}
+	.freshpr-item .freshpr-item-bottom {
+		-webkit-transform: translate(0,0);
+		transform: translate(0,0);
+	}
 }
 
 @media screen and (max-width:515px) {
@@ -383,4 +387,6 @@
 	.fresh-projects {
 		padding-bottom: 9px;
 	}
+
+
 }
