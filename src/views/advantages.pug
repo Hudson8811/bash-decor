@@ -133,7 +133,11 @@ block main
 										use(xlink:href='./svg/sprite.svg#socials--phone')
 									span По телефону
 							+input('phone', 'phone', 'input--gray', 'номер телефона')
-							+button('получить каталог потолков', 'form__button')
+
+							.btn-v2.form__button
+								.btn-v2__inner
+									span.btn-v2__bg
+									span.btn-v2__text получить каталог потолков
 							.form__privacy-policy Оставляя заявку, вы соглашаетесь с <a href="#" target="_blank">политикой <br> конфиденциальности</a>
 	.bg-clouds(style='background-image: url(images/bg-clouds.jpg)')
 		#quiz.quiz.quiz--page
